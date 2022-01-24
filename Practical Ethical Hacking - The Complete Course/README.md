@@ -1,6 +1,6 @@
 ## **Course Repo**  https://github.com/Gr1mmie/Practical-Ethical-Hacking-Resources
 
-The following snip is from the course...
+### **The following snipit is from the course...**
 
 ### **Practical Network Penetration Tester (PNPT)**
 Many students take this course to obtain the [Practical Network Penetration Tester (PNPT)](https://certifications.tcm-sec.com/pnpt/)  certification. If you are one of those students, please read on. If not, you can safely move on to the course introduction!
