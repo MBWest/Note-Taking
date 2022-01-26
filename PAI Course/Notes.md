@@ -1,9 +1,9 @@
 ## Notes
 **Flashpoint** - https://fp.tools
 - Mass data searching and reports
-- "cyber-partisan"
 
-Social Media Discovery - Twitter Standard Operators
-| Operator |Description  |
-|--|--|
-| watching now |    |
+  
+Echosec Account
+Student012
+[BH]-01-24-2022mbf6bv
+8wtxbyo
