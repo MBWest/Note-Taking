@@ -145,6 +145,7 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 	- **rm -i** - Interactive optionsl, prompts user (y or n)
 
 ## Commands
+
 ### Type of Commands
 1. **Executable program** - Compiled binary files
 	- Usually stored in /bin,  /usr/bin, /usr/local/bin
@@ -152,6 +153,33 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 	- ***help* command** - Similar to Man Pages but for built-in shell commands
 3. **Shell Function**
 4. **Alias**
+
+### Redirection
+
+*Standard Input* -> **Command** -> *Standard Output* or -> *Standard Error*
+
+#### Standard Input
+
+Standard input is where a program or command get its input from. By default, the shell directs standard input from the keyboard
+- The input information could come from a keyboard, a file, or even from another command. 
+
+#### Standard Output
+
+Standard output is a place to which a program or command can send information.
+- The information could go to a screen to be displayed, to a file, or even to a printer or other device
+
+#### Standard Error
+
+Commands and programs also have a destination to send error messages: Standard Error
+- By default, the shell directs standard error information to the screen for the user to read, but this destination can be changed if needed. 
+
+#### Redirecting Output (>)
+
+The redirect output symbol (**>**) tells the shell to redirect the output of a command to a specific file instead of the screen. 
+- By default, the **date** command will print the current date to the screen. If we instead run **date > output.txt** the output will be redirected to a file called output.txt
+
+The append output symbol (**>>**) tells the shell to redirect the output of a command to a specific file instead of the screen.
+- To instead keep the existing contents in the file and add new content to the end of the file, use (**>>**) when redirecting. 
 
 ### Basic Commands
 - **type** - Shows the type of a command and its location
