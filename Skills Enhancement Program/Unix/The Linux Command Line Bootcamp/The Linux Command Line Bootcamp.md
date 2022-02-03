@@ -11,6 +11,24 @@
 **- Linux, GNU, Kernes, Oh My!**
 	- https://www.howtogeek.com/139287/the-great-debate-is-it-linux-or-gnulinux/
 
+## Useful Shortcuts
+
+- **Clear the screen** - Ctrl-l
+- **Move the cursor to the beginning of the line** - Ctrl-a
+- **Move the cursor to the end of the line** - Ctrl-e
+- **Move the cursor foward one character** - Ctrl-f
+- **Move the cursor backwards one character** - Ctrl-b
+- **Move the cursor forward one word** - Alt-f
+- **Move the cursor backwards one word** - Alt-b
+- **Swaps the current character under the cursor with the preceding one** - Ctrl-t
+- **Swaps the current word under the cursor with the preceding one** - Alt-t
+- **Kill the text from the cursor until the end of the line** - Ctrl-k
+- **Kill the text from the cursor until the beginning of the line** - Ctrl-u
+- **Kill the text from the cursor through the end of the word** - Alt-d
+- **Kill the text from the current cursor through the beginning of the word** - Ctrl-w or alt-delete
+- **Kill-ring**
+	- Words killed are temporarly stored in the kill-ring and can be brought back using **Ctrl-y**
+
 ## Command Basics (capitalization matters!)
 ### Basic Command Structure
 - **Command**
@@ -96,10 +114,17 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 	- *Example* > cd ~
 
 ### Directory Manipulation
+
+#### mkdir
+
 - **mkdir *foldername1*** - Creates a new folder in the current directory
 - **mkdir *foldername1 foldername2*** - Creates multiple folders
 	- Can provide an absolute path or a relative path
 - **mkdir -p** - Make parent directories as needed (useful if nested folders do not already exist)
+
+#### rm
+
+
 - **rm -d *foldername***- Deletes empty directories
 - **rmdir *foldername*** - Deletes empty directories
 - **rm -r *foldername*** - Removes directories and their contents recursively
@@ -134,11 +159,36 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 - **cal** - Shows calendar
 
 ### File Manipulation
+
+#### touch
+
 - **touch** - Change file timestamps/Create files
 	- **touch *filename filename***... - Create multiple files at once
 		- If you wish to have a space in the file name you must wrap the name in "quotation marks"
 	- **touch ../*filename*** - Creates a file in the parent directory
+
+#### file
+
 - **file** - See what type of item a file is
 	- If looking at a file with a space in the name you must wrap it in "quotation marks" or escape the space with a backslash (\)
+
+#### rm
+
 - **rm *filename*** - Remove files from the machine
 	- **DELETES FILES**, there is no undo or recycling bin to retrieve them from
+
+#### mv
+
+- **mv *source destination*** - When you specify a file(s) as the source and a directory as the destination, you are moving the files into the directory
+	- *Example* > mv app.css styles/
+		- Will move the app.css file into the styles directory
+- **mv *fileone filetwo filethree destination/*** - Moves multiple files into one directory
+- **mv *folderone/ foldertwo/*** - Moves the first directory into the second directory
+	- If *foldertwo/* does not exist it will rename *folderone/* into foldertwo/
+
+#### cp
+
+- **cp *filename newfile*** - Copies filename into another file called newfile
+- **cp *filename destination/newfilename*** - Copies filename into another directory called newfilename
+- **cp *filename filename1 destination/*** - Copies filename and filename1 into another directory
+- **cp -r *directory/ copyofdirectory*** - Recursively copies directory into a copyofdirectory
