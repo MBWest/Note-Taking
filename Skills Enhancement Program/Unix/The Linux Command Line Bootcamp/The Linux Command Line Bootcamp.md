@@ -29,6 +29,20 @@
 - **Kill-ring**
 	- Words killed are temporarly stored in the kill-ring and can be brought back using **Ctrl-y**
 
+## History
+
+- **history** - View previous run commands
+	- **history | less**  - Easier way to manage a long history
+- **!somenumber** - Rerun a command using its line number from the history
+	- *Example* > !73
+		- Runs the 73rd command in the history
+- **!!** - Reruns the last command
+	- Useful if your last command needed sudo in front of it
+- **Ctrl-r** - Search through your history
+- *.bash_history* - Where the history is saved
+- *$HISTFILESIZE* - Number of items stored in history
+- *$HISTSIZE* - The number of item which will be shown to the user when running *history*
+
 ## Command Basics (capitalization matters!)
 ### Basic Command Structure
 - **Command**
@@ -192,3 +206,66 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 - **cp *filename destination/newfilename*** - Copies filename into another directory called newfilename
 - **cp *filename filename1 destination/*** - Copies filename and filename1 into another directory
 - **cp -r *directory/ copyofdirectory*** - Recursively copies directory into a copyofdirectory
+
+#### cat
+
+- **cat *filename*** - Con*cat*enates and prints the contents of a file
+	- **cat *filename1 filename2** - Displays the contents of both filename1 and filename2
+
+#### less
+
+- **less *filename*** - Opens a file in the less program
+	- **less navigation**
+		- *space* or *f* - Go to the next page
+		- *b* - Go back to the previous page
+		- *Enter* or *Down Arrow* - Scroll down by one
+		- */* - Search followed by a pattern
+		- *q* - Quit
+
+#### head
+
+- **head *filename*** - Prints a portion of a file starting at the beginning of the file (Default 10 lines)
+- **head -n 21 *filename*** - Prints the first 21 lines of the file
+	- **--lines 21** - Equal to *-n 21*
+	- **-21** - Equal to *--lines 21* or *-n 21*
+- **head -c 8 *filename*** - Prints the first 8 bytes of the file
+
+#### sort
+
+- **sort *filename*** - Outputs the contents of a file alphabetically
+	- Lowercase letters come before uppercase letters
+- **sort -r *filename*** - Alpabetically reverses the output of a file
+	- *--reverse* - Equal to -r
+- **sort -n *filename*** - Sorts the numeric value
+	- *--numeric* - Equal to -n
+- **sort -u *filname*** - Sorts unique values only
+	- *--unique* - Equal to -u
+- **sort  *filename* -k*cloumnnumber*** - Specifies a particular column to sort by
+	- *Example* > sort data.txt -n -k2
+		- Sorts the data.txt file 2nd column by their numeric value. 
+
+#### tail
+
+- **tail *filename*** - Prints a portion of a file starting at the end of the file (Default 10 lines)
+- **tail -n 21 *filename*** - Prints the first 21 lines of the file
+	- **--lines 21** - Equal to *-n 21*
+	- **-21** - Equal to *--lines 21* or *-n 21*
+- **tail -c 8 *filename*** - Prints the last 8 bytes of the file
+- **tail -f *filename*** - Continue to output data from a file
+	- *--follow* - Equal to -f
+
+#### tac
+
+- **tac *filename*** - Concatenate and print file in reverse
+
+#### rev
+
+- **rev *filename*** - Prints out each letter in a file in reverse
+
+#### wc
+
+- **wc *filename*** - Ouputs the number of words, lines or bytes in a file
+	- **-l** - Limit the output to the number of lines
+	- **-w** - Limit the output to the number of words
+	- **-m** - Limit the output to the number of characters
+	- **-c** - Limit the output to the number of bytes
