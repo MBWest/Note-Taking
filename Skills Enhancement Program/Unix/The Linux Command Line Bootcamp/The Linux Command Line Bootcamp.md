@@ -181,6 +181,10 @@ The redirect output symbol (**>**) tells the shell to redirect the output of a c
 The append output symbol (**>>**) tells the shell to redirect the output of a command to a specific file instead of the screen.
 - To instead keep the existing contents in the file and add new content to the end of the file, use (**>>**) when redirecting. 
 
+#### Redirecting Standard Input
+
+To pass contents of a file to standard input use the (**<**) symbol followed by the filename. 
+
 ### Basic Commands
 - **type** - Shows the type of a command and its location
 - **which** - Finds the exact location of an executable
