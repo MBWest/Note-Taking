@@ -111,6 +111,53 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 7. Miscellaneous
 8. System Admin Commands
 
+## Expansion
+
+**(*)** - Represents zero or more characters in a filename
+**(?)** - Represent one character in a filename
+**[A-Z]** - Represents a range of characters in a filename ([A-Z], [a-z], [0-9])
+**[^A-Z]** - Represents a range of characters to **NOT** match ([^A-Z], [^a-z], [^0-9])
+
+### Pathname Expansion (*)
+
+- *Example* > echo press * to speak to operator
+	- The **(*)** will be replaced by all files that are in the current directory
+- *Example* > ls *html
+	- Matches any files that end with .html
+*Example* > cat blue*
+	- Matches any files that start with "blue"
+
+
+### Brace Expansion {}
+
+Brace expansion is used to generate arbitrary strings. 
+
+**{1,2,3}**
+- *Example* > touch page{1,2,3}
+	- Generates three new files: page1.txt, page2.txt, page3.txt
+**{1..3}**
+- *Example* > touch page{1..3}
+	- Generates three new files: page1.txt, page2.txt, page3.txt
+**{2..10..2}**
+- *Example* > touch page{2..10..2}
+	- Generates five new files: page2.txt, page4.txt, page6.txt, page8.txt, page10.txt
+**{A..E}**
+- *Example* > touch page{A..E}
+	- Generates five new files: pageA.txt, pageB.txt, pageC.txt, pageD.txt, pageE.txt
+
+### Quoting
+
+### Command Substitution]
+
+### Arithmetic Expansion
+
+### Tilde Expansion
+
+- *Example* > echo **~**
+	- Returns the current users home directory 
+- *Example* > echo **~User**
+	- Returns the specific users home directory 
+
 ## Directories
 
 ### Relative Path/Absolute Path
@@ -144,6 +191,8 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 - **rm -r *foldername*** - Removes directories and their contents recursively
 	- **rm -i** - Interactive optionsl, prompts user (y or n)
 
+
+
 ## Commands
 
 ### Type of Commands
@@ -157,6 +206,9 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 ### Redirection
 
 *Standard Input* -> **Command** -> *Standard Output* or -> *Standard Error*
+
+The **>** operator default to 1 as the file descriptor number which is why we dont need to specify **1>** to redirect standard output. 
+The **<** operator uses a default file descriptor number of 0, so we dont ned to specify **0<** to redirect to standard input, although you can. 
 
 #### Standard Input
 
@@ -172,18 +224,58 @@ Standard output is a place to which a program or command can send information.
 
 Commands and programs also have a destination to send error messages: Standard Error
 - By default, the shell directs standard error information to the screen for the user to read, but this destination can be changed if needed. 
+- If you have standard output and standard error in the same command you must redirect standard output first and then standard error. 
 
 #### Redirecting Output (>)
 
 The redirect output symbol (**>**) tells the shell to redirect the output of a command to a specific file instead of the screen. 
 - By default, the **date** command will print the current date to the screen. If we instead run **date > output.txt** the output will be redirected to a file called output.txt
 
-The append output symbol (**>>**) tells the shell to redirect the output of a command to a specific file instead of the screen.
+The append output symbol (**>>**) tells the shell to redirect the output SSof a command to a specific file instead of the screen.
 - To instead keep the existing contents in the file and add new content to the end of the file, use (**>>**) when redirecting. 
 
-#### Redirecting Standard Input
+#### Redirecting Standard Input (<)
 
 To pass contents of a file to standard input use the (**<**) symbol followed by the filename. 
+- *Example* > cat < filename.txt
+
+#### Redirecting Standard Input and Output at the Same Time
+
+- *Example* > cat **<** original.txt *>* output.txt
+
+#### Redirecting Standard Error (2>)
+
+By default, error messages are output top the screen. The standard error redirection operator is **2>**
+- *Example* > ls notrealfolder 2> errorlog.txt
+	- Redirects the error text to the errorlog.txt file
+
+#### Redirecting Standard Output and Error at the Same Time (&>)
+
+Newer versions of bash allow for (&>) to redirect both standard output and standard error to the same file
+
+### Piping
+
+#### Piping vs Redirecting
+
+**>** Connects a command to some file
+
+**|** Connets a command to another command
+
+#### Piping (|)
+
+Pipe the standard output from one command into the standard input of another command using the (**|**) 
+
+#### tr
+
+**tr** - Translate, squeeze, and/or delete characters from standard input, writing to standard output
+- *Example* > cat somefile | tr s $
+	- Replaces all lower case s's with a dollar sign ($) then outputs the results to the terminal 
+- Can use both ranges (*a-z, A-Z*) or character sets *[:alpha:]*, *[:blank:]*...
+
+#### tee
+
+The tee program rads standard input and copies it both to standard output AND to a file. This allows the user to capture information part of the way through a pipeline, without interrupting the flow.
+- *Example* > command1 | **tee** file.txt | command2
 
 ### Basic Commands
 - **type** - Shows the type of a command and its location
@@ -243,6 +335,8 @@ To pass contents of a file to standard input use the (**<**) symbol followed by 
 
 - **cat *filename*** - Con*cat*enates and prints the contents of a file
 	- **cat *filename1 filename2** - Displays the contents of both filename1 and filename2
+- **cat *filename.txt* -n** - Displays the contents of the file with each line having a number assosiated with it
+
 
 #### less
 
