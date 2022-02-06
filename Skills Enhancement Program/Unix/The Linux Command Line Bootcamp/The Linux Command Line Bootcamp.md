@@ -111,6 +111,41 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 7. Miscellaneous
 8. System Admin Commands
 
+## Finding Things
+
+### Locate Command
+
+The locate command references a pre-generated database file rather than searching the entire matchine. Update this database using the **updatedb** command.
+
+The **locate** command performs a search of pathnames across the machine that match a given substring and then prints out any matching names
+- *Example* > locate chick
+	- Locates all files and directories with the name 'chick' in them
+You can use expansion characters (*, ?) to narrow down the search.
+- *Example* >  locate /bin/less???
+	- locates all files that contain the /bin/less with exactly 3 characters afterwards.
+
+**Options**
+- -i - Option tells locate to ignore casing
+- -l - Option tells locate to limit the number of entries that locate retrieves
+- -e - Option will only print entries that actually exist at the time locate is run
+
+### Find Command
+
+By default the **find** command will list every single file and directory nested in our current working directory. You can also provide a specific folder
+- *Example* > find friends/
+	- This would print all the files and directories inside the friends directory, including nested folders
+
+
+
+### Finding by Time
+
+### Find with Logical Operators
+
+### Find with Exac and User Defined
+
+### Xargs Command
+
+
 ## Expansion
 
 **(*)** - Represents zero or more characters in a filename
@@ -126,7 +161,6 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 	- Matches any files that end with .html
 *Example* > cat blue*
 	- Matches any files that start with "blue"
-
 
 ### Brace Expansion {}
 
@@ -145,11 +179,33 @@ Brace expansion is used to generate arbitrary strings.
 - *Example* > touch page{A..E}
 	- Generates five new files: pageA.txt, pageB.txt, pageC.txt, pageD.txt, pageE.txt
 
-### Quoting
+### Quoting 
+
+If you wrap text in a double quote ("wrapped"), the shell will respect spacing and ignore special characters except: Dollar Sign ($), backslash (\), and backtick (`).
+
+If you wrap text in a single quote ('wrapped') you will suppress all forms of subsitution. 
 
 ### Command Substitution]
 
+You can use the **$(command)** syntax to dispay the output of another command
+- *Example* > echo "today is $(date)"
+	- This will echo out to the terminal "today is Thu 01 May 2021 03:10:31 PM PDT"
+- You can use the `command` syntax to dispay the output of another command
+- *Example* > echo today is `date`
+	- This will echo out to the terminal "today is Thu 01 May 2021 03:10:31 PM PDT"
+
+
 ### Arithmetic Expansion
+
+The shell will perform arithmetic via expansion using the **$((expression))** syntax. Inside the parentheses the user can write artithmetic expression using:
+- + Addition
+- - Subtraction
+- * Multiplication
+- / Division
+- ** Exponentiation
+- % Modulo
+
+- *Exmaple* > (echo $((10+7)))
 
 ### Tilde Expansion
 
