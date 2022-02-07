@@ -170,16 +170,59 @@ Without these modifiers at the beggining of your numbers to specify less-than (*
 
 ### Find with Logical Operators
 
-We can also use the **-and**, **-or**, and **-not** operators to create more complex queries.
+We can also use the **-and**, **-or**, and **-not (!)** operators to create more complex queries.
 - *Example* > find -name "*chick* -or -name "*kitty*"
 	- Finds all files with the name chick or kitty
 - *Example* > find -cmin -60 -not -name "*.log"
 	- Finds all files with ctime less than 60 minutes ago and do not have *.log in their name 
 
-### Find with Exac and User Defined
+### Find with Exec and User Defined Actions
+
+We can provide find with our own actions to perform using each matching parthname. 
+The syntaxx is **find -exec *command* {} ;**
+- Instead of **-exec** you can use *-ok** and the terminal will ask (y/n) for each item
+- The **{}** are a placeholder for the current pathname (each match), and the semicolon(;) is required to indicate the end of the command
+- *Example* > find ~ -type f -empty -exec ls -l '{}' ';'
+	- Find all the empty files in my home directory and run the ls -l command against each item found
+- *Example* > find -type f -name "*.html" -exec cp '{}' '{}_COPY' ';'
+	- Finds all files that end with .html. Then creates a copy of each using the cp command. 
 
 ### Xargs Command
 
+When **-exec** is used, the command is executed separatley for every single element, unlike **xargs** which builds up the input into a bundle that will be provided as an arguement to the next command. 
+find -name "*txt" -exec ls '{}' ';' **=EQUALS=** find -name ".txt" | xargs ls
+
+### Grep
+
+#### Grep Basics
+
+The **grep** command searches for patterns in each file's content. **Grep** will print each line that matches a pattern we provide
+- Example > grep "chicken" animals.txt
+	- Prints each line from the animals.txt file that contains the pattern "chicken"
+
+#### Grep Options
+
+- **-i** - Makes grep search case insensitve
+- **-w** - Ensures that grep only matches whole words rather than fragments located inside other words
+- **-r** - Perfoms a recursive search, which will include all files under a directory, subdirectories, and their files, and so on 
+- **-n** - Lables each line with the applicable line number
+- **-c** - Counts how many times the grep commands finds the requested pattern
+- **-A** - Gives x number of lines after each pattern found
+- **-B** - Gives x number of lines before each pattern found
+- **-C** - Gives x number of lines before and after each pattern found
+- **-E** - Same as using egrep
+
+#### Grep and Regular Expressions
+- **.**- Matches any single character
+- **?**- Matches 1 or less the preceding pattern
+- **^** - Matches the start of a line
+- **$** - Matches the end of a line
+- **[abc]** - Matches any character in the set
+- **[^abc]**- Matches any character NOT in the set
+- **[A-Z]** - Matches characters in a range
+- **a{1}** - Matches the preceding letter repeating {x} times (a{3} =EQUALS= aaa)
+- * - Repeat previous expression 0 or more times
+- **\*** - Escape meta-characters
 
 ## Expansion
 
@@ -282,6 +325,10 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 - **rm -r *foldername*** - Removes directories and their contents recursively
 	- **rm -i** - Interactive optionsl, prompts user (y or n)
 
+
+
+
+## File Permissions
 
 
 ## Commands
