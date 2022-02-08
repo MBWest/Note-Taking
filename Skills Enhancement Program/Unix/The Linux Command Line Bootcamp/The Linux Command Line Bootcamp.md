@@ -325,10 +325,8 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 - **rm -r *foldername*** - Removes directories and their contents recursively
 	- **rm -i** - Interactive optionsl, prompts user (y or n)
 
-
-
-
 ## File Permissions
+
 
 
 ## Commands
