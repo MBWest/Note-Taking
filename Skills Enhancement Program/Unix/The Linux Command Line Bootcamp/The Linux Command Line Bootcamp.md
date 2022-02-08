@@ -301,6 +301,7 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 ### Root Directory
 **/** - Starting point of the entire Directory, called the root directory (Top Level Directory)
 - Not the actual folder with the name "root"
+
 ### Home Directory
 **/home** - Contains a home folder for each user on the system
 - *Example* > /home/west
@@ -325,9 +326,74 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 - **rm -r *foldername*** - Removes directories and their contents recursively
 	- **rm -i** - Interactive optionsl, prompts user (y or n)
 
-## File Permissions
+## Permissions
+
+### Groups
+
+On Unix systems, a single user may be the owner of files and directories, meaning that they have control over their access. 
+Additionally, users can belong to groups which are given access to particular files and folders by their owners. 
+- **whoami** - Shows current terminal user
+
+### User and Group IDs
+
+When a new user account is made, it is assigned a user ID. The user is also assigned a group ID. 
+These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/group.
+- **id** - View Users and Group IDs
 
 
+### File Attributes
+
+#### File Type
+- **-** - Regular File
+- **d** - Directory
+- **C** - Character Special File
+- **l** - Symbolic Link
+
+
+|Owner|Group|World|
+|---|---|---|
+|rwx|rwx|rwx|
+
+| Character | Effect On Files | Effect On Directories |
+|--|--|--|
+| r | file can be read | directory's contents can be listed |
+| w | file can be modified | directory's contents can be modified (create new files, rename files/folders) but only if the executable attribute is also set |
+| x | file can be treated as a program to be executed |  allows a directory to be entered or "cd"ed into |
+| - | file cannot be read, modified, or executed depending on the location of the - character  | directory contents cannot be shown, modified, or cd'ed into depending on the location of the - character |
+
+#### Examples
+
+|Owner|Group|World|
+|---|---|---|
+|rw-|- - -|- - -|
+
+- In the above example, we see that the file's owner has read and write permissions but NOT execute permissions. No one else has any access.
+
+|Owner|Group|World|
+|---|---|---|
+|rwx|- - -|- - -|
+
+- In the above example, we see that the file's owner has read, write, AND execute permissions. No one else has any access.
+
+|Owner|Group|World|
+|---|---|---|
+|rw-|r- -|r- -|
+
+- In the above example, we see that the file's owner has read, and write BUT NOT execute permissions. Members of the file's owner group can only read the file. Everyone else can read the file too.
+
+|Owner|Group|World|
+|---|---|---|
+|rwx|rwx|- - -|
+
+- In the above example, we see that the directory's owner AND member's of the owner group can enter the directory, rename, and remove files from within the directory. 
+
+
+|Owner|Group|World|
+|---|---|---|
+|rwx|- -x|- - -|
+
+- In the above example, we see that the directory's owner can enter the directory, rename, and remove files from within the directory. Members of the owner group can enter the directory but
+cannot create, delete, or rename files.
 
 ## Commands
 
