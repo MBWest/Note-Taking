@@ -340,15 +340,14 @@ When a new user account is made, it is assigned a user ID. The user is also assi
 These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/group.
 - **id** - View Users and Group IDs
 
-
 ### File Attributes
 
 #### File Type
 - **-** - Regular File
 - **d** - Directory
-- **C** - Character Special File
+- **c** - Character Special File
 - **l** - Symbolic Link
-
+- **b** - Block Special File
 
 |Owner|Group|World|
 |---|---|---|
@@ -394,6 +393,38 @@ These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/g
 
 - In the above example, we see that the directory's owner can enter the directory, rename, and remove files from within the directory. Members of the owner group can enter the directory but
 cannot create, delete, or rename files.
+
+#### Permission Commands
+
+- **chmod** - To change the permissions of a file or directory, we can use the chmod command
+	- To use chmod to alter permissions we need to tell it: ***Who, What, Which***
+		- *Who:*
+			- **u** - User (The owner of the file)
+			- **g** - Group (Members of the group the file belongs to)
+			- **o** - Others (The 'World')
+			- **a** - All of the above
+		- *What:*
+			- **Minus Sign (-)** - Removes the permission
+			- **Plus Sign (+)** - Grants the permission
+			- **Equal Sign (=)** - Set a permission and removes others
+		- *Which:*
+			- **r** - The read permissions
+			- **w** - The write permissions
+			- **x**- The execute permissions
+	*Examples:*
+	**Add write permissions to the group**
+	chmod g+w file.txt
+	**Remove write permissions from all**
+	chmod a-w file.txt
+
+
+- **chown**
+- **sudo** - 
+- **addgroup** -
+- **adduser**
+- **su**
+
+
 
 ## Commands
 
