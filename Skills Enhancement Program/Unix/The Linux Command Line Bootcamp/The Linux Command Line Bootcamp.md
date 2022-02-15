@@ -417,14 +417,185 @@ cannot create, delete, or rename files.
 	**Remove write permissions from all**
 	chmod a-w file.txt
 
+- **chmod octals** - Chmod also supports octal number (base 8). Each digit in an octal number represents 3 binary digits
 
-- **chown**
-- **sudo** - 
-- **addgroup** -
-- **adduser**
-- **su**
+|Octal  | Binary  | File Mode  |
+|--|--|--|
+|  0| 000 | - - - |
+|1  | 001 | - -x |
+| 2 |  010| -w- |
+|  3|  011| -wx |
+|  4|  100| r- - |
+|  5| 101 |r-x |
+|  6|110  |rw-  |
+|  7| 111  |rwx  |
 
 
+- **chown** - Changes the owner or the group owner of a file or directory
+	- *Example* > chown bojack file.txt
+		- Makes bojack the owner of file.txt 
+	- *Example* > chown :horses file.txt
+		- Makes the file.txt group owner horses
+- **sudo** - Execute a command as another user (chown USER[:GROUP] FILE(s))
+	- *Example* >  sudo -l
+		- Shows all commands that the current user can run as the super user
+- **addgroup** - Add a Group
+- **adduser** - Add a User
+- **su** - Substitute user as another user. 
+	- *Example* > su - hermione
+		- Createes a new login shell for the user hermione. You would need to entire hermione's password.
+	- To leave the session type, exit. 
+
+## Enviorment
+
+### Viewing the Environment
+
+- **printenv** or **env** - Prints out standard environmental information
+
+### Parameter Expansion
+
+If you write out the name of an enviornment variable prefixed with a dollar sign ($) the shell will replace it with the actual value
+
+### Defining Variables
+
+To define a cariable, use the syntax **variable=value**
+	- To make a variable a global variable, prefix the variable with **export**
+
+### Startup Files
+
+**Login Session**
+- **/etc/profile**- Global config for all users
+- **~/.bash_profile** - user's personal config file
+- **~/.bash_login** - read if bash_profile isn't found
+- **~/.profile** - used if previous two aren't found
+
+**Non-login Session**
+For non-login session (typical session when you launch the terminal via the GUI):
+- **etc/bash.bashrc** - Global config for all users
+- **~/.bashrc** - Specific settings for each user. This is where you can define your own settings and configurations
+
+## Scripting
+
+### Writing a Basic Script
+
+#### The Basic Steps
+1. Write a script in a file and save it
+2. Make the script executable using chmod
+3. Verify that the shell can find your script
+
+#### Shebang! (First Line of Script)
+
+The first line of our script shoudl read ***"#!/bin/bash"***
+
+The **"#!"** is called the shebang, and it's used to tell the OS which interpreter it shoud use when parsing this file. 
+
+#### Comments (#)
+
+Lines that begine with **"#"** will not be read by the shell. 
+
+#### Commands
+
+You can write any of the commands that are normally run from the command line. 
+
+#### Executing the Script
+
+We can execute the script the 'long way' by running **bash PathToFile**
+
+#### Locating Commands
+
+If we want the shell to find our own programs, we need to make sure we put them in a folder that is in the PATH variable
+
+A common place to put user-defined programs is in a bin folder located in the user's home directory. 
+	- *Example* >  /home/colt/bin
+- If that directory is not yet part of your path, you can add it by putting PATH="$HOME/bin:$PATH" in your .bashrc file
+
+#### Making it Executable 
+
+Make sure the file containing our script is executable. 
+	- *Example* > chmod a+x FileName 
+		- Grants executable permissions to everyone
+
+### The PATH Variable
+
+### Writing our first script
+
+#!/bin/bash
+
+#This is my first script
+
+echo "Hello there, $USER"
+echo "Today is $(date)"
+echo "last ran hi at $(date)" >> hi.log
+
+## Cron
+
+The cron service allows you to schedule commands to run at regular intervals
+
+### Editing the crontab
+
+To set up a cron job, we need to edit the crontab configuration file. Rather than edit the files directly it is best to use the **crontab -e** command.
+
+### Cron Syntax (https://crontab.guru/)
+
+| a|b  |c  |d  |e  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+- asteric(*) - Any Value
+- 5,6 - List of values (5 and 6)
+- 1-4 - Range of values (1 to 4)
+- */5 - Step values (every 5)
+
+### Examples
+
+1. Run a job at minute 30, every hour (everytime the clock shows x:30)
+| 30|*  |*  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+2. Run a job every day at midnight (when hour is 0 and minute is 0)
+
+| 30|6  |*  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+3. Run a job every monday at 6:30AM
+
+| 30|6  |*  |*  |1  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+4. Run a job every monday in April at 6:30AM
+
+| 30|6  |*  |4  |1  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+5. Run a job at midnight on the first of every month
+
+| 0|0  |1  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+6. Run a job at midnight every weekday (monday-friday)
+
+| 0|0  |*  |*  |1-5  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+7. Run a job every 5 minutes
+
+| */5 |*  |*  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
 
 ## Commands
 
