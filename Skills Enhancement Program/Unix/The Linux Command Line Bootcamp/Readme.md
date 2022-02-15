@@ -1,4 +1,4 @@
-**SNIPIT FROM COURSE*
+**SNIPIT FROM COURSE**
 ----------
 
 
