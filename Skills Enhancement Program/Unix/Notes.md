@@ -69,6 +69,7 @@
 - **Down** - Cycle through recent commands
 
 ## Man Pages (Manuals)
+
 #### What are Man Pages?
 Built-in form of documentation available on nearly all UNIX-like operating systems
 #### Navigating and Searching a Man Page
@@ -110,118 +111,6 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 7. Miscellaneous
 8. System Admin Commands
 
-## Finding Things
-
-### Locate Command
-
-The locate command references a pre-generated database file rather than searching the entire matchine. Update this database using the **updatedb** command.
-
-The **locate** command performs a search of pathnames across the machine that match a given substring and then prints out any matching names
-- *Example* > locate chick
-	- Locates all files and directories with the name 'chick' in them
-You can use expansion characters (*, ?) to narrow down the search.
-- *Example* >  locate /bin/less???
-	- locates all files that contain the /bin/less with exactly 3 characters afterwards.
-
-**Options**
-- -i - Option tells locate to ignore casing
-- -l - Option tells locate to limit the number of entries that locate retrieves
-- -e - Option will only print entries that actually exist at the time locate is run
-
-### Find Command
-
-By default the **find** command will list every single file and directory nested in our current working directory. You can also provide a specific folder
-- *Example* > find friends/
-	- Print all the files and directories inside the friends directory, including nested folders
-
-**Options**
-- **-type f** - Will limit searches to files
-- **-type d** - Will limit searches to directories
-- **-name "*.txt"*** - Will limit searches to files with *.txt* at the end
-	- Use the ***-iname*** option for a case insensitive search
-- **-size** - Find files of a specific size
-	- *Example* > find -size +1G
-		- Finds all files larger than 1 gigabyte
-	- *Example* > find -size -50m
-		- Finds all files smaller than 50 megabytes
-	- *Example* > find -size 20k
-		- Finds all files exactly 20 kilobytes big
-- **-user** - Matches files na ddirectories that belong to a particular user
-- **-empty** - Finds all empty files and folders
-
-### Finding by Time and Types of Timestamps
-
-Use the find command and the applicable modifiers to look for time ranges
-Without these modifiers at the beggining of your numbers to specify less-than (**-**) and greater-than (**+**) your number will specify exactly 
-- **find -mmin *number*** - Find by modified time
-- **find -amin *number*** - Find by accessed time
-- **find -cmin *number*** - Find by changed time
-
-**Types of Timestamps**
-- **mtime**, or modification time, is when a file was last modified AKA when its contents last changed. This is the default time shown when running *'ls -l'*.
-- **ctime**, or change time, is when a file was last changed. This occurs anytime mtime changes but also when we rename a file, move it, or alter permissions. To see change time us the *'ls -lc'* command. 
-- **atime**, or access time, is updated when a file is read by an application or a command like cat.To see access time us the *'ls -lu'* command. 
-
-**Modifying Time Stamps Using the Touch Command**
-- **-d** - Allows you to create a file and specify the timestamp
-	- *Example* > touch *filename* -d "1 week ago"
-		- Creates a file and sets mtime of the file to exactly 1 week ago
-
-### Find with Logical Operators
-
-We can also use the **-and**, **-or**, and **-not (!)** operators to create more complex queries.
-- *Example* > find -name "*chick* -or -name "*kitty*"
-	- Finds all files with the name chick or kitty
-- *Example* > find -cmin -60 -not -name "*.log"
-	- Finds all files with ctime less than 60 minutes ago and do not have *.log in their name 
-
-### Find with Exec and User Defined Actions
-
-We can provide find with our own actions to perform using each matching parthname. 
-The syntaxx is **find -exec *command* {} ;**
-- Instead of **-exec** you can use *-ok** and the terminal will ask (y/n) for each item
-- The **{}** are a placeholder for the current pathname (each match), and the semicolon(;) is required to indicate the end of the command
-- *Example* > find ~ -type f -empty -exec ls -l '{}' ';'
-	- Find all the empty files in my home directory and run the ls -l command against each item found
-- *Example* > find -type f -name "*.html" -exec cp '{}' '{}_COPY' ';'
-	- Finds all files that end with .html. Then creates a copy of each using the cp command. 
-
-### Xargs Command
-
-When **-exec** is used, the command is executed separatley for every single element, unlike **xargs** which builds up the input into a bundle that will be provided as an arguement to the next command. 
-find -name "*txt" -exec ls '{}' ';' **=EQUALS=** find -name ".txt" | xargs ls
-
-### Grep
-
-#### Grep Basics
-
-The **grep** command searches for patterns in each file's content. **Grep** will print each line that matches a pattern we provide
-- Example > grep "chicken" animals.txt
-	- Prints each line from the animals.txt file that contains the pattern "chicken"
-
-#### Grep Options
-
-- **-i** - Makes grep search case insensitve
-- **-w** - Ensures that grep only matches whole words rather than fragments located inside other words
-- **-r** - Perfoms a recursive search, which will include all files under a directory, subdirectories, and their files, and so on 
-- **-n** - Lables each line with the applicable line number
-- **-c** - Counts how many times the grep commands finds the requested pattern
-- **-A** - Gives x number of lines after each pattern found
-- **-B** - Gives x number of lines before each pattern found
-- **-C** - Gives x number of lines before and after each pattern found
-- **-E** - Same as using egrep
-
-#### Grep and Regular Expressions
-- **.**- Matches any single character
-- **?**- Matches 1 or less the preceding pattern
-- **^** - Matches the start of a line
-- **$** - Matches the end of a line
-- **[abc]** - Matches any character in the set
-- **[^abc]**- Matches any character NOT in the set
-- **[A-Z]** - Matches characters in a range
-- **a{1}** - Matches the preceding letter repeating {x} times (a{3} =EQUALS= aaa)
-- * - Repeat previous expression 0 or more times
-- **\*** - Escape meta-characters
 
 ## Expansion
 
@@ -344,9 +233,11 @@ These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/g
 #### File Type
 - **-** - Regular File
 - **d** - Directory
-- **c** - Character Special File
+- **c** - Special File or Device
 - **l** - Symbolic Link
-- **b** - Block Special File
+- **b** - Block Device
+- **s** - Socket
+- **p** - Named Pipe
 
 |Owner|Group|World|
 |---|---|---|
@@ -392,6 +283,11 @@ These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/g
 
 - In the above example, we see that the directory's owner can enter the directory, rename, and remove files from within the directory. Members of the owner group can enter the directory but
 cannot create, delete, or rename files.
+
+### The Sticky Bit 
+The sticky bit is to tell the OS to run the executable as its owner. Indicated by the ‘s’ instead of ‘x’
+- **-rwsrwx---**
+- This is very important to configure correctly. If you have a root based executable with the sticky bit set for everyone then anyone can run it as root!
 
 #### Permission Commands
 
@@ -799,6 +695,176 @@ To set up a cron job, we need to edit the crontab configuration file. Rather tha
 | Minute| Hour  | Day  | Month  | Day (of week)  |
 |0-59 |0-23  |1-31 |1-12  |0-6  |
 
+### Locate Command
+
+The locate command references a pre-generated database file rather than searching the entire matchine. Update this database using the **updatedb** command.
+
+The **locate** command performs a search of pathnames across the machine that match a given substring and then prints out any matching names
+- *Example* > locate chick
+	- Locates all files and directories with the name 'chick' in them
+You can use expansion characters (*, ?) to narrow down the search.
+- *Example* >  locate /bin/less???
+	- locates all files that contain the /bin/less with exactly 3 characters afterwards.
+
+**Options**
+- -i - Option tells locate to ignore casing
+- -l - Option tells locate to limit the number of entries that locate retrieves
+- -e - Option will only print entries that actually exist at the time locate is run
+
+### Find Command
+
+By default the **find** command will list every single file and directory nested in our current working directory. You can also provide a specific folder
+- *Example* > find friends/
+	- Print all the files and directories inside the friends directory, including nested folders
+
+**Options**
+- **-type f** - Will limit searches to files
+- **-type d** - Will limit searches to directories
+- **-name "*.txt"*** - Will limit searches to files with *.txt* at the end
+	- Use the ***-iname*** option for a case insensitive search
+- **-size** - Find files of a specific size
+	- *Example* > find -size +1G
+		- Finds all files larger than 1 gigabyte
+	- *Example* > find -size -50m
+		- Finds all files smaller than 50 megabytes
+	- *Example* > find -size 20k
+		- Finds all files exactly 20 kilobytes big
+- **-user** - Matches files na ddirectories that belong to a particular user
+- **-empty** - Finds all empty files and folders
+
+### Finding by Time and Types of Timestamps
+
+Use the find command and the applicable modifiers to look for time ranges
+Without these modifiers at the beggining of your numbers to specify less-than (**-**) and greater-than (**+**) your number will specify exactly 
+- **find -mmin *number*** - Find by modified time
+- **find -amin *number*** - Find by accessed time
+- **find -cmin *number*** - Find by changed time
+
+**Types of Timestamps**
+- **mtime**, or modification time, is when a file was last modified AKA when its contents last changed. This is the default time shown when running *'ls -l'*.
+- **ctime**, or change time, is when a file was last changed. This occurs anytime mtime changes but also when we rename a file, move it, or alter permissions. To see change time us the *'ls -lc'* command. 
+- **atime**, or access time, is updated when a file is read by an application or a command like cat.To see access time us the *'ls -lu'* command. 
+
+**Modifying Time Stamps Using the Touch Command**
+- **-d** - Allows you to create a file and specify the timestamp
+	- *Example* > touch *filename* -d "1 week ago"
+		- Creates a file and sets mtime of the file to exactly 1 week ago
+
+### Find with Logical Operators
+
+We can also use the **-and**, **-or**, and **-not (!)** operators to create more complex queries.
+- *Example* > find -name "*chick* -or -name "*kitty*"
+	- Finds all files with the name chick or kitty
+- *Example* > find -cmin -60 -not -name "*.log"
+	- Finds all files with ctime less than 60 minutes ago and do not have *.log in their name 
+
+### Find with Exec and User Defined Actions
+
+We can provide find with our own actions to perform using each matching parthname. 
+The syntaxx is **find -exec *command* {} ;**
+- Instead of **-exec** you can use *-ok** and the terminal will ask (y/n) for each item
+- The **{}** are a placeholder for the current pathname (each match), and the semicolon(;) is required to indicate the end of the command
+- *Example* > find ~ -type f -empty -exec ls -l '{}' ';'
+	- Find all the empty files in my home directory and run the ls -l command against each item found
+- *Example* > find -type f -name "*.html" -exec cp '{}' '{}_COPY' ';'
+	- Finds all files that end with .html. Then creates a copy of each using the cp command. 
+
+### Xargs Command
+
+When **-exec** is used, the command is executed separatley for every single element, unlike **xargs** which builds up the input into a bundle that will be provided as an arguement to the next command. 
+find -name "*txt" -exec ls '{}' ';' **=EQUALS=** find -name ".txt" | xargs ls
+
+### Grep
+
+#### Grep Basics
+
+The **grep** command searches for patterns in each file's content. **Grep** will print each line that matches a pattern we provide
+- Example > grep "chicken" animals.txt
+	- Prints each line from the animals.txt file that contains the pattern "chicken"
+
+#### Grep Options
+
+- **-i** - Makes grep search case insensitve
+- **-w** - Ensures that grep only matches whole words rather than fragments located inside other words
+- **-r** - Perfoms a recursive search, which will include all files under a directory, subdirectories, and their files, and so on 
+- **-n** - Lables each line with the applicable line number
+- **-c** - Counts how many times the grep commands finds the requested pattern
+- **-A** - Gives x number of lines after each pattern found
+- **-B** - Gives x number of lines before each pattern found
+- **-C** - Gives x number of lines before and after each pattern found
+- **-E** - Same as using egrep
+
+#### Grep and Regular Expressions
+- **.**- Matches any single character
+- **?**- Matches 1 or less the preceding pattern
+- **^** - Matches the start of a line
+- **$** - Matches the end of a line
+- **[abc]** - Matches any character in the set
+- **[^abc]**- Matches any character NOT in the set
+- **[A-Z]** - Matches characters in a range
+- **a{1}** - Matches the preceding letter repeating {x} times (a{3} =EQUALS= aaa)
+- * - Repeat previous expression 0 or more times
+- **\*** - Escape meta-characters
+
+### Working with Processes
+
+#### Get a Process ID (pidof)
+
+- *Example* > pidof firefox
+    - Returns the process id of firefox
+
+#### Get a List of Processes (ps)
+
+- *Example* > ps
+    - Get a list of processes you have access to
+
+- *Example* > ps aux 
+    - See a list of every process being ran
+
+- *Example* > top
+    - Provides cpu memory usage and process IDs
+
+#### Killing of Processes
+
+- *Example* > kill -l
+    - List all available ways to kill a signal
+
+- *Example* > kill 9 2975
+    - Uses the SIGKILL to kill the 2975 process
+
+- *Example* > pkill firefox
+    - Kills the firefox process
+
+- *Example* > killall firefox
+    - Kills the firefox process
+
+#### Dealing with Open Files
+
+- **lsof** - Identifies any open files on the system
+    - *Example* > lsof +D /var/log
+        - Views all sub directories to see if anything is open 
+    - *Example* > lsof -u brandon
+        - View open files by the user Brandon
+
+**Output of lsof**
+- **Command** - Name of the application ran 
+- **PID** - PID of the application
+- **USER** - Users context the application is running in
+- **FD** - File Drescriptor
+    - **Cwd** - Shows the current working directory
+    - **Txt** - Shows its a text file
+    - **Mem** - Data Segment or Shared Object loaded into memory
+    - **Number** - This will be a digit and will show the actual file discriptor number (#u)
+- **TYPE** - Tells us what type of file
+    - **REG** - Regular file
+    - **DIR** - Directory
+    - **FIFO** - Named pipe, symbolic links, sockets, blocks
+    - **UNKOWN** - Normally happens with kernel threads
+- **DEVICE** - The drive, EX: sda1
+- **SIZE/OFF** - Size of the file
+- **NODE** - inode number
+- **NAME** - Name of the file
+
 ## Kernel
 
 - The Linux Kernel is a result of collaborative development efforts from developers accross the globe.
@@ -847,7 +913,17 @@ To set up a cron job, we need to edit the crontab configuration file. Rather tha
 
 ### Program vs. Process
 - **Program** - Is an executable file on the disk
-    - **Process** - Is an instance of that program
+    - **Process** - Is an instance of that program or is a program or application that is in execution
+
+### Types of Processes
+
+#### Foreground Process
+
+Also known as an interactive process. Terminal for example or web browser. 
+
+#### Background Process
+
+Also known as a non-interactive process. These are not normally connected to any foreground process and don't expect any user input. 
 
 ### User and System Processes
 - They dont actuall run simultaneously
@@ -855,12 +931,27 @@ To set up a cron job, we need to edit the crontab configuration file. Rather tha
 
 ### Process IDs
 
-- **PID** (Process ID)
+- **PID** (Process ID) When a program is started it is assigned a PID
     - *Kernel* PID 0
 - **PPID** (Parent Process ID)
     - init.d PID 1, PPID 0 
 - **Process Tree**
-    - Stars at PID 0
+    - Starts at PID 0
+
+### States of a Process
+
+- **Running** - Either actively running or waiting for a CPU core to be assigned to it
+- **Waiting** - In this state the process is waiting for 1 of 2 things
+    - Event to happen such as user input, etc
+    - Systems resources to become available
+    - ***Two Types of Waiting***
+        - **Interrupted** - Some hardware based conditions would cause this
+        - **Uninterruptible** - This process cannot be stopped by any event or signal
+- **Stopped** - The process has been stopped by some means
+    - This can be a signal to stop from the user or system
+    - Can also be in this state during the time a debugger is attached to it
+- Zombie/Orphan - The process is no longer alive or AKA dea
+    - The reason it is still showing as a 'Zombie' or 'z' is due to still being on the process entry table in the kernel
 
 ## File Sharing and Printing
 
@@ -878,3 +969,7 @@ To set up a cron job, we need to edit the crontab configuration file. Rather tha
 ### Mounting
 Mount an NFS file system to access it
      - *Example* > mount -t nfs computer:fs /mount_point
+
+## Signals
+
+A system message sent from one process to another, not usually used to transfer data but instead of used to remotely command the partnered process
