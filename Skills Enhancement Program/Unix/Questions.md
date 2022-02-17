@@ -31,7 +31,7 @@
 
 3. Which directory contains on-line manual pages? **/usr/share/man**
 
-4.Which of the following are stored as regular files?
+4. Which of the following are stored as regular files?
 Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
 A. Links
 B. Sockets
