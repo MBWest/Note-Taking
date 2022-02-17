@@ -1,4 +1,3 @@
-# The Linux Command Line Bootcamp: Beginner To Power User
 ### Resources
 **- Operating Systems: Timeline and Family Tree** 
 	- https://eylenburg.github.io/os_familytree.htm
@@ -527,76 +526,6 @@ echo "Hello there, $USER"
 echo "Today is $(date)"
 echo "last ran hi at $(date)" >> hi.log
 
-## Cron
-
-The cron service allows you to schedule commands to run at regular intervals
-
-### Editing the crontab
-
-To set up a cron job, we need to edit the crontab configuration file. Rather than edit the files directly it is best to use the **crontab -e** command.
-
-### Cron Syntax (https://crontab.guru/)
-
-| a|b  |c  |d  |e  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
-- asteric(*) - Any Value
-- 5,6 - List of values (5 and 6)
-- 1-4 - Range of values (1 to 4)
-- */5 - Step values (every 5)
-
-### Examples
-
-1. Run a job at minute 30, every hour (everytime the clock shows x:30)
-| 30|*  |*  |*  |*  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
-2. Run a job every day at midnight (when hour is 0 and minute is 0)
-
-| 30|6  |*  |*  |*  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
-3. Run a job every monday at 6:30AM
-
-| 30|6  |*  |*  |1  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
-4. Run a job every monday in April at 6:30AM
-
-| 30|6  |*  |4  |1  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
-5. Run a job at midnight on the first of every month
-
-| 0|0  |1  |*  |*  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
-6. Run a job at midnight every weekday (monday-friday)
-
-| 0|0  |*  |*  |1-5  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
-7. Run a job every 5 minutes
-
-| */5 |*  |*  |*  |*  |
-|--|--|--|--|--|--|
-| Minute| Hour  | Day  | Month  | Day (of week)  |
-|0-59 |0-23  |1-31 |1-12  |0-6  |
-
 ## Commands
 
 ### Type of Commands
@@ -799,3 +728,153 @@ The tee program rads standard input and copies it both to standard output AND to
 	- **-w** - Limit the output to the number of words
 	- **-m** - Limit the output to the number of characters
 	- **-c** - Limit the output to the number of bytes
+
+### Cron
+
+The cron service allows you to schedule commands to run at regular intervals
+
+#### Editing the crontab
+
+To set up a cron job, we need to edit the crontab configuration file. Rather than edit the files directly it is best to use the **crontab -e** command.
+
+#### Cron Syntax (https://crontab.guru/)
+
+| a|b  |c  |d  |e  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+- asteric(*) - Any Value
+- 5,6 - List of values (5 and 6)
+- 1-4 - Range of values (1 to 4)
+- */5 - Step values (every 5)
+
+#### Examples
+
+1. Run a job at minute 30, every hour (everytime the clock shows x:30)
+| 30|*  |*  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+2. Run a job every day at midnight (when hour is 0 and minute is 0)
+
+| 30|6  |*  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+3. Run a job every monday at 6:30AM
+
+| 30|6  |*  |*  |1  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+4. Run a job every monday in April at 6:30AM
+
+| 30|6  |*  |4  |1  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+5. Run a job at midnight on the first of every month
+
+| 0|0  |1  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+6. Run a job at midnight every weekday (monday-friday)
+
+| 0|0  |*  |*  |1-5  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+7. Run a job every 5 minutes
+
+| */5 |*  |*  |*  |*  |
+|--|--|--|--|--|--|
+| Minute| Hour  | Day  | Month  | Day (of week)  |
+|0-59 |0-23  |1-31 |1-12  |0-6  |
+
+## Kernel
+
+- The Linux Kernel is a result of collaborative development efforts from developers accross the globe.
+- Small incremental changes, also known as patches add:
+    - New features
+    - Make enhancements
+    - Fix bugs
+- A new release of Linux kernel happens every 2 to 3 months. 
+    - Realeases are time based rather than feature based
+
+### Kernel Module
+- Loaded on demand
+    - Become part of the kernel once loaded
+
+**Module commands**
+- **insmod** - Insert a module into the kernel
+- **rmmod** - Remove a module from the kernel
+- **lsmod** - List the currently loaded modules
+- **modinfo** - Display information about a module
+- **modprobe** - Insert or remove a module from the kernel. Unlike insmod, modprobe automatically handles module dependencies. Dependent modules will be automatically loaded or unloaded with modprobe **-a**
+    - *Example* > modpro [options] modulename params
+    Option
+    - **c** - Show configuration file
+    - **l** - List modules
+    - **r** - Remove modules
+
+## File System
+
+- **/boot** - Contains files that is used by the boot loader (grub.cfg)
+- **/root** - Root user home directory,  not the same as /
+- **/dev** - System devices (e.g. disk, cdrom, speakers, flashdrive, keyboard, etc.)
+- **/etc** - Configuration files
+- **/bin -> /usr/bin** - Everyday user commands
+- **/sbin -> /user/sbin** - System/file system commands
+- **/opt** - Optional add-on applications (not part of OS apps)
+- **/proc** - Running processes (Only exists in Memory)
+- **/lib -> /usr/lib** - C programming library files needed by command sand apps
+- **/tmp** - Directory for temporary files
+- **/home** - Directory for user
+- **/var** - System logs
+- **/run** - System daemons that start very early to store temporary runtime files like PID files
+- **/mnt** - To mount external files systems (NFS)
+- **/media** - for cdrom mounts
+
+## Processes
+
+### Program vs. Process
+- **Program** - Is an executable file on the disk
+    - **Process** - Is an instance of that program
+
+### User and System Processes
+- They dont actuall run simultaneously
+- The OS split time between each process and the CPU
+
+### Process IDs
+
+- **PID** (Process ID)
+    - *Kernel* PID 0
+- **PPID** (Parent Process ID)
+    - init.d PID 1, PPID 0 
+- **Process Tree**
+    - Stars at PID 0
+
+## File Sharing and Printing
+
+### Network File System
+- Remote access to file system
+- Supported by Linux, UNIX, Windows
+- Packages
+- Name Resolution
+
+### NFS Server Configuration
+- **/etc/exports/** - Which file systems are exported, permissions and which host may mount them
+- **/etc/host.allow** - Which hosts are permitted to mount exported file systems
+- **/etc/host.deny** - Which host are explicity denied permissions to mount exported file systems
+
+### Mounting
+Mount an NFS file system to access it
+     - *Example* > mount -t nfs computer:fs /mount_point
