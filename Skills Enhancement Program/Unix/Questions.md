@@ -50,7 +50,7 @@ B. Symbolic Link
 
 7. Write a command that will create a symbolic link named /tmp/log to /var/log/secure. **ln -s /var/log/secure /tmp/log**
 
-8.Which of the following correctly describes a partition?
+8. Which of the following correctly describes a partition?
 
 Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
 
