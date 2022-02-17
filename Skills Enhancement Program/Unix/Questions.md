@@ -32,14 +32,16 @@
 3. Which directory contains on-line manual pages? **/usr/share/man**
 
 4. Which of the following are stored as regular files?
+
 Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
-A. Links
-B. Sockets
-C. Executables
-D. Configuration Files
-E. Device Files
-F. Text Files
-G. Libraries
+
+    A. Links
+    B. Sockets
+    C. Executables
+    D. Configuration Files
+    E. Device Files
+    F. Text Files
+    G. Libraries`
 
 5. A link that has the same inode number as the original file is a:
 Format: Multiple Choice, Letter only
@@ -52,17 +54,17 @@ B. Symbolic Link
 
 8. Which of the following correctly describes a partition?
 
-Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
 
-A. System that aggregates physical devices to form pools
+    A. System that aggregates physical devices to form pools
 
-B. Determines where and how file contents are stored
+    B. Determines where and how file contents are stored
 
-C. Is used to increase reliability by duplicating data across disks
+    C. Is used to increase reliability by duplicating data across disks
 
-**D. Is a fixed-size subsection of a storage device**
+    **D. Is a fixed-size subsection of a storage device**
 
-**E. Has its own device file**
+    **E. Has its own device file**
 
 9.
 
