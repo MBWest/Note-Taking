@@ -4,7 +4,7 @@
 
 ### Unix Shells and Scripting
 
-1. How would you view the manual page for SSH? ** man ssh**
+1. How would you view the manual page for SSH? **man ssh**
 
 2. What is the standard shell that most other shell versions are based off of? **Bourne Shell**
 
@@ -33,14 +33,20 @@
 
 4. Which of the following are stored as regular files?
 
-Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
 
     A. Links
+
     B. Sockets
+
     C. Executables
+
     D. Configuration Files
+
     E. Device Files
+
     F. Text Files
+
     G. Libraries`
 
 5. A link that has the same inode number as the original file is a:
@@ -66,8 +72,44 @@ B. Symbolic Link
 
     **E. Has its own device file**
 
-9.
+9. (T/F) RAID can increase the amount of storage space available for a device. **False**
 
-10.
 
-11.
+10. It can be beneficial to put which of the following directories on a secondary partition?
+
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+
+    A. /var/log
+
+    **B. /tmp**
+
+    C. /root
+
+    **D. /var**
+
+    E. /etc
+
+11. Which partitioning scheme is preferred for newer devices? **GPT** (GUID Partition Table)
+
+### Unix Users and Permissions 
+
+1. What file defines groups in most Unix systems? **/etc/group**
+
+    For assistance in completing this challenge refer to pages 244-252 in the UNIX and Linux System Administration Handbook 5th Edition.
+
+2. On Linux, if you create a normal user, their UID will typically be higher than what number? **1000**
+
+    For assistance in completing this challenge refer to pages 244-252 in the UNIX and Linux System Administration Handbook 5th Edition.
+
+3. What would be the octal value equivalent of a file that has the following permissions (-rwx--x-w-): **712**
+
+    For assistance in completing this challenge refer to pages 132-139 in the UNIX and Linux System Administration Handbook 5th Edition.
+
+4. Using mnemonic syntax, provide the chmod command to add the following permissions to the file /myfile:
+    Owner: rwx
+    Group:rw
+    Other:x
+
+5. The parent of a currently running process dies. What is the new parent of this process? **init**
+     
+     For assistance in completing this challenge refer to pages 92-94 in the UNIX and Linux System Administration Handbook 5th Edition.
