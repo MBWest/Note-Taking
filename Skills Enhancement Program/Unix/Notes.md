@@ -953,9 +953,34 @@ Also known as a non-interactive process. These are not normally connected to any
 - Zombie/Orphan - The process is no longer alive or AKA dea
     - The reason it is still showing as a 'Zombie' or 'z' is due to still being on the process entry table in the kernel
 
-## File Sharing and Printing
+### Signals
 
-### Network File System
+A system message sent from one process to another, not usually used to transfer data but instead of used to remotely command the partnered process.
+
+When a process receives a Signal, either of the **three** things can happen:
+- **Default** - Process excecute the default action of the signal.
+    - *Example* > When process receives SIGTERM signal, process is terminated by default
+- **Customized** -  Process executes customized processing on receiving the singal by executing the *signal handler routine* (Special function which is invoked when the process receives a signal. Executed at the highest priority)
+    - *Example* > When process receives the SIGTERM signa, process might want to print the Goodbye msg on the screen, or write its internal data structure in a file for offline debugging before it dies out
+- **Ignore** - Process ignore the signal
+
+#### Well Known Linux Signals
+
+- **SIGINT** - Interrupt (i.e., Ctrl-C)
+- **SIGUSR1 and SIGUSR2** - User defined signals
+- **SIGKILL** - Sent to the process from kernel when kill -9 is invoked on a PID. 
+    - This signal cannot be caught by the process.
+- **SIGABRT** - Raised by abort() by the process itself. Cannot be blocked. The process is terminated. 
+- **SIGTERM** - Raised when *kill* is invoked. Can be caught by the process to execute user defined actions.  
+- **SIGSEGV** - Segmentation fault, raised by the kernel to the process when illegal memory is referenced.
+- **SIGCHILD** - Whenever a child terminates, this is the signal sent to the parent. 
+
+## Network File Sharing (NFS)
+
+
+
+### Network File System (NFS) 
+- Default Port 2049
 - Remote access to file system
 - Supported by Linux, UNIX, Windows
 - Packages
@@ -970,6 +995,3 @@ Also known as a non-interactive process. These are not normally connected to any
 Mount an NFS file system to access it
      - *Example* > mount -t nfs computer:fs /mount_point
 
-## Signals
-
-A system message sent from one process to another, not usually used to transfer data but instead of used to remotely command the partnered process
