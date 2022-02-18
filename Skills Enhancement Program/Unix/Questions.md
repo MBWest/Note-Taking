@@ -74,7 +74,6 @@ B. Symbolic Link
 
 9. (T/F) RAID can increase the amount of storage space available for a device. **False**
 
-
 10. It can be beneficial to put which of the following directories on a secondary partition?
 
     Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
@@ -114,7 +113,7 @@ B. Symbolic Link
      
      For assistance in completing this challenge refer to pages 92-94 in the UNIX and Linux System Administration Handbook 5th Edition.
 
-## Unix Networking and Name Resolution
+### Unix Networking and Name Resolution
 
 1. In regards to **/etc/resolv.conf**, what keyword deteremines the domain(s) to be queried if the hostname is not fully qualified?
 
@@ -122,23 +121,59 @@ B. Symbolic Link
 
 
 
-2.
+2. For assistance in completing this challenge refer to pages 500-502 in the UNIX and Linux System Administration Handbook 5th Edition.
 
-3.
+    In regards to /etc/nsswitch.conf, what keyword refers to querying the /etc/hosts file for name resolution?
 
-4.
+3. For assistance in completing this challenge refer to pages 500-502 in the UNIX and Linux System Administration Handbook 5th Edition.
 
-5.
+    The following is an entry in /etc/nsswitch.conf
 
-6.
+	hosts: dns [!UNAVAIL=return] files
+    Assuming this the only entry in the file concerning name resolution, will /etc/hosts be referenced if DNS lookup fails? 
 
-7.
+    Answer with either True or **False**
 
-8.
+4. What arguments for the netstat command will display the routing table without resolving host names, port numbers, and user names? **-rn**
 
-9.
+    Refer to the manpage of netstat for assistance in answering this challenge. One place you can look is (https://linux.die.net/man/8/netstat) 
 
-## Unix Firewalls 1
+5. Refer to the manpage of netstat for assistance in answering this challenge. One place you can look is here (https://linux.die.net/man/8/netstat).  **-pantu**
+
+    Provide the correct options for netstat that will perform the following:
+
+    Show the PID of the program for each socket
+
+    Show listening and non-listening ports
+
+    Does not resolve hostnames,ports, or usernames
+
+    Shows TCP connections
+
+    Show UDP connections
+
+    Provide you answer ordering options 1-5 from left to right. For example if the answer to 1 
+    was -a and the answer to 2 was -b, etc, you answer will be -abcde
+
+6. If the system you run netstat on attempted to initiate a connection but has not yet received a response, what state is the connection most likely listed as?  **SYN_SENT**
+
+    To answer this challenge, you may refer to this page(https://www.supportsages.com/understanding-the-netstat-command/).
+
+7.  This system is listening on tcp for what 3 network services? Separate each answer with commas, no spaces, and in alphabetical order. Use acronyms or abbreviated names of the services to get marked correct. **DNS,ipp,MySQL**
+
+    To answer this challenge, refer to the attached netstat output and a listing of common UNIX ports such as this one.
+
+8. What is the most popular implementation of DNS? **BIND**
+
+    For assistance in completing this challenge refer to pages 498-500 in the UNIX and Linux System Administration Handbook 5th Edition.
+
+
+9. Which version of NFS removed the need for the lockd and statd daemon? **4**
+
+    For assistance in completing this challenge refer to pages 791-798 in the UNIX and Linux System Administration Handbook 5th Edition.
+
+
+### Unix Firewalls 1
 
 1. What is the default iptables table? **filter**
 
@@ -216,7 +251,7 @@ B. Symbolic Link
 
     F. Raw
 
-## Unix Processes
+### Unix Processes
 
 1. What identification number determines the resources a process has access to at a given moment?
 
