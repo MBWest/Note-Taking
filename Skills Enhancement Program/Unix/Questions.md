@@ -297,3 +297,52 @@ B. Symbolic Link
 
 8. Based on the attached process list, write a pkill command that will send a TERM signal to the children of the script.sh process. Use the PID of the specified process. **pkill -15 -P 13635**
 
+### Unix Logging 1
+
+1. What are the major subtasks of log management? 
+
+    **A. Collecting logs from a variety of sources**
+
+    **B. Providing a structured interface for querying, analyzing, filtering, and monitoring messages**
+
+    **C. Managing the retention and expiration of messages**
+
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+
+2. What role does Unix's syslog play in log management?
+
+    **A. Collecting logs from a variety of sources**
+
+    B. Providing a structured interface for querying, analyzing, filtering, and monitoring messages
+
+    C. Managing the retention and expiration of messages
+
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+
+3. What role does Linux's systemd journal play in log management?
+
+    **A. Collecting logs from a variety of sources**
+
+    **B. Providing a structured interface for querying, analyzing, filtering, and monitoring messages**
+
+    **C. Managing the retention and expiration of messages**
+
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+
+4. What is the usual default path in Unix for storing log files? **/var/log**
+
+5. Where are private authorization messages logged, including authentication and ssh login attempts? **/var/log/secure**
+
+6. What log file does the last command interact with to display the record of user login/logout and system reboot information? **/var/log/wtmp**
+
+7. What log file does the lastlog command interact with to display the record of most recent logins of users? **/var/log/lastlog**
+
+8. What is the command to view the last 5 entries of journal logs created by the cron service?  
+
+9. What is the command to view all journal entries from the date 2021-08-01 to 2021-08-07?
+
+    FORMAT: command --option=value --option=value
+
+10. Where is the default location for the rsyslog's configuration file? **/etc/rsyslog.conf**
+
+11. (T/F) Unlike systemd journal, syslog acts as a message router by, (1) taking input from various plug-ins, (2) filtering them according to its rules, and (3) outputting them to their destinations. **T**
