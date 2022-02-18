@@ -171,7 +171,7 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 - ** Exponentiation
 - % Modulo
 
-- *Exmaple* > (echo $((10+7)))
+- *Example* > (echo $((10+7)))
 
 ### Tilde Expansion
 
@@ -829,7 +829,7 @@ The **grep** command searches for patterns in each file's content. **Grep** will
 - *Example* > kill -l
     - List all available ways to kill a signal
 
-- *Example* > kill 9 2975
+- *Example* > kill -9 2975
     - Uses the SIGKILL to kill the 2975 process
 
 - *Example* > pkill firefox
@@ -1011,7 +1011,7 @@ Also known as a non-interactive process. These are not normally connected to any
 - **Stopped** - The process has been stopped by some means
     - This can be a signal to stop from the user or system
     - Can also be in this state during the time a debugger is attached to it
-- Zombie/Orphan - The process is no longer alive or AKA dea
+- **Zombie/Orphan** - The process is no longer alive or AKA dea
     - The reason it is still showing as a 'Zombie' or 'z' is due to still being on the process entry table in the kernel
 
 ### Signals
@@ -1038,8 +1038,6 @@ When a process receives a Signal, either of the **three** things can happen:
 
 ## Network File Sharing (NFS)
 
-
-
 ### Network File System (NFS) 
 - Default Port 2049
 - Remote access to file system
@@ -1055,4 +1053,6 @@ When a process receives a Signal, either of the **three** things can happen:
 ### Mounting
 Mount an NFS file system to access it
      - *Example* > mount -t nfs computer:fs /mount_point
+
+## Securing User Enviornment
 
