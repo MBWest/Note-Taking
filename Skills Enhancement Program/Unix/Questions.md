@@ -16,9 +16,9 @@
 
 6. Write a command that will count the number of lines in /etc/passwd and write the result to /tmp/lines. **wc -l /etc/passwd > /tmp/lines**
 
-7. On one line write two commands that will assign the value /bin/bash to a variable called myshell and then print the value of myshell.
+7. On one line write two commands that will assign the value /bin/bash to a variable called myshell and then print the value of myshell. **myshell=/bin/bash; echo $myshell**
 
-8. Write a command that will promote the variable myshell to an environment variable and reassign the value to /bin/sh.
+8. Write a command that will promote the variable myshell to an environment variable and reassign the value to /bin/sh. **export myshell=/bin/sh**
 
 9. What should be the first line in a bash script? **#!/bin/bash**
 
@@ -115,13 +115,13 @@ B. Symbolic Link
 
 ### Unix Networking and Name Resolution
 
-1. In regards to **/etc/resolv.conf**, what keyword deteremines the domain(s) to be queried if the hostname is not fully qualified?
+1. In regards to **/etc/resolv.conf**, what keyword deteremines the domain(s) to be queried if the hostname is not fully qualified? **search**
 
     For assistance in completing this challenge refer to pages 500-502 in the UNIX and Linux System Administration Handbook 5th Edition.
 
 
 
-2. For assistance in completing this challenge refer to pages 500-502 in the UNIX and Linux System Administration Handbook 5th Edition.
+2. For assistance in completing this challenge refer to pages 500-502 in the UNIX and Linux System Administration Handbook 5th Edition. **files**
 
     In regards to /etc/nsswitch.conf, what keyword refers to querying the /etc/hosts file for name resolution?
 
@@ -347,15 +347,19 @@ B. Symbolic Link
 
 7. What log file does the lastlog command interact with to display the record of most recent logins of users? **/var/log/lastlog**
 
-8. What is the command to view the last 5 entries of journal logs created by the cron service?  
+8. What is the command to view the last 5 entries of journal logs created by the cron service? **journalctl -u cron -n 5**
 
-9. What is the command to view all journal entries from the date 2021-08-01 to 2021-08-07?
+9. What is the command to view all journal entries from the date 2021-08-01 to 2021-08-07? **journalctl --since=2021-08-01 --until=2021-08-07**
 
     FORMAT: command --option=value --option=value
 
-10. Where is the default location for the rsyslog's configuration file? **/etc/rsyslog.conf**
+10. Where is the default configuration file for systemd journal stored? **/etc/systemd/journald.conf**
 
-11. (T/F) Unlike systemd journal, syslog acts as a message router by, (1) taking input from various plug-ins, (2) filtering them according to its rules, and (3) outputting them to their destinations. **T**
+11. In what directory custom configuration files for systemd journal stored? **/etc/systemd/journal.conf.d**
+
+12. Where is the default location for the rsyslog's configuration file? **/etc/rsyslog.conf**
+
+13. (T/F) Unlike systemd journal, syslog acts as a message router by, (1) taking input from various plug-ins, (2) filtering them according to its rules, and (3) outputting them to their destinations. **T**
 
 ### Unix Boot and Login 
 
@@ -436,7 +440,7 @@ B. Symbolic Link
 
     Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
 
-    A. It is a form of sandbox to prevent system damage.
+    **A. It is a form of sandbox to prevent system damage.**
 
     B. Core OS functions usually run in user space.
 
@@ -444,7 +448,7 @@ B. Symbolic Link
 
     D. User applications run in protection ring 1.
 
-    E. User space processes interact with the kernel through system calls.
+    **E. User space processes interact with the kernel through system calls.**
 
 6. What directory contains file objects that can be used to tune kernel parameters during runtime?  **/proc/sys**
 
