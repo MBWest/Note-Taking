@@ -253,7 +253,7 @@ B. Symbolic Link
 
 ### Unix Processes
 
-1. What identification number determines the resources a process has access to at a given moment?
+1. What identification number determines the resources a process has access to at a given moment? **EUID**
 
 2. Which processes has the highest priority in CPU time?
 
@@ -295,7 +295,17 @@ B. Symbolic Link
 
     * * * * * echo $(date) >> ~/date.log
 
-8. Based on the attached process list, write a pkill command that will send a TERM signal to the children of the script.sh process. Use the PID of the specified process. **pkill -15 -P 13635**
+8. Which of the following methods can be used to investigate a suspicious process with a PID of 5435
+
+    **A. ps -ef | grep 5435**
+
+    **B. netstat -pant | grep 5435**
+
+    **C. ls -l /proc/5435**
+
+    **D. strace -p 5435**
+
+9. Based on the attached process list, write a pkill command that will send a TERM signal to the children of the script.sh process. Use the PID of the specified process. **pkill -15 -P 13635**
 
 ### Unix Logging 1
 
@@ -346,3 +356,114 @@ B. Symbolic Link
 10. Where is the default location for the rsyslog's configuration file? **/etc/rsyslog.conf**
 
 11. (T/F) Unlike systemd journal, syslog acts as a message router by, (1) taking input from various plug-ins, (2) filtering them according to its rules, and (3) outputting them to their destinations. **T**
+
+### Unix Boot and Login 
+
+1. What is the first step in the boot process after the machine is powered on?
+
+    A. Load boot loader
+
+    B. Load system kernel
+
+    **C. Load BIOS/UEFI**
+
+2. Match the following descriptions to the corresponding firmware: **U,U,B,B,U,U**
+
+    FORMAT: comma separated list (e.g., B,U,U,B,B)
+
+    B: BIOS U: UEFI
+
+    More modern standard of PC firmware
+    Uses a disk partitioning scheme known as GPT (GUID Partition Table)
+    Assumes boot device starts with the MBR (Master Boot Record)
+    Requires execution of second-stage boot loader
+    Defines APIs for accessing system hardware
+    Consults its partition table to identify the ESP
+
+3. What sector of a storage device contains the code responsible for reading the partitioning information from the MBR and executing the second-stage boot loader?  **volume boot record**
+
+4. What is the boot loader's main function?
+
+    A. Consult the MBR for the location of the boot block 
+    **B. Identity and load the OS kernel** 
+    C. Start the initial process (init) D. Mount the root file system
+
+5. What is the absolute path to the GRUB config file in Red Hat and CentOS? **/boot/grub2/grub.cfg**
+
+6. What is the boot loader for FreeBSD known as? **loader**
+
+
+7. From which file is the grub.cfg generated? **/etc/default/grub**
+
+8. What is the kernel boot time option to use /dev/sda1 as the root file system? **root=/dev/sda1**
+
+9. What is the name of the system management daemon with a process ID of 1, and is the parent process for all other processes? **init**
+
+10. What are some of the core responsibilities of init?
+
+    **A. Mount filesystems** 
+    **B. Configure network interfaces**
+    **C. Start up other daemons and services**
+    D. Execute initial user log in scripts
+
+    FORMAT: comma separated list (e.g., A,C,D)
+
+11. What term associated with** systemd** is analogous to traditional init's runlevel , which defines the operational mode of the system? **target**
+
+12. What is the command that is used to manage and check the status of the configurations of systemd units? **systemctl**
+
+### Unix Kernel Basics
+
+1. Which of the following are classified as UNIX operating systems? **B,C,E**
+
+2. The kernel provides which of the following functions?
+
+    **A. Communication with processes and threads**
+
+    B. Runs user applications
+
+    **C. Provides memory management**
+
+    **D. Management of hardware devices**
+
+    E. None of the above
+
+3. (T/F) Many kernel parameters can accessed from user mode to change the behavior of the kernel. **T**
+
+4. (T/F) User processes have access to all of a system's memory space. **F**
+
+5. Which of the following statements correctly describe User Space?
+
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+
+    A. It is a form of sandbox to prevent system damage.
+
+    B. Core OS functions usually run in user space.
+
+    C. When a process malfunctions within user space it will often crash the entire system.
+
+    D. User applications run in protection ring 1.
+
+    E. User space processes interact with the kernel through system calls.
+
+6. What directory contains file objects that can be used to tune kernel parameters during runtime?  **/proc/sys**
+
+7. What file can be used with the sysctl command to permanently set parameter configurations?  /**etc/sysctl.conf**
+
+8. Write an echo command that will temporarily set the "panic_on_oops" parameter to 3.
+
+9. Write a sysctl command that will display all kernel parameter values. **sysctl -a**
+
+10. Which of the following statements do not correctly describe Linux kernel modules?
+
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+
+    A. Kernel modules allow a driver to be linked in while the kernel is running.
+
+    B. Almost anything can be built as a loadable kernel module.
+
+    **C. Loading a kernel module can never cause a kernel panic.**
+
+    **D. The implementation of loadable modules is the same for every OS.**
+
+11. Write a modprobe command to list the dependencies of the ip_tables module. Assume you are root. **modprobe -D ip_tables**
