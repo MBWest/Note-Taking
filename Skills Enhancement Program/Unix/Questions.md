@@ -104,7 +104,8 @@ B. Symbolic Link
 
     For assistance in completing this challenge refer to pages 132-139 in the UNIX and Linux System Administration Handbook 5th Edition.
 
-4. Using mnemonic syntax, provide the chmod command to add the following permissions to the file /myfile:
+4. Using mnemonic syntax, provide the chmod command to add the following permissions to the file /myfile: **chmod u+rwx,g+rw,o+x**
+
     Owner: rwx
     Group:rw
     Other:x
