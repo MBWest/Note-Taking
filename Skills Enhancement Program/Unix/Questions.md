@@ -39,15 +39,15 @@
 
     B. Sockets
 
-    C. Executables
+    **C. Executables**
 
-    D. Configuration Files
+    **D. Configuration Files**
 
     E. Device Files
 
-    F. Text Files
+    **F. Text Files**
 
-    G. Libraries`
+    **G. Libraries**
 
 5. A link that has the same inode number as the original file is a:
 Format: Multiple Choice, Letter only
@@ -119,7 +119,6 @@ B. Symbolic Link
 1. In regards to **/etc/resolv.conf**, what keyword deteremines the domain(s) to be queried if the hostname is not fully qualified? **search**
 
     For assistance in completing this challenge refer to pages 500-502 in the UNIX and Linux System Administration Handbook 5th Edition.
-
 
 
 2. For assistance in completing this challenge refer to pages 500-502 in the UNIX and Linux System Administration Handbook 5th Edition. **files**
@@ -362,6 +361,18 @@ B. Symbolic Link
 
 13. (T/F) Unlike systemd journal, syslog acts as a message router by, (1) taking input from various plug-ins, (2) filtering them according to its rules, and (3) outputting them to their destinations. **T**
 
+14. What is the correct syntax to log all sensitive/private authorization message to /var/log/secure? **authpriv.* /var/log/secure**
+
+    FORMAT: [selector]space[action]
+
+15. What is the correct syntax to log all crit severity level messages (excluding other severity levels) to /var/log/crit? ***.=crit /var/log/crit**
+
+    FORMAT: [selector]space[action]
+
+16. What is the correct syntax to forward mail-related messages at priorities notice, warning, and crit to IP address 192.168.10.10 on TCP port 514? **mail.=notice;mail.=warning;mail.=crit @@192.168.10.10**
+
+    FORMAT: [selector]space[action]
+
 ### Unix Boot and Login 
 
 1. What is the first step in the boot process after the machine is powered on?
@@ -455,7 +466,7 @@ B. Symbolic Link
 
 7. What file can be used with the sysctl command to permanently set parameter configurations?  /**etc/sysctl.conf**
 
-8. Write an echo command that will temporarily set the "panic_on_oops" parameter to 3.
+8. Write an echo command that will temporarily set the "panic_on_oops" parameter to 3. **echo 3 > /proc/sys/kernel/panic_on_oops**
 
 9. Write a sysctl command that will display all kernel parameter values. **sysctl -a**
 
