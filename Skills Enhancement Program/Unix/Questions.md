@@ -700,3 +700,17 @@ B. Symbolic Link
     What is the source port for the packet? **55237**
     What application-layer protocol is being used in this packet? **HTTP**
     What is the default port for this protocol?
+
+4. tcpdump can compile BPFs. Examine the following compiled filter. Then answer the questions in order, separated by a comma. **IP,UDP**
+
+    (000) ldh [12]
+    (001) jeq #0x800 jt 2 jf 5
+    (002) ldb [23]
+    (003) jeq #0x11 jt 4 jf 5
+    (004) ret #65535
+    (005) ret #0
+
+    Questions:
+
+    What network layer protocol does the filter accept?
+    What transport layer protocol does the filter accept?
