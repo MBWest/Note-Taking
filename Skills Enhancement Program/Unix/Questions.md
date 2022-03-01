@@ -486,5 +486,140 @@ B. Symbolic Link
 
 ## Networking
 
+## File Transfer
+
+1. What python module can be used in a one-liner to quickly spin up an HTTP server for hosting files? **SimpleHTTPServer module**
+
+2. What command line flag is used to recursively transfer directories using SCP? **-r**
+
+3. Provide a netcat command to listen on port 8080 for a file, and write to a file named recv.txt **nc -l -p 8080 > recv.txt**
+
+4. Provide a windows cmd.exe (no powershell) command to base64 encode loot.dmp and output results to loot.b64 **certutil -encode loot.dmp loot.b64**
+
+5. Decode the following base64 string to get the flag: MWZmYzQyNDA0ODUyMjIzYTg2NDgzZDYzYjc2ZTUyYjUzZGEwZjJlNA== **1ffc42404852223a86483d63b76e52b53da0f2e4**
+
+    Try out different methods to get familiar with them. Websites are great but may not be available on mission, so try command line utilities. Python is also good practice.
+
+6. You have just landed on a target and need to transfer your tools via a separate channel. Your target is a workstation that is NATed behind a firewall with inbound rules. Which method is the better option for file transfer for both feasibility and opsec? The flag will be either A or B, letter only.
+
+    A. Try to mount an SMB share on the target from your ops station and copy your tools over.
+
+    **B. Host a file on an apache server on your ops station and download it to the target using wget.**
+
+7. Consider the following scenario and decide if it is better to push or pull your tools to the target.
+
+    You have just landed on a target web server. After performing initial survey, you would like to upload your toolset. You have noticed that this web server rarely initiates outbound connections except for receiving updates, resolving DNS, and time synchronization. You have also noticed that ports 80, 443, 8000, 8443 are accessible from the internet on the target. Which file transfer strategy is more likely to succeed and blend in? Assume all tools in the options are available. Answer with A or B, letter only.
+
+    A. Set up a local HTTP server on port 80 of your ops station and pull your tools to the target using wget.
+
+    **B. Set up a netcat listener on the target on port 8000 (currently open) and push your tools to the target using netcat**
+
+## Socket Programming
+
+1. What are the two components to a socket? Answer like: component and component **IP and Port**
+
+2. Which parameter below is used in Python socket object creation to specify the socket as TCP? Answer with the letter only.
+
+    A. socket.AF_INET
+    **B. socket.SOCK_STREAM**
+    C. socket.SOCK_DGRAM
+    D. socket.SOCK_RAW
+
+3. Which parameter below is used in Python socket object creation to specify the socket as UDP? Answer with the letter only.
+
+    **A. socket.SOCK_DGRAM**
+    B. socket.SOCK_RAW
+    C. socket.SOCK_STREAM
+    D. socket.AF_INET
+
+4. Which parameter below is used in Python socket object creation to specify a raw socket? Answer with the letter only.
+
+    A. socket.SOCK_STREAM
+    **B. socket.SOCK_RAW**
+    C. socket.AF_INET
+    D. socket.SOCK_DGRAM
+
+5. What attribute needs to be set to specify an interface in scapy? **iface**
+
+## Routers, Firewalls, and the Internet
+
+1. What type of firewall does an Access Control List in Cisco IOS provide? **Packet Filtering**
+
+2. What type of router has links to more than one AS? **Autonomous System Boundary Router**
+
+3. What Regional Internet Registry (RIR) is responsible for assignment of IP addresses in South Korea? **APNIC**
+
+4. Fill in the blank: With an increase of devices on the internet, the available ____________ addresses have been running out. NAT is used to help with this problem until IPv6 is commonly implemented. **ipv4**
+
+5. Fill in the blank: Network Address Port Translation (NAPT) uses the _____________ port to multiplex multiple inside IPs through one outside IP.
 
 
+
+6. What type of firewall can use TCP connection state in its rules? **stateful** 
+
+7. In the provided Cisco IOS config, what is the hostname of the device? **retail**
+
+## Non SSH Redirection
+
+1. (T/F) Metasploit routing can only handle TCP traffic. **T**
+
+2. You reach a nix system in the middle of your op via an SSH connection that does not have an ssh client installed, what discussed tool could you bring over to continue transitioning through this network? **socat**
+
+3. Given this fpipe command, what sort of traffic is probably being routed? (answer with just the protocol name) **ssh**
+
+    fpipe.exe -l 22022 -r 22 192.168.100.2
+
+4. You come across a log file of commands on a DMZ machine with this socat command: **smb**
+
+    socat TCP:LISTEN:22139 TCP:192.168.117.47:139
+
+    What service might this command have been set up to allow an outside entity to exploit? (answer with just the service type)
+
+5. You have accessed a windows machine via ssh partway though your op plan. Unfortunatly the windows firewall is blocking incoming ssh, and you are not allowed to modify the firewall. Thankfully port 5000 is open. **fpipe.exe -l 5000 -r 22 192.168.100.80**
+
+    What command would allow you, assuming you brought over a tool that has been discussed, to connect your ssh cilent though this windows machine to 192.168.100.80:22? (assume you are in the same directory as your tool when the command is run)
+
+## Forward SSH Tunneling
+1.  An SSH tunnel is configured from machine A through machine B to machine C to channel telnet traffic. At which point can the traffic be captured unencrypted? Answer with the letter.
+
+            A                   B                     C
+            --------------      --------------      --------------
+            |            |      |            |      |            |
+            |        8080>====================------>80          |
+            |            |      |            |      |            |
+            --------------      --------------      --------------
+
+
+   
+
+    A. On the wire between machine A and B (assume you can collect the traffic)   
+    **B. On the wire between machine B and C (assume you can collect the traffic)**    
+    C. Via TcpDump port 22 on machine B    
+    D. Via TcpDump port 8080 on machine A   
+
+2. Provide the command line option to configure a forward SSH tunnel listening on localhost port 8080 to 10.0.0.8 port 80, through an SSH session on 172.16.0.5 port 22. Use IP addresses and not hostnames. Provide only the command line option for the tunnel in format: **-L 8080:10.0.0.8:80**
+
+    -<FLAG> <ARGUMENTS>
+
+3. Provide the ssh command to configure a forward SSH tunnel. This configuration should allow other ops network machines to connect to your ops station to use the tunnel. Your ops station IP address is 172.16.0.4 and the listening port should be 1022. The tunnel should point to 192.168.10.10 port 22. The tunnel should go through an SSH session on 172.16.0.5 port 22.
+
+    The credentials to 172.16.0.5 are user1/pass1 and the credentials to 192.168.10.10 are user2/pass2. Use IP addresses and not hostnames. Provide the command line for the tunnel in format:
+
+    `ssh -p <ARG> <user>@<IP> -<FLAG> <ARGS>`
+
+4. A forward SSH tunnel has already been configured as specified below. Provide the ssh command to connect to 172.16.0.4 through the tunnel. The tunnel was configured with the following command:
+
+        ssh -p 22 user1@192.168.10.10 -L 127.0.0.1:1022:172.16.0.4:22
+        192.168.10.9        192.168.10.10       172.16.0.4
+        --------------      --------------      --------------
+        |            |      |            |      |            |
+        |            ------->22          |      |            |
+        |        1022>====================------>22          |
+        |            |      |            |      |            |
+        --------------      --------------      --------------
+                            user1               user2
+                            pass1               pass2
+
+    Provide the SSH command in the format:
+
+    `ssh -p <ARG> <user>@<IP>`
