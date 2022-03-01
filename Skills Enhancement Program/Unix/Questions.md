@@ -551,7 +551,7 @@ B. Symbolic Link
 
 4. Fill in the blank: With an increase of devices on the internet, the available ____________ addresses have been running out. NAT is used to help with this problem until IPv6 is commonly implemented. **ipv4**
 
-5. Fill in the blank: Network Address Port Translation (NAPT) uses the _____________ port to multiplex multiple inside IPs through one outside IP.
+5. Fill in the blank: Network Address Port Translation (NAPT) uses the _____________ port to multiplex multiple inside IPs through one outside IP. **source**
 
 6. What type of firewall can use TCP connection state in its rules? **stateful** 
 
@@ -597,15 +597,16 @@ B. Symbolic Link
 
     `-<FLAG> <ARGUMENTS>`
 
-3. Provide the ssh command to configure a forward SSH tunnel. This configuration should allow other ops network machines to connect to your ops station to use the tunnel. Your ops station IP address is 172.16.0.4 and the listening port should be 1022. The tunnel should point to 192.168.10.10 port 22. The tunnel should go through an SSH session on 172.16.0.5 port 22.
+3. Provide the ssh command to configure a forward SSH tunnel. This configuration should allow other ops network machines to connect to your ops station to use the tunnel. Your ops station IP address is 172.16.0.4 and the listening port should be 1022. The tunnel should point to 192.168.10.10 port 22. The tunnel should go through an SSH session on 172.16.0.5 port 22. **ssh -p 22 user1@172.16.0.5 -L 172.16.0.4:1022:192.168.10.10:22**
 
     The credentials to 172.16.0.5 are user1/pass1 and the credentials to 192.168.10.10 are user2/pass2. Use IP addresses and not hostnames. Provide the command line for the tunnel in format:
 
     `ssh -p <ARG> <user>@<IP> -<FLAG> <ARGS>`
 
-4. A forward SSH tunnel has already been configured as specified below. Provide the ssh command to connect to 172.16.0.4 through the tunnel. The tunnel was configured with the following command:
+4. A forward SSH tunnel has already been configured as specified below. Provide the ssh command to connect to 172.16.0.4 through the tunnel. The tunnel was configured with the following command: **ssh -p 1022 user2@127.0.0.1**
 
-        ssh -p 22 user1@192.168.10.10 -L 127.0.0.1:1022:172.16.0.4:22
+    `ssh -p 22 user1@192.168.10.10 -L 127.0.0.1:1022:172.16.0.4:22`
+
         192.168.10.9        192.168.10.10       172.16.0.4
         --------------      --------------      --------------
         |            |      |            |      |            |
@@ -620,7 +621,7 @@ B. Symbolic Link
 
     `ssh -p <ARG> <user>@<IP>`
 
-### Reverse SSH Tunneling
+### **Reverse SSH Tunneling**
 
 1. A reverse SSH tunnel is configured as described in the diagram below using the following command on machine A:
 
@@ -649,3 +650,53 @@ B. Symbolic Link
         --------------      --------------      --------------
 
     To which machine will the tunnel try to communicate with on port 80? Answer with the letter only.
+
+3. Provide the reverse tunnel option and argument to catch a callback on the remote machine on port 8000 and send the callback from the tunnel to a local netcat listener on port 1337. The callback is coming from a separate remote machine, so the remote listener must be listening globally. You may assume that the remote machine allows reverse tunnels and the default is to listen globally. Please provide the option and argument in the following format, using IP addresses and not hostnames: **-R 8000:127.0.0.1:1337**
+
+    Callback, remote machine : 8000
+
+    `-<OPT> <ARG>`
+
+4. An implanted machine is calling back to a redirector at 192.168.5.164 on port 8080. You need to connect to this redirector via SSH on port 2222 as user1 and set up a reverse SSH tunnel that will send this redirector from your ops station to a beacon collector at 172.16.2.10 on port 4443. Provide the full SSH command to catch this redirector and send to the collector. You may assume the redirector can perform reverse tunneling and that the default is to listen globally. Provide the command in the following format:
+
+    **ssh -p 2222 user1@192.168.5.164 -R 8080:172.16.2.10:4443**
+
+    Redirector : 192.168.5.164
+        Port : 8080
+    Connection Port: 2222
+    Beacon Collector : 172.16.2.10
+        Port : 4443
+
+        Ops Station          Redirector (192.168.5.164) Beacon Collector (172.16.2.10)        
+        --------------      --------------          --------------
+        |            |      |  User1     |          |            |
+        |            -------> 2222       |          |            |
+        |   8080     <===================<------- 4443           |
+        |            |      |            |          |            |
+        --------------      --------------          --------------
+
+    `ssh -p <ARG> <user>@<IP> -<OPT> <ARGS>`
+
+5. Reference the attached output from TcpDump on your redirector. Another operator has implanted a target and has set it to call back via TCP to your redirector, however they did not include the callback port in the op notes. You have been tasked to configure a reverse SSH tunnel to catch the callback and forward it to a collector on your ops station. Based on the TcpDump output, what port should you configure the reverse tunnel to listen on? **8008**
+
+### **Network Troubleshooting**
+
+1. One bit in a mac address determines if an address is unicast or multicast. Given the BPF ether[0xNN]=1, what digits should replace NN to determine if the packet is multicast? **01**
+
+2. Analyze the following IP packet. Enter answers in the order they are asked separated by a comma.
+
+    `45 00 00 34 c2 ce 40 00 80 06 00 00 7f 00 00 01 7f 00 00 01 d7 c5 26 e3 03 e7 5b 6a 00 00 00 00 80 02 ff ff 18 f0 00 00 02 04 ff d7 01 03 03 08 01 01 04 02`
+
+    Questions:
+    What transport layer protocol is in use? **TCP**
+    What is the destination port? **9955**
+
+3. Use the packet below to answer the following questions. This is part of the same packet exchange as in question 1. Enter answers in the order they are asked separated by a comma.
+
+    `45 00 02 dd c2 d4 40 00 80 06 00 00 7f 00 00 01 7f 00 00 01 d7 c5 26 e3 03 e7 5b 6b 8e b4 fb f3 50 18 27 f9 0d 84 00 00 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 31 32 37 2e 30 2e 30 2e 31 3a 39 39 35 35 0d 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a 43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6d 61 78 2d 61 67 65 3d 30 0d 0a 73 65 63 2d 63 68 2d 75 61 3a 20 22 20 4e 6f 74 20 41 3b 42 72 61 6e 64 22 3b 76 3d 22 39 39 22 2c 20 22 43 68 72 6f 6d 69 75 6d 22 3b 76 3d 22 39 36 22 2c 20 22 4d 69 63 72 6f 73 6f 66 74 20 45 64 67 65 22 3b 76 3d 22 39 36 22 0d 0a 73 65 63 2d 63 68 2d 75 61 2d 6d 6f 62 69 6c 65 3a 20 3f 30 0d 0a 73 65 63 2d 63 68 2d 75 61 2d 70 6c 61 74 66 6f 72 6d 3a 20 22 57 69 6e 64 6f 77 73 22 0d 0a 55 70 67 72 61 64 65 2d 49 6e 73 65 63 75 72 65 2d 52 65 71 75 65 73 74 73 3a 20 31 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 57 69 6e 64 6f 77 73 20 4e 54 20 31 30 2e 30 3b 20 57 69 6e 36 34 3b 20 78 36 34 29 20 41 70 70 6c 65 57 65 62 4b 69 74 2f 35 33 37 2e 33 36 20 28 4b 48 54 4d 4c 2c 20 6c 69 6b 65 20 47 65 63 6b 6f 29 20 43 68 72 6f 6d 65 2f 39 36 2e 30 2e 34 36 36 34 2e 35 35 20 53 61 66 61 72 69 2f 35 33 37 2e 33 36 20 45 64 67 2f 39 36 2e 30 2e 31 30 35 34 2e 34 33 0d 0a 41 63 63 65 70 74 3a 20 74 65 78 74 2f 68 74 6d 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 68 74 6d 6c 2b 78 6d 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 6d 6c 3b 71 3d 30 2e 39 2c 69 6d 61 67 65 2f 77 65 62 70 2c 69 6d 61 67 65 2f 61 70 6e 67 2c 2a 2f 2a 3b 71 3d 30 2e 38 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 73 69 67 6e 65 64 2d 65 78 63 68 61 6e 67 65 3b 76 3d 62 33 3b 71 3d 30 2e 39 0d 0a 53 65 63 2d 46 65 74 63 68 2d 53 69 74 65 3a 20 6e 6f 6e 65 0d 0a 53 65 63 2d 46 65 74 63 68 2d 4d 6f 64 65 3a 20 6e 61 76 69 67 61 74 65 0d 0a 53 65 63 2d 46 65 74 63 68 2d 55 73 65 72 3a 20 3f 31 0d 0a 53 65 63 2d 46 65 74 63 68 2d 44 65 73 74 3a 20 64 6f 63 75 6d 65 6e 74 0d 0a 41 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 7a 69 70 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 0d 0a 41 63 63 65 70 74 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e 2d 55 53 2c 65 6e 3b 71 3d 30 2e 39 0d 0a 0d 0a`
+
+    Questions:
+
+    What is the source port for the packet? **55237**
+    What application-layer protocol is being used in this packet? **HTTP**
+    What is the default port for this protocol?
