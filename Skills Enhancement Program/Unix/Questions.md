@@ -2,7 +2,7 @@
 
 ## Unix
 
-### Unix Shells and Scripting
+### **Unix Shells and Scripting**
 
 1. How would you view the manual page for SSH? **man ssh**
 
@@ -22,7 +22,7 @@
 
 9. What should be the first line in a bash script? **#!/bin/bash**
 
-### Unix Filesystems
+### **Unix Filesystems**
 
 1. Which directory stores critical system and configuration files? **/etc**
 
@@ -90,7 +90,7 @@ B. Symbolic Link
 
 11. Which partitioning scheme is preferred for newer devices? **GPT** (GUID Partition Table)
 
-### Unix Users and Permissions 
+### **Unix Users and Permissions** 
 
 1. What file defines groups in most Unix systems? **/etc/group**
 
@@ -114,7 +114,7 @@ B. Symbolic Link
      
      For assistance in completing this challenge refer to pages 92-94 in the UNIX and Linux System Administration Handbook 5th Edition.
 
-### Unix Networking and Name Resolution
+### **Unix Networking and Name Resolution**
 
 1. In regards to **/etc/resolv.conf**, what keyword deteremines the domain(s) to be queried if the hostname is not fully qualified? **search**
 
@@ -173,7 +173,7 @@ B. Symbolic Link
     For assistance in completing this challenge refer to pages 791-798 in the UNIX and Linux System Administration Handbook 5th Edition.
 
 
-### Unix Firewalls 1
+### **Unix Firewalls 1**
 
 1. What is the default iptables table? **filter**
 
@@ -251,7 +251,7 @@ B. Symbolic Link
 
     F. Raw
 
-### Unix Processes
+### **Unix Processes**
 
 1. What identification number determines the resources a process has access to at a given moment? **EUID**
 
@@ -307,7 +307,7 @@ B. Symbolic Link
 
 9. Based on the attached process list, write a pkill command that will send a TERM signal to the children of the script.sh process. Use the PID of the specified process. **pkill -15 -P 13635**
 
-### Unix Logging 1
+### **Unix Logging 1**
 
 1. What are the major subtasks of log management? 
 
@@ -373,7 +373,7 @@ B. Symbolic Link
 
     FORMAT: [selector]space[action]
 
-### Unix Boot and Login 
+### **Unix Boot and Login** 
 
 1. What is the first step in the boot process after the machine is powered on?
 
@@ -428,7 +428,7 @@ B. Symbolic Link
 
 12. What is the command that is used to manage and check the status of the configurations of systemd units? **systemctl**
 
-### Unix Kernel Basics
+### **Unix Kernel Basics**
 
 1. Which of the following are classified as UNIX operating systems? **B,C,E**
 
@@ -486,7 +486,7 @@ B. Symbolic Link
 
 ## Networking
 
-## File Transfer
+### **File Transfer**
 
 1. What python module can be used in a one-liner to quickly spin up an HTTP server for hosting files? **SimpleHTTPServer module**
 
@@ -514,7 +514,7 @@ B. Symbolic Link
 
     **B. Set up a netcat listener on the target on port 8000 (currently open) and push your tools to the target using netcat**
 
-## Socket Programming
+### **Socket Programming**
 
 1. What are the two components to a socket? Answer like: component and component **IP and Port**
 
@@ -541,7 +541,7 @@ B. Symbolic Link
 
 5. What attribute needs to be set to specify an interface in scapy? **iface**
 
-## Routers, Firewalls, and the Internet
+### **Routers, Firewalls, and the Internet**
 
 1. What type of firewall does an Access Control List in Cisco IOS provide? **Packet Filtering**
 
@@ -553,13 +553,11 @@ B. Symbolic Link
 
 5. Fill in the blank: Network Address Port Translation (NAPT) uses the _____________ port to multiplex multiple inside IPs through one outside IP.
 
-
-
 6. What type of firewall can use TCP connection state in its rules? **stateful** 
 
 7. In the provided Cisco IOS config, what is the hostname of the device? **retail**
 
-## Non SSH Redirection
+### **Non SSH Redirection**
 
 1. (T/F) Metasploit routing can only handle TCP traffic. **T**
 
@@ -579,7 +577,8 @@ B. Symbolic Link
 
     What command would allow you, assuming you brought over a tool that has been discussed, to connect your ssh cilent though this windows machine to 192.168.100.80:22? (assume you are in the same directory as your tool when the command is run)
 
-## Forward SSH Tunneling
+### **Forward SSH Tunneling**
+
 1.  An SSH tunnel is configured from machine A through machine B to machine C to channel telnet traffic. At which point can the traffic be captured unencrypted? Answer with the letter.
 
             A                   B                     C
@@ -589,9 +588,6 @@ B. Symbolic Link
             |            |      |            |      |            |
             --------------      --------------      --------------
 
-
-   
-
     A. On the wire between machine A and B (assume you can collect the traffic)   
     **B. On the wire between machine B and C (assume you can collect the traffic)**    
     C. Via TcpDump port 22 on machine B    
@@ -599,7 +595,7 @@ B. Symbolic Link
 
 2. Provide the command line option to configure a forward SSH tunnel listening on localhost port 8080 to 10.0.0.8 port 80, through an SSH session on 172.16.0.5 port 22. Use IP addresses and not hostnames. Provide only the command line option for the tunnel in format: **-L 8080:10.0.0.8:80**
 
-    -<FLAG> <ARGUMENTS>
+    `-<FLAG> <ARGUMENTS>`
 
 3. Provide the ssh command to configure a forward SSH tunnel. This configuration should allow other ops network machines to connect to your ops station to use the tunnel. Your ops station IP address is 172.16.0.4 and the listening port should be 1022. The tunnel should point to 192.168.10.10 port 22. The tunnel should go through an SSH session on 172.16.0.5 port 22.
 
@@ -623,3 +619,33 @@ B. Symbolic Link
     Provide the SSH command in the format:
 
     `ssh -p <ARG> <user>@<IP>`
+
+### Reverse SSH Tunneling
+
+1. A reverse SSH tunnel is configured as described in the diagram below using the following command on machine A:
+
+    `ssh -p 22 user1@B -R 8080:127.0.0.1:80`
+
+        A                   B                   C
+        --------------      --------------      --------------
+        |            |      |            |      |            |
+        |            ------->            |      |            |
+        |            <===================<-------            |
+        |            |      |            |      |            |
+        --------------      --------------      --------------
+
+    On which machine will the tunnel listening port 8080 be listening on? Answer with the letter only. **B**
+
+2. A reverse SSH tunnel is configured as described in the diagram below using the following command on machine A:
+
+    `ssh -p 22 user1@B -R 8080:127.0.0.1:80`
+
+        A                   B                   C
+        --------------      --------------      --------------
+        |            |      |            |      |            |
+        |            ------->            |      |            |
+        |            <===================<-------            |
+        |            |      |            |      |            |
+        --------------      --------------      --------------
+
+    To which machine will the tunnel try to communicate with on port 80? Answer with the letter only.
