@@ -1,4 +1,4 @@
-#Questions
+# Questions
 
 ## Unix
 
@@ -207,7 +207,7 @@ B. Symbolic Link
 
     Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
 
-   ** A. 10.1.254.12**
+    **A. 10.1.254.12**
 
     B. 192.168.1.2
 
@@ -483,3 +483,8 @@ B. Symbolic Link
     **D. The implementation of loadable modules is the same for every OS.**
 
 11. Write a modprobe command to list the dependencies of the ip_tables module. Assume you are root. **modprobe -D ip_tables**
+
+## Networking
+
+
+
