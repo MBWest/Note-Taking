@@ -876,7 +876,6 @@ B. Symbolic Link
 
     (D isnt correct on here, but it actually is)
 
-
 3. You're practicing your sweet powershell skills, but there's a 2nd freeze and your internet connection suddenly drops. You want to learn more about the "Enable-BitLocker" command, but "get-help" isn't quite giving you enough information. How can you modify your command to make it better? **Get-Help Enable-Bitlocker -Full**
 
 4. What command would you use to display only the status of a service called "XblGameSave". Do not use aliases. **Get-Service XblGameSave | Select-Object Status**
@@ -897,9 +896,11 @@ B. Symbolic Link
 
     D. get-help get-process
 
-9. You are getting a process list, but want to view everything (properties, methods, objects) about the process objects. What command can you use to do this (enter the FULL command)? **Get-Process | Select-Object *?**
+9. You are getting a process list, but want to view everything (properties, methods, objects) about the process objects. What command can you use to do this (enter the FULL command)? **Get-Process | Get-Member**
 
-10. You want to use gwmi, but don't know what gwmi objects are available... what command can be used to do this? note: gwmi is an abbreviation for Get-WmiObject. Provide the answer as all letters applicable comma separated with no spaces.
+10. What do all wmi object names in powershell start with? **win32**
+
+11. You want to use gwmi, but don't know what gwmi objects are available... what command can be used to do this? note: gwmi is an abbreviation for Get-WmiObject. Provide the answer as all letters applicable comma separated with no spaces.
 
     A. gwmi | gm
 
@@ -909,7 +910,7 @@ B. Symbolic Link
 
     D. gwmi *
 
-11. You are on a target box in a PS shell and your cim cmdlets aren't working. What is most likely the reason?
+12. You are on a target box in a PS shell and your cim cmdlets aren't working. What is most likely the reason?
 
     **A. the system is running an older version of powershell (ex: powershell 1.0)**
 
@@ -919,7 +920,7 @@ B. Symbolic Link
 
     D. the firewall is blocking cim because it uses DCOM, which is often blocked by networking equipment
 
-12. You just used some sweet powershell skills to get the status of the "w32time" service. Now you want to invoke a method on it ("it" being the "status" property of the service object). What are some ways to do this? Provide the answer as all letters applicable in alphabetical order comma separated with no spaces.
+13. You just used some sweet powershell skills to get the status of the "w32time" service. Now you want to invoke a method on it ("it" being the "status" property of the service object). What are some ways to do this? Provide the answer as all letters applicable in alphabetical order comma separated with no spaces.
 
     **A. (Get-service | where name -eq "w32time" | select status).<method name>()**  
     
@@ -931,7 +932,7 @@ B. Symbolic Link
     
     E. <object name> = Get-service | where name -eq "w32time" | select status <object name>.<method name>()
 
-13. You are writing a script and want to get ONLY the pid value of winlogon process:
+14. You are writing a script and want to get ONLY the pid value of winlogon process:
 
     A. ps winlogon | select processid
     
@@ -941,7 +942,7 @@ B. Symbolic Link
     
     D. (ps winlogon).processid
     
-14. You're on target, and run a tasklist... you find a task that is running a PS script. Inside the script you see this:
+15. You're on target, and run a tasklist... you find a task that is running a PS script. Inside the script you see this:
 
     `get-nettcpconnection | where-object {$_.state -eq "Listen"} | select name,instanceID,localaddress,localport,owningprocess,remoteaddress,remoteport  | format-list 
     | out-file \\tyrell\evilcorp\hit_these.txt`
@@ -956,7 +957,7 @@ B. Symbolic Link
     
     D. sending a list of listening ports on the target's box to a local file*
   
-15. You import a csv file using this command:
+16. You import a csv file using this command:
 
     `$csv_content = import-csv "C:\powershell\advanced_powershell\practice lab\section3\testfile.csv"`
     
@@ -969,3 +970,35 @@ B. Symbolic Link
     C. invoke-method csv_content -method-name ToString
     
     **D. $csv_content.ToString()**  
+
+### **Kernel and Registry**
+
+1. What is the executable that provides the fundamental kernel mechanisms? **ntoskrnl.exe**
+
+2. Which of the following are core kernel functions?
+
+    Format: Alphabetical list of letters, comma separated, no spaces (A,B,C)
+
+    A. I/O manager
+
+    B. Thread Scheduling
+
+    C. Event Tracing
+
+    D. Cache Manager
+
+    E. Interrupt Dispatching
+
+3. Which mode does OS code run in? **Kernel Mode**
+
+4. (T/F) Read-only pages can be written to in kernel mode. **F**
+
+5. You are using MS Paint to create a "high quality" Bill Gates meme to share with your fellow SEP friends. Which mode (user mode or kernel mode) would you expect the CPU to spend more time running in? **Kernel Mode**
+
+6. What are the five registry hives? **HKCC,HKCR,HKCU,HKLM,HKU**
+
+7. Which registry value type contains 32-bit numbers? **REG_DWORD**
+
+8. Write a CMD command to query the run subkey under HKLM. Use the full path to the key starting with HKLM\Software\Microsoft **reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Run**
+
+9. 
