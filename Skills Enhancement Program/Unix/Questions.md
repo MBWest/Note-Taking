@@ -1001,4 +1001,25 @@ B. Symbolic Link
 
 8. Write a CMD command to query the run subkey under HKLM. Use the full path to the key starting with HKLM\Software\Microsoft **reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Run**
 
-9. 
+9. You previously made a file called C:\Users\coolmeme.jpg using MS Paint, and now wish to remove evidence that you were slacking off. This file path is contained in the File1 value within the paint recent file list. Write a CMD command that will delete ONLY the value containing the evidence. **reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List" /v File1**
+
+    Use the full path to subkey beginning with a root key
+
+10. An administrator suspects that you spent your day making dank memes in MS Paint instead of working on a SEP quiz. They wish to use their forensic skills to see what files you have recently opened in Paint on your Windows 10 workstation. Which registry subkey should they look into? **HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List**
+
+    Format: Full path to subkey beginning with a root key
+
+### ***Command Shell and Filesystems***
+
+1. What two characters can be used at the end of most windows commands to get help? **/?**
+
+2. What windows command is used without arguments to list current environment variables? **set**
+
+3. What line can be placed at the top of a batch file to prevent printing commands as they are executed? **echo off**
+
+4. True or False: NTFS stores file timestamps in UTC **true**
+
+5. What WMI action obtains all details for a particular alias?
+
+6. What WMI alias is used for management of user account information? **useraccount**
+
