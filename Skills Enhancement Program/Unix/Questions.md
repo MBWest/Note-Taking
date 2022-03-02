@@ -714,3 +714,135 @@ B. Symbolic Link
 
     What network layer protocol does the filter accept?
     What transport layer protocol does the filter accept?
+
+## Security Concepts
+
+### **Security Products**
+
+1. Linux operating systems maintain access control via Discretionary Access Control (DAC) by default. What type of access control does SELinux enable? Enter either the full term or acronym. **MAC**
+
+2. What was the built-in antivirus that shipped with Windows 7? **Microsoft Security Essentials**
+
+3. Of the following choices, where is the best choice to place an IDS? Answer with the letter only.
+
+    A. Directly before your firewall on the outside of your network 
+    **B. Directly before your firewall on the inside of your network**
+    C. At each switch to capture all inter-host traffic in your network
+
+### **Metasploit**
+
+1. When using Kali Linux, where is the default path for metasploit usually located? **/usr/share/metasploit-framework**
+
+2. T/F In the scope of the the penetration testing lifecycle, are auxiliary modules nothing more than small pieces of code designed to do a specific task? **T**
+
+3. Based on the reading, how many factors go into selecting the proper exploit for the target? (1, 2, 3.. etc) **4**
+
+4. What module type in metasploit deals with obfuscation of attacks? **Encoders**
+
+5. What command in the Metasploit Framework functions like netcat? **Connect**
+
+6. What command in MSF is used to add, view, modify, or delete network routes? **route**
+
+7. If you want to set a global variable in MSF what command would you use? **setg**
+
+8. If you wanted to specifically retrieve the contents of a local variable in MSF, such as RHOST, what command would you use? **get**
+
+### **Exploitation Through Tunnels**
+
+1. T/F A reason to exploit though an SSH tunnel would be to attribute the attack to yourself. **f**
+
+2. When using metasploit to exploit a remote target whose IP address is 103.137.58.28 on port 137 that is at the end of an SSH forward tunnel you have set up to have a local port of 13701 on your ops station, what should the RPORT and RHOST of your exploit in MSF be? (answer in this format- RHOST:RPORT) **127.0.0.1:13701**
+
+3. Your op plan calls for you to trigger an implant that has been placed on a target machine which is designed to reach out to the IP address of the target network DMZ server. You have already established your reverse tunnel from the DMZ on port 1337 to your local machine on 13370. When you trigger the implant, what port should your handler be listening on? **13370**
+
+4. You have set up a last hop SSH tunnel using this command: ssh -p 3333 badguy@127.0.0.1 -L 4444:192.168.19.38:5600
+
+    When running an exploit through MSF, what should your RPORT and and RHOST be? (answer in this format- RHOST:RPORT) **127.0.0.1:4444**
+
+5. (T/F) Alongside SSH tunneling, metasploit can be used for privlage escalation via a target hosts internal ports. **T**
+
+6. (T/F) If triggering an implant that calls out to a specific port on your last hop machine, you do not need to route that traffic back to metasploit through a reverse tunnel and catch it with a handler. Metasploit will take care of that itself. **F**
+
+### **Shellcode, Backdoors, and Code Injection**
+
+1. The XOR operation is used when writing shellcode in order to remove what hex character from the actual executed code? (A,B,C..0,1,2, ect ) **0**
+
+2. When your exploit needs more memory space to execute than is available in the process, what type of shellcode is used to download more code in chunks to make sure the full attack is completed? **staged**
+
+3. You have accessed a target windows machine through rdesktop, you notice a brief flash of a command prompt window when you open a text document. When you check the netstat information after, you notice that there is a new netcat connection to an unknown IP. What sort of persistance method is this most likely? **Abusing Default File Associations**
+
+    `https://www.cynet.com/attack-techniques-hands-on/the-art-of-persistence/`
+
+4. On a linux target machine, you notice that every time you logon to bash a new connection to an unknown IP occurs. What file might cause this action? **.bashrc**
+
+5. You have triaged a persistance mechanisim on a linux host which waits for a specific series of ports to be sent a syn packet before opening a shell on port 1337. This is acomplished by a script run through the root crontab. What permission level does the spawned shell have? **root**
+
+6. What sort of attack will execute code when an unsuspecting user visits that web page? **Cross Site Scripting**
+
+7. What sort of attack leverages only knowledge of the underlying operating system behind a web application in order to execute code? This attack also requires manipulation of input to the web application. **Command injection**
+
+8. (T/F) Logging of code injection attacks is not a concern. **F**
+
+9. When attempting to perform command injection on a linux based webapp, you notice most commands you normally have access to do not seem to exist, and the directory structure seems very sparse and non standard. However you do seem to have the ability to interact with the OS. What security method may be stopping your attack efforts? **chroot**
+
+### **Malware, Botnets, and Rootkits**
+
+1. You are sniffing traffic on your network and see an overwhelming amount of TCP-SYN segments from different IP addresses targeting your external-facing web server. What type of attack is this? **ddos**
+
+2. You are looking at a process list on a linux box. You see that a process called "/usr/bin/itune" has spawned a child process titled "/bin/nc -lvp 1337." What type of malware is "/usr/bin/itune"? **trojan**
+
+3. You see that process A is writing to a file. You open that file, and see text, such as:
+
+        username
+        password
+        date -u
+        whoami
+        ps -eof
+
+    What kind of malware is program A? **keylogger**
+
+4. What sort of malware hides itself, and as a result, is the hardest to detect? **rootkit**
+
+5. You identify a process as suspicious. When looking further into this process, you notice that it spawns a copy of itself. This copy is then transfered to other hosts on the network via ftp. What sort of malware is at play? **worm**
+
+6. You receive an email with this sus message: Я испортил вашу сеть. Если вы хотите, чтобы все было в порядке, пришлите мне 20000 Doge. What sort of malware is at play here? **Ransomware**
+
+7. You access a linux box via netcat, port 4321. When you are on target, you get a process list, but don't see a netcat listener on port 4321. It appears that someone has modified the ps system binary, so that it hides the netcat listener in its output. What sort of rootkit is this indicative of? **user mode**
+
+8. What sort of rootkit modifies device drivers and the kernel? **kernel mode**
+
+9. Are rootkits necessarily malicious? **no**
+
+    yes or no?
+
+10. On their own, rootkits often: 
+
+    A. act as droppers
+    B. propagate through a network
+    **C. hide programs and processes**
+    **D. escalate privileges**
+    E. deny access to a server
+    **F. create backdoor(s) for persistent access**
+    G. come into effect at a certain time
+    
+    Answer with all letters, in alpabetical order comma separated with a space, like: A, B, C, D
+
+11. You are on a windows box. You get a process list and see this entry:
+
+    This is most likely:
+    
+    A. spyware
+
+    B. a worm
+
+    **C. a trojan**
+
+    D. ransomware
+
+    E. a rootkit
+
+    F. a keylogger
+    
+    G. adware
+
+    Answer with one letter.
