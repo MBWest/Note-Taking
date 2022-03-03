@@ -981,13 +981,13 @@ B. Symbolic Link
 
     A. I/O manager
 
-    B. Thread Scheduling
+    **B. Thread Scheduling**
 
     C. Event Tracing
 
     D. Cache Manager
 
-    E. Interrupt Dispatching
+    **E. Interrupt Dispatching**
 
 3. Which mode does OS code run in? **Kernel Mode**
 
@@ -1096,9 +1096,9 @@ Provide flags/arguments in the following order: target IP, username, password, o
 
 5. What registry key contains the machine SID? Provide the registry key with abbreviated hive (HKLM, HKCU, HKU, etc) and backslashes. **HKLM\SECURITY\SAM\Domains\Account**
 
-6. You have harvested the value 9EA7F390492EBADED8956C55 from the V value of the registry key HKLM\SECURITY\SAM\Domains\Account. Decode this value and provide the resulting machine SID.
+6. You have harvested the value 9EA7F390492EBADED8956C55 from the V value of the registry key HKLM\SECURITY\SAM\Domains\Account. Decode this value and provide the resulting machine SID. **S-1-5-21-2431887262-3736743497-1433179608**
 
-    NOTES:
+    **NOTES**:
     - The machine SID is stored in a raw-bytes form in the registry. To convert it into the more common numeric form, one interprets it as three little endian 32-bit integers, converts them to decimal, and add hyphens between them.
 
     |Example  |2E,43,AC,40,C0,85,38,5D,07,E5,3B,2B  |
@@ -1107,4 +1107,79 @@ Provide flags/arguments in the following order: target IP, username, password, o
     | 2) Reverse the order of bytes in each section: | 40,AC,43,2E - 5D,38,85,C0 - 2B,3B,E5,07 |
     | 3) Convert each section into decimal: | 1085031214 - 1563985344 - 725345543 |
     | 4) Add the machine SID prefix: | S-1-5-21-1085031214-1563985344-725345543 |
+
+    **Question**:
+    |Question |9E,A7,F3,90,49,2E,BA,DE,D8,95,6C,55  |
+    |--|--|
+    | 1) Divide the bytes into 3 sections: | 9E,A7,F3,90 - 49,2E,BA,DE - D8,95,6C,55  |
+    | 2) Reverse the order of bytes in each section: | 90,F3,A7,9E - DE,BA,2E,49 - 55,6C,95,D8 |
+    | 3) Convert each section into decimal: | 2431887262 - 3736743497 - 1433179608 |
+    | 4) Add the machine SID prefix: | **S-1-5-21-2431887262-3736743497-1433179608**|
+
+### **Active Directory**
+
+1. What is the lowest-level object in Active Directory that you can delegate authority to? **ou**
+
+2. What is the Active Directory term for a group of IP subnets connected at high speed? I.E. co-located at the same physical location? **site**
+
+3. In cmd.exe, what command can be used to gather information about computers in a domain?
+
+4. What Powershell cmdlet can be used to add an Active Directory user? **New-ADUser**
+
+### **Permissions and ACLs**
+
+1. What windows command is used to review ACLs? **CACLS**
+
+2. What basic NTFS permission grants all permissions to a user or group? **full control**
+
+3. You have created a new folder on your Windows 7 desktop. You run icacls and find that the new folder is already populated with permissions in its ACL. Are these permissions inherited or explicit? **inherited**
+
+4. Provide a command using icacls that grants only read and write permission to the directory C:\share\docs for the user "sep". **icacls C:\share\docs /grant sep:(R,W)**
+
+### **Windows Firewall**
+
+1. Windows Firewall was first available in Windows **XP**.
+
+2. Windows Firewall uses `profiles` to determine firewall behavior. Which profile is most likely to be in use by a laptop connected to public wifi? **public**
+
+3. What netsh command would you use to view the current firewall profile configuration on a Windows 7 host? **netsh advfirewall show currentprofile**
+
+4. How would you turn off the firewall on a Windows XP host using netsh? **netsh firewall set opmode disable**
+
+### **Auditing**
+
+1. What command is used to discover which users are being audited? **AuditPol /List /User**
+
+2. What command is used to determine how user "Edna" is being audited? **auditpol /get /user:Edna /category:***
+
+3. What command is used to determine how a user is being audited? (use `"<username>"` in the flag) **auditpol /get /user:<username> /category:***
+
+4. What command do you use to list basic auditing categories? **auditpol /list /category**
+
+5. How would you list all auditpol categories, and their correlating subcategories: **auditpol /list /subcategory:***
+
+6. How do you use auditpol to get the SID for user "Ned"? **auditpol /list /user:ned /v**
+
+7.
+
+8.
+
+### **Windows Protection Mechanisms**
+
+1. Which of the following is protected by both Windows Resource Protection and Windows File Protection? **Files**
+
+    Enter one of the following:
+
+    Files
+    Folders
+    Registries
+
+2. True or false: In Windows 10, ASLR randomizes the location of important DLLs in memory. **TRUE**
+
+3. True or false: Applications cannot run code from the default process stack but still can run code from the default process heap when DEP is enabled. **FALSE**
+
+4. To accomplish a Windows Resource Protection scan, what command line syntax should be used? **sfc /scannow**
+
+
+
 
