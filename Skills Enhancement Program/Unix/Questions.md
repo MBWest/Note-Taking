@@ -1160,9 +1160,9 @@ Provide flags/arguments in the following order: target IP, username, password, o
 
 6. How do you use auditpol to get the SID for user "Ned"? **auditpol /list /user:ned /v**
 
-7.
+7. What command do you use to list GUID's for all audit policy categories? 
 
-8.
+8. 
 
 ### **Windows Protection Mechanisms**
 
@@ -1179,7 +1179,3 @@ Provide flags/arguments in the following order: target IP, username, password, o
 3. True or false: Applications cannot run code from the default process stack but still can run code from the default process heap when DEP is enabled. **FALSE**
 
 4. To accomplish a Windows Resource Protection scan, what command line syntax should be used? **sfc /scannow**
-
-
-
-
