@@ -1122,7 +1122,7 @@ Provide flags/arguments in the following order: target IP, username, password, o
 
 2. What is the Active Directory term for a group of IP subnets connected at high speed? I.E. co-located at the same physical location? **site**
 
-3. In cmd.exe, what command can be used to gather information about computers in a domain?
+3. In cmd.exe, what command can be used to gather information about computers in a domain? **dsquery computer**
 
 4. What Powershell cmdlet can be used to add an Active Directory user? **New-ADUser**
 
