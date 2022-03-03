@@ -1092,7 +1092,7 @@ Provide flags/arguments in the following order: target IP, username, password, o
 
 3. What user account is associated with the SID S-1-5-21-2431887262-3736743497-1433179608-502? **krbtgt**
 
-4. What WMI alias can be used to get SIDs for users?
+4. What WMI alias can be used to get SIDs for users? **useraccount**
 
 5. What registry key contains the machine SID? Provide the registry key with abbreviated hive (HKLM, HKCU, HKU, etc) and backslashes. **HKLM\SECURITY\SAM\Domains\Account**
 
@@ -1160,9 +1160,9 @@ Provide flags/arguments in the following order: target IP, username, password, o
 
 6. How do you use auditpol to get the SID for user "Ned"? **auditpol /list /user:ned /v**
 
-7. What command do you use to list GUID's for all audit policy categories? 
+7. What command do you use to list GUID's for all audit policy categories? **AuditPol /List /Category /V**
 
-8. 
+8. For user "Milhouse," what command would you use to add auditing for failure to logon locally? **auditpol /set /user:Milhouse /subcategory:"logon" /include /failure:enable**
 
 ### **Windows Protection Mechanisms**
 
