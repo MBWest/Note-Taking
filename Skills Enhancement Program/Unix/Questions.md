@@ -1085,3 +1085,26 @@ Provide flags/arguments in the following order: target IP, username, password, o
 6. What is the hex suffix of NetBIOS names for the domain master browser? Answer with a two-digit hex number like 0x00 **ox1B**
 
 ### Users and SIDs
+
+1. What is the RID in the SID S-1-5-21-2431887262-3736743497-1433179608-1001? **1001**
+
+2. What is the default RID of the built-in administrator account? **500**
+
+3. What user account is associated with the SID S-1-5-21-2431887262-3736743497-1433179608-502? **krbtgt**
+
+4. What WMI alias can be used to get SIDs for users?
+
+5. What registry key contains the machine SID? Provide the registry key with abbreviated hive (HKLM, HKCU, HKU, etc) and backslashes. **HKLM\SECURITY\SAM\Domains\Account**
+
+6. You have harvested the value 9EA7F390492EBADED8956C55 from the V value of the registry key HKLM\SECURITY\SAM\Domains\Account. Decode this value and provide the resulting machine SID.
+
+    NOTES:
+    - The machine SID is stored in a raw-bytes form in the registry. To convert it into the more common numeric form, one interprets it as three little endian 32-bit integers, converts them to decimal, and add hyphens between them.
+
+    |Example  |2E,43,AC,40,C0,85,38,5D,07,E5,3B,2B  |
+    |--|--|
+    | 1) Divide the bytes into 3 sections: | 2E,43,AC,40 - C0,85,38,5D - 07,E5,3B,2B |
+    | 2) Reverse the order of bytes in each section: | 40,AC,43,2E - 5D,38,85,C0 - 2B,3B,E5,07 |
+    | 3) Convert each section into decimal: | 1085031214 - 1563985344 - 725345543 |
+    | 4) Add the machine SID prefix: | S-1-5-21-1085031214-1563985344-725345543 |
+
