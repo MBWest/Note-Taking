@@ -1019,7 +1019,69 @@ B. Symbolic Link
 
 4. True or False: NTFS stores file timestamps in UTC **true**
 
-5. What WMI action obtains all details for a particular alias?
+5. What WMI action obtains all details for a particular alias? **list**
 
 6. What WMI alias is used for management of user account information? **useraccount**
 
+7. What option is used in a PsExec command to run the remote process in the System account? **-s**
+
+### **Boot and Logon**
+
+1. In a BIOS Windows 7 system, what executable is the operating system loader that is responsible for loading the kernel? Provide only the filename. **winload**
+
+2. In Windows Vista+, boot configurations are maintained in the BCD. What plain text file in Windows XP contains the boot configurations? Provide the file name and extension only. **boot.ini**
+
+3. What is the process name in Windows that is responsible for verifying credentials on login? This process also hosts the Local Security Authority. **lsass**
+
+4. By default, the ______ is Ctrl+Alt+Del. No application can intercept this or prevent Winlogon from receiving it. **SAS**
+
+5. Provide the command to enumerate the boot configuration of a system using BCD. **BCDEdit /enum**
+
+### **Windows Process**
+
+1. What switch for the TaskList command can control the output format? Provide only the switch. **FO**
+
+2. What TaskList filter can be used to filter processes by loaded dlls? Provide only the filter name (not the switch). **MODULES**
+
+3. What TaskList filter can be used to filter processes based on filename? Provide only the filter name (not the switch). **IMAGENAME**
+
+4. Provide a pslist command that shows process information including thread and memory detail for only PID 2330. **pslist -x 2330**
+
+5. Provide a pslist command to show all processes on 192.168.10.10 in tree format. The login to this machine is user1/pass1.
+Provide flags/arguments in the following order: target IP, username, password, other options. **pslist \\192.168.10.10 -u user1 -p pass1 -t**
+
+6. Using Sysinternals listdlls utility, provide a command to list processes that have loaded mscvr.dll. **listdlls -d mscvr.dll**
+
+7. In the PE file format, what is the Machine Type value for IMAGE_FILE_MACHINE_AMD64? This indicates that an image file is intended for the x64 CPU type. Provide the answer as a 4-digit hexadecimal prefixed with 0x. **0x8664**
+
+    Resource - https://docs.microsoft.com/en-us/windows/win32/debug/pe-format
+
+8. At what offset in the COFF File Header is the TimeDateStamp field located? Provide the number only. **4**
+
+    Resource - https://docs.microsoft.com/en-us/windows/win32/debug/pe-format
+
+### **Windows Services**
+
+1. Provide the command with sc that gets the current status of the WinRM service. **sc query WinRM**
+
+2. Provide the command with sc to obtain the binary path of the SamSs service. **sc qc SamSs**
+
+3. What psservice command parameter can be used to set the start type of a service? **setconfig**
+
+4. What psservice command parameter can be used to show services dependent of the one specified? **depend**
+
+### **Networking and Name Resolution**
+
+1. What is the default port for SMB? **445**
+
+2. What is the default port for NetBIOS session services? **139**
+
+3. What Windows netstat option displays associated executable names? **-b**
+
+4. What Windows netstat option displays the current routing table? **-r**
+
+5. True or False: When resolving a name, Windows will perform a local NetBIOS broadcast request before contacting the configured DNS server. **True**
+
+6. What is the hex suffix of NetBIOS names for the domain master browser? Answer with a two-digit hex number like 0x00 **ox1B**
+
+### Users and SIDs
