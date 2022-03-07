@@ -1,6 +1,6 @@
 # apropos
 
-apropos [OPTION..] KEYWORD...
+`apropos [OPTION..] KEYWORD...`
 
 - **apropos *compress***- Suppose you don’t know how to compress a file then you could type the following command in terminal and it will show all the related command and its short description or functionality.
 
