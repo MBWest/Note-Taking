@@ -30,3 +30,11 @@ Subnet Guide: https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/
 |Class C |255.255.255.x||||||||
 |CIDR |/25|/26|/27|/28|/29|/30|/31|/32|  
 |Hosts |128|64|32|16|8|4|2|1|  
+|Subnet mask (Replace x)|128|192|224|240|248|252|254|255|
+
+
+        Notes:
+        - Host double each increment of CIDR
+        - Always subtract 2 from host total:
+            - Network ID - First Address
+            - Broadcast - Last Address
