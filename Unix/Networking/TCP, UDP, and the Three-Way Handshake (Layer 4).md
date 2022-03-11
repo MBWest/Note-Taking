@@ -1,5 +1,7 @@
-## TCP vs UDP
-### TCP
+# TCP vs UDP
+
+## TCP
+
 **Transmission Control Protocol**
 - Connection oriented protocol
 - **Example** - SSH, FTP and HTTP/HTTPS
@@ -9,7 +11,9 @@
 	- Send out - **SYN** packet
 	- Receive - **SYN/ACK** packet 
 	- Send out - **ACK** packet
-### UDP
+
+## UDP
+
 **User Datagram Protocol**
 - Connectionless protocol
 - Streaming services 

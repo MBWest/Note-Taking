@@ -1,4 +1,4 @@
-## MAC Addresses
+#  MAC Addresses
 - *Stands for Media Access Control*
 - MAC Addresses is a Layer 2 protocol
 	- Switches communicate over Layer 2 (physical addresses)
@@ -6,6 +6,6 @@
 
 ## Linux
 
-#### Command
+### Command
 
 **ifconfig** - Your *ether* is your MAC address (Physical address)

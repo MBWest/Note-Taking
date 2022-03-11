@@ -1,5 +1,6 @@
-## Common Ports
-### TCP
+#  Common Ports
+
+## TCP
 - **FTP** (21)
 - **SSH** (22)
 - **Telnet** (23)
@@ -9,7 +10,9 @@
 - **POP3** (110)
 - **SMB** (139 +445)
 - **IMAP** (143)
-### UDP
+
+## UDP
+
 - **DNS** (53)
 - **DCHP** (67, 68)
 - **TFTP** (69)

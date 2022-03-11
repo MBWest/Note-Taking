@@ -1,4 +1,4 @@
-## The OSI Model
+# The OSI Model
 
  1. **Physical** - Data Cables (Cat6
  2. **Data**- Switching, MAC Addresses

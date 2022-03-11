@@ -1,1 +1,0 @@
-The Real Hackers Handbook (Fourth Edition) by Dr. K
