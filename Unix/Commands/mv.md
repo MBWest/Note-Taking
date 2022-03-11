@@ -5,4 +5,4 @@
 		- Will move the app.css file into the styles directory
 - **mv *fileone filetwo filethree destination/*** - Moves multiple files into one directory
 - **mv *folderone/ foldertwo/*** - Moves the first directory into the second directory
-	- If *foldertwo/* does not exist it will rename *folderone/* into foldertwo/
+	- If *foldertwo/* does not exist it will rename *folderone/* into *foldertwo/*
