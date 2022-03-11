@@ -1,5 +1,3 @@
 # ifconfig
 
-**ifconfig is considered to be deprecated**
-
-- **ifconfig** - Shows interfaces
+- **ifconfig** - Lists the basic interface information

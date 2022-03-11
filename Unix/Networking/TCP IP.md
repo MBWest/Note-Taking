@@ -5,6 +5,8 @@
 - **IP** - Internet Protocol
     - Sends data from one device to another
 - **Hosts** - Devices on a network that have an IP address
+    - **hostname** - Human-readable name for an IP address
+        - *Example* > webprod01 = 10.109.155.174 
 
 ## IP Address
 

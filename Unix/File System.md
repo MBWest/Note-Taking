@@ -73,3 +73,17 @@
 - **/var/log/lastlog** - log of last boot process
 - **/var/log/messages** - log of messages produced by syslog daemon at boot
 - **/var/log/wtmp** - list login time and duration of each user on the system currently
+
+## Soft Links
+
+- Can Cross the file system
+- Allows you to link between directories
+- Has different inodes number and file permissions than original file
+- Permissions will not be updated
+
+## Hard Links
+
+- Cant cross the file system
+- Cant link directories
+- Has the same inodes number and permissiosn of original file
+- Permissions will be updated if we change the permissions of source file
