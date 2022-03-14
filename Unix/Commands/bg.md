@@ -1,4 +1,4 @@
-# &
+# bg
 
 ***Syntax*** - bg [job_id...]
 
