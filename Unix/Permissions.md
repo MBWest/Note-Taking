@@ -1,5 +1,9 @@
 # Permissions
 
+## Terminal
+- If you are logged into the system as a normal user the command prompt will end in a **dollar sign ($)**
+- If you are logged into the system as a normal user the command prompt will end in a **pound sign (#)**
+
 ## Groups
 
 On Unix systems, a single user may be the owner of files and directories, meaning that they have control over their access. 
