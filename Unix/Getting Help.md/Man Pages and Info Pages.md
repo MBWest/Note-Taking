@@ -41,3 +41,18 @@ Built-in form of documentation available on nearly all UNIX-like operating syste
 6. Games
 7. Miscellaneous
 8. System Admin Commands
+
+# Info Pages
+
+## What are Info Pages
+Intended to be a replacement for man pages
+
+## Navigating and Searching a Info Page
+
+- **info *command*** - Opens the info page for a command
+
+# Dash Dash Help
+Many commands utilize a ***--help*** switch that provides usage information that in built into the command
+
+## Examples
+- **ls --help** - Displays the help page for the ls command

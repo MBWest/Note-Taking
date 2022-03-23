@@ -1,6 +1,7 @@
 # Permissions
 
 ## Terminal
+
 - If you are logged into the system as a normal user the command prompt will end in a **dollar sign ($)**
 - If you are logged into the system as a normal user the command prompt will end in a **pound sign (#)**
 
