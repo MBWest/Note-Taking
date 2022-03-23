@@ -4,7 +4,8 @@ By default the **find** command will list every single file and directory nested
 - *Example* > find friends/
 	- Print all the files and directories inside the friends directory, including nested folders
 
-**Options**
+## Options
+
 - **-type f** - Will limit searches to files
 - **-type d** - Will limit searches to directories
 - **-name "*.txt"*** - Will limit searches to files with *.txt* at the end
@@ -27,12 +28,12 @@ Without these modifiers at the beggining of your numbers to specify less-than (*
 - **find -amin *number*** - Find by accessed time
 - **find -cmin *number*** - Find by changed time
 
-**Types of Timestamps**
+### Types of Timestamps
 - **mtime**, or modification time, is when a file was last modified AKA when its contents last changed. This is the default time shown when running *'ls -l'*.
 - **ctime**, or change time, is when a file was last changed. This occurs anytime mtime changes but also when we rename a file, move it, or alter permissions. To see change time us the *'ls -lc'* command. 
 - **atime**, or access time, is updated when a file is read by an application or a command like cat.To see access time us the *'ls -lu'* command. 
 
-**Modifying Time Stamps Using the Touch Command**
+### Modifying Time Stamps Using the Touch Command
 - **-d** - Allows you to create a file and specify the timestamp
 	- *Example* > touch *filename* -d "1 week ago"
 		- Creates a file and sets mtime of the file to exactly 1 week ago
@@ -55,3 +56,7 @@ The syntaxx is **find -exec *command* {} ;**
 	- Find all the empty files in my home directory and run the ls -l command against each item found
 - *Example* > find -type f -name "*.html" -exec cp '{}' '{}_COPY' ';'
 	- Finds all files that end with .html. Then creates a copy of each using the cp command.
+
+## Examples
+
+- **find . -name 'file*.txt'** - Find all files with the pattern denoted in the 'pattern' from the current directory and all sub directories. 
