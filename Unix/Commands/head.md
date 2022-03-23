@@ -1,5 +1,10 @@
 # head
 
+## Format
+
+head [filename]
+
+## Examples
 - **head *filename*** - Prints a portion of a file starting at the beginning of the file (Default 10 lines)
 - **head -n 21 *filename*** - Prints the first 21 lines of the file
 	- **--lines 21** - Equal to *-n 21*

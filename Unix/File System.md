@@ -1,5 +1,11 @@
 # File System
 
+## Spaces in Paths and Filenames
+
+Spaces in filenames and Paths can cause problems when trying to open files or folders. Use a `\` in front of the space to have the system treat the space as part of the arguement. 
+- **cat file\ name.txt** - Opens the 'file name.txt' file
+    - The alternative is to place the entire name in quotes ("file name.txt")
+
 **Official Filesystem Hierarchy Standard:** https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
 
 ## Descriptions
