@@ -24,4 +24,5 @@
         36K    /home/tcarrigan/article_submissions/community_content
         48K    /home/tcarrigan/article_submissions/
         48K    total
+        
 - **-X, --exclude=Pattern** - Excludes filetypes from your calculations
