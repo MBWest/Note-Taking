@@ -2,6 +2,11 @@
 
 **Official Filesystem Hierarchy Standard:** https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
 
+## Descriptions
+
+**Man Page**
+- **man hier** - Description of the filsystem hierarchy
+
 - **/boot** - Holds important files during boot-up process, including Linux Kernel
 - **/root** - This is the home directory of root user and should never be confused with ‘/‘
 - **/dev** - Contains device files for all the hardware devices on the machine e.g., cdrom, cpu, etc
