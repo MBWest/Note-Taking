@@ -8,6 +8,20 @@ Spaces in filenames and Paths can cause problems when trying to open files or fo
 
 **Official Filesystem Hierarchy Standard:** https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
 
+## Soft Links (see ln.md)
+
+- Can cross the file systems
+- Allows you to link between directories
+- Has different inodes number and file permissions than original file
+- Permissions will not be updated
+
+## Hard Links (see ln.md)
+
+- Cant cross the file system
+- Cant link directories
+- Has the same inodes number and permissiosn of original file
+- Permissions will be updated if we change the permissions of source file
+
 ## Descriptions
 
 **Man Page**
@@ -87,16 +101,4 @@ Spaces in filenames and Paths can cause problems when trying to open files or fo
 - **/var/log/messages** - log of messages produced by syslog daemon at boot
 - **/var/log/wtmp** - list login time and duration of each user on the system currently
 
-## Soft Links
 
-- Can Cross the file system
-- Allows you to link between directories
-- Has different inodes number and file permissions than original file
-- Permissions will not be updated
-
-## Hard Links
-
-- Cant cross the file system
-- Cant link directories
-- Has the same inodes number and permissiosn of original file
-- Permissions will be updated if we change the permissions of source file
