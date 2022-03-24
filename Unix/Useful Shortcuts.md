@@ -13,5 +13,4 @@
 - **Kill the text from the cursor until the beginning of the line** - Ctrl-u
 - **Kill the text from the cursor through the end of the word** - Alt-d
 - **Kill the text from the current cursor through the beginning of the word** - Ctrl-w or alt-delete
-- **Kill-ring**
-	- Words killed are temporarly stored in the kill-ring and can be brought back using **Ctrl-y**
+- **Kill-ring**	- Words killed are temporarly stored in the kill-ring and can be brought back using **Ctrl-y**
