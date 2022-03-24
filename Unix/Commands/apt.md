@@ -1,10 +1,17 @@
 # Apt
 
+- Copy files and set attributes
 - Search for and install software packages (Debian/Ubuntu).
 - apt is a subset of the most commonly used apt-get and apt-cache(8) commands, use apt-get for more the low-level package management options.
 
-## options
+## Format
 
+install [OPTION]... [-T] SOURCE DEST
+install [OPTION]... SOURCE... DIRECTORY
+install [OPTION]... -t DIRECTORY SOURCE...
+install [OPTION]... -d DIRECTORY...
+
+## options
 
 | Apt Option  | Description  | Apt-Get Equivalent  |
 |--|--|--|
@@ -17,3 +24,15 @@
 |update | Resynchronize the package index files from their sources. | apt-get update  |
 |upgrade | Install the newest versions of all packages currently installed on the system from the sources enumerated in etc/apt/sources.list. New packages will be installed, but existing packages will never be removed. | apt-get upgrade |
 |full‑upgrade | Perform the function of upgrade but may also remove installed packages if that is required in order to resolve a package conflict. | apt‑get dist‑upgrade |
+
+## Examples
+
+- **apt update** - Ensures the sysetm has the most up to date information
+    - Should be ran with `sudo`
+- **apt upgrade** - Installs new dependecies and programs
+- **apt install pdftk** - Installs the PDF viewer tool (pdftk)
+- **apt search pdftk** - Searches the repositories for the pdftk tool
+- **apt show pdftk** - Check information about a packet before installing it
+- **apt remove pdftk** - Removes the pdftk application, leaving the dependecies that were installed alongside it
+- **apt purge pdftk** - Removes configuration files that were instealled alongside the tool
+- **apt autoremove** - Removes dependencies that tools and applications left behind after uninstalling

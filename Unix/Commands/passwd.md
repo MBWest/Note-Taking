@@ -9,7 +9,8 @@ passwd [options] [LOGIN]
 
 ## Examples
 
-- **passwd** - Prompts the user to enter a new password. This will change the current password
+- **passwd** - Prompts the user to enter a new password. This will change the current users password
+- **sudo passwd sally** - Promts the user to enter a new Password. This will change sally's passwod
 
 ## Files
 
