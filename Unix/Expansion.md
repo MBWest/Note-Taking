@@ -47,7 +47,7 @@ If you wrap text in a double quote ("wrapped"), the shell will respect spacing a
 
 If you wrap text in a single quote ('wrapped') you will suppress all forms of subsitution. 
 
-## Command Substitution]
+## Command Substitution
 
 You can use the **$(command)** syntax to dispay the output of another command
 - *Example* > echo "today is $(date)"
@@ -55,7 +55,12 @@ You can use the **$(command)** syntax to dispay the output of another command
 - You can use the `command` syntax to dispay the output of another command
 - *Example* > echo today is `date`
 	- This will echo out to the terminal "today is Thu 01 May 2021 03:10:31 PM PDT"
+- *Example* > ls -l `cat file-list.txt`
+	- The shell will execute what is inside the back ticks (`) first and send that output to the command outside the back ticks (This is the same as the **$(command)**)
 
+### Resources
+
+**Bash manual section on command substitution:** https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html
 
 ## Arithmetic Expansion
 
