@@ -36,7 +36,7 @@ To pass contents of a file to standard input use the (**<**) symbol followed by 
 
 ## Redirecting Standard Input and Output at the Same Time
 
-- *Example* > cat **<** original.txt *>* output.txt
+- *Example* > cat < original.txt > output.txt
 
 ## Redirecting Standard Error (2>)
 
@@ -44,6 +44,12 @@ By default, error messages are output top the screen. The standard error redirec
 - *Example* > ls notrealfolder 2> errorlog.txt
 	- Redirects the error text to the errorlog.txt file
 
-## Redirecting Standard Output and Error at the Same Time (&>)
+### 2> /dev/null
+
+In linux the /dev/null is like a blackhole. Send errors here if you dont wish to view them at a later date. 
+	- *Example* > find / -name 'sample.txt' 2> /dev/null
+
+## Redirecting Standard Output and Standard Error at the Same Time (&>)
 
 Newer versions of bash allow for (&>) to redirect both standard output and standard error to the same file
+	- *Example* > find / -name 'sample.txt' &> all.txt
