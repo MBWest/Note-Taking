@@ -20,3 +20,20 @@
 - **Arguments** - Values that we give to a command to work with or operate on
 	- *Example* > ncal 1999
 	- *Example* > ncal april 1999
+
+## Alias
+
+### Format
+
+alias name=`value`
+
+### Examples
+
+- **alias ll=`ls -alF`** - Typing 'll' into the command line will instead execute the `value` listed
+- **alias del=`rm -rfi`** - Typing 'del' into the command line will instead execute the `value` listed
+	- This alias is common for individuals to manually add to force the command prompt to ask if you want to delete a file
+- **alias c=`clear`** -Typing 'c' into the command line will instead execute the `value` listed
+
+### .bsahrc
+
+When updating the .bashrc file with alias' you must run `source .bashrc` command if you want the current shell to recognize the new alias`
