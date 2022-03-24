@@ -1,7 +1,7 @@
 # chmod
 
 - **chmod** - To change the permissions of a file or directory, we can use the chmod command
-	- To use chmod to alter permissions we need to tell it: ***Who, What, Which***
+	- To use chmod in symbolic mode to alter permissions we need to tell it: ***Who, What, Which***
 		- *Who:*
 			- **u** - User (The owner of the file)
 			- **g** - Group (Members of the group the file belongs to)
@@ -15,13 +15,20 @@
 			- **r** - The read permissions
 			- **w** - The write permissions
 			- **x**- The execute permissions
-	*Examples:*
+	***Examples:***
+	**Remove all permissions for all users**
+	chmod a= hello.txt
 	**Add write permissions to the group**
 	chmod g+w file.txt
 	**Remove write permissions from all**
 	chmod a-w file.txt
 
 - **chmod octals** - Chmod also supports octal number (base 8). Each digit in an octal number represents 3 binary digits
+
+|R  | W  | X  |
+|--|--|--|
+| 2^2| 2^1 |2^0 |
+|  4| 2 | 1 |
 
 |Octal  | Binary  | File Mode  |
 |--|--|--|
