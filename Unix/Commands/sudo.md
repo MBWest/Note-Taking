@@ -1,5 +1,7 @@
 # sudo 
 
+execute a command as another user
+
 - **sudo** - Execute a command as another user or root
 	- *Example* >  sudo -l
 		- Shows all commands that the current user can run as the super user
