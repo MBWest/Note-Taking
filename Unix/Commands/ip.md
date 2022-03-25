@@ -1,17 +1,18 @@
-# ip address or ip a
+# ip
 
-**ip address can be shortened**
-- **ip addr** = ip a
-- **ip address show** = ip a s
+## addr (Similar to ifconfig)
 
-## Similar to ifconfig
+Display IP Addresses and property information
 
-- **ip a** - Lists the basic interface information
+- **ip addr** - Lists the basic interface information
+- **ip addr show dev en1** - Display information only for device en1
 
-## Similar to arp
+## neigh (Similar to arp)
 
-- **ip n** - Shows the IP addresses the computer talks to and the MAC addresses that is associated with it
+- **ip neigh** - Shows the IP addresses the computer talks to and the MAC addresses that is associated with it
 
-**Similar to route**
+## route (Similar to route)
 
-- **ip r** - Shows where the traffic is exiting the computer
+- **ip route** - Shows where the traffic is exiting the computer
+
+## link
