@@ -19,6 +19,7 @@ The **grep** command searches for patterns in each file's content. **Grep** will
 - **-B** - Gives x number of lines before each pattern found
 - **-C** - Gives x number of lines before and after each pattern found
 - **-E** - Same as using egrep
+- **-v** - Show all results that do not match the specified pattern
 
 ## Grep and Regular Expressions
 
@@ -35,11 +36,11 @@ The **grep** command searches for patterns in each file's content. **Grep** will
 
 ## Examples
 
-- **grep bob wordlist.txt** - 
-- **grep -v e wordlist.txt | less** - 
-- **grep error /var/log/*.log** - 
-- **grep error -A 1 -B 3 /var/log/*.log** - 
-- **grep -v e random-words.txt** - 
-- **grep -v e random-words.txt | sort** - 
-- **grep -v e random-words.txt | sort | uniq** - 
-- **grep -v e random-words.txt | sort | uniq | wc -l** - 
+- **grep bob wordlist.txt** - Searches through the wordlist.txt file for any string that matches the pattern 'bob'
+- **grep -v e wordlist.txt | less** -  Searches through the wordlist.txt for words without the letter 'e' and pipes the results to the less command
+- **grep error /var/log/*.log** - Searches multiple files for the pattern 'error'
+- **grep error -A 1 -B 3 /var/log/*.log** - Searches multiple files for the pattern 'error', also shows you 1 line aftern the match and 3 lines before the match
+- **grep -v e random-words.txt** - Searches through the wordlist.txt for words without the letter 'e' 
+- **grep -v e random-words.txt | sort** - Searches through the wordlist.txt for words without the letter 'e', then pipes the results to the sort command to have the results appear alphabetically
+- **grep -v e random-words.txt | sort | uniq** - Searches through the wordlist.txt for words without the letter 'e', then pipes the results to the sort command to have the results appear alphabetically, then pipes the results to the uniq q command to remove any adjacent duplicate lines
+- **grep -v e random-words.txt | sort | uniq | wc -l** - Searches through the wordlist.txt for words without the letter 'e', then pipes the results to the sort command to have the results appear alphabetically, then pipes the results to the uniq command to remove any adjacent duplicate lines, then pipes the results the wordcount (wc) command with the -l options to only show the count of lines
