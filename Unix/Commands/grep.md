@@ -44,3 +44,6 @@ The **grep** command searches for patterns in each file's content. **Grep** will
 - **grep -v e random-words.txt | sort** - Searches through the wordlist.txt for words without the letter 'e', then pipes the results to the sort command to have the results appear alphabetically
 - **grep -v e random-words.txt | sort | uniq** - Searches through the wordlist.txt for words without the letter 'e', then pipes the results to the sort command to have the results appear alphabetically, then pipes the results to the uniq q command to remove any adjacent duplicate lines
 - **grep -v e random-words.txt | sort | uniq | wc -l** - Searches through the wordlist.txt for words without the letter 'e', then pipes the results to the sort command to have the results appear alphabetically, then pipes the results to the uniq command to remove any adjacent duplicate lines, then pipes the results the wordcount (wc) command with the -l options to only show the count of lines
+- **grep www1-google-analytics.com access.log | head -n 1**
+	- **grep www1-google-analytics.com access.log** - extract lines that contain the string www1-google-analytics.com.
+    - **head -n 1** - only show the first line of output
