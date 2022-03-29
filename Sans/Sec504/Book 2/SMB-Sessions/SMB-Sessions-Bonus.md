@@ -190,7 +190,7 @@ Explore the contents of the files on the share to retrieve Eleanor Rigby's passw
     ww.gofundme.com"}]},"createdAt":1563194790,"typeName":"webforms.WebForm"}
     ***5642bee8-a5ff-11dc-8314-0800200c9a66***
 
-Terminate the Container
+**Terminate the Container**
 
 At the end of the exercise, return to the terminal window where you ran gosmbtgt and press CTRL+C to terminal the container instance.
 
