@@ -16,3 +16,11 @@ https://cuckoosandbox.org/
 
 https://infosecwriteups.com/memory-analysis-ransomware-blueteamlabs-f49765cd5b9c
 
+## Pizza as a Service
+
+https://miro.medium.com/max/1400/1*bl4PsuSnNz7xHpri5uqaow.jpeg
+
+## FedRAMP
+
+https://www.fedramp.gov/
+
