@@ -28,3 +28,15 @@ https://www.fedramp.gov/
 
 https://www.spiderfoot.net/
 
+## CWE -  Common Weakness Enumeration
+
+cwe.mitre.org
+
+Common Weakness Enumeration (CWE) is a list of software and hardware weaknesses
+
+
+## MITRE EngenuityMITRE Engenuity
+
+https://mitre-engenuity.org/mad/
+
+ATT&CK Training and Certification - MITRE ATT&CK Defender (MAD)
