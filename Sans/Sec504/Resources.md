@@ -39,4 +39,5 @@ Common Weakness Enumeration (CWE) is a list of software and hardware weaknesses
 
 https://mitre-engenuity.org/mad/
 
-ATT&CK Training and Certification - MITRE ATT&CK Defender (MAD)
+ATT&CK Training and Certification - MITRE ATT&CK Defender (MAD) 
+
