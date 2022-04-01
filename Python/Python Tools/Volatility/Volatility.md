@@ -20,7 +20,7 @@
 - **pslist**: Display process information using conventional memory analysis in a tree form
 - **pstree**: Display process information using conventional memory analysis in a tree form
 - **psscan**: Display process information using non-conventional memory analysis (possibly identifying
-detection evasion techniques)
+detection evasion techniques). Can find information about listening sockets that have been closed. 
 - **hivelist**: Display registry hive information
 - **printkey**: Display specified registry key and value information
 - **svcscan**: Display Windows services
