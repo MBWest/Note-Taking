@@ -4,4 +4,7 @@
 
 ## Examples 
 
-- **ifconfig** - Lists the basic interface information
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **General** |
+| `ifconfig`/`ip a` | Show our IP address |
