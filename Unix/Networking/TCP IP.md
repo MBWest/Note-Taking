@@ -38,8 +38,7 @@
 ## Broadcast Address
 
 - Special Logical address used to send data to all hosts on a given network
-
-- *Example* > 199.83.131.255
+    - *Example* > 199.83.131.255
 
 | Class | Network  | Subnet Mask  | Broadcast |
 |--|--|--|--|
@@ -59,7 +58,7 @@
 
 - Allows networks to be subdivided regardless of their traditional class
 
-**Example**
+**Examples**
 - **CIDR Network** - 121.67.198.0
 - **CIDR Subnet** - 255.255.255.0
 - **CIDR Broadcast** - 121.67.198.255

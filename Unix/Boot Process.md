@@ -1,20 +1,19 @@
 # The Linux Boot Process
 
-## Basic Input/Output System (BIOS)
-- Special firmware
-- Operating System independent
-- **Primary Purpose** - Is to find and execute the boot loader
-- Perfroms the POST
-    - Power-On Self Test
-- Knows about bootables devices
-    - The boot device order can be changed
+| **Info**   | **Description** |
+| --------------|--------------|
+| `Basic Input/Output System (BIOS)` | Special firmware; Operating System independent |
+| `Primary Purpose` | Perfroms the POST (Power-On Self Test); Knows about bootables devices; The boot device order can be changed |
 
 ## Boot loaders
 
-- **LILO** - Linux Loader
-- **GRUB** - Grand Unified Bootloader
-    - Replaced LILO
-- **Primary Purpose** - Boot Loader start the operating system
+Boot Loader start the operating system
+
+| **Info**   | **Description** |
+| --------------|--------------|
+| **Boot Loaders** |
+| `LILO` | Linux Loader |
+| `GRUB` | Grand Unified Bootloader; Replaced LILO |
 
 ## Initial RAM Disk (initrd)
 
@@ -37,16 +36,17 @@
 
 ## Run Level
 
-- **0** - Shuts down the system
-- **1, S, s** - Single user mode
-    - Used for maintenance
-- **2** - Multi-user mode with graphical interface (Debian/Ubuntu)
-- **3** - Multi-user text mode (RedHat/CentOS)
-- **4** - Undefined
-- **5** - Multi-user mode with graphical interface (RedHat/CentOS)
-- **6** - Reboot
+| **Run Level**   | **Description** |
+| --------------|--------------|
+| `0`  | Shuts down the system |
+| `1, S, s`  | Single user mode; Used for maintenance |
+| `2`  | Multi-user mode with graphical interface (Debian/Ubuntu) |
+| `3`  | Multi-user text mode (RedHat/CentOS) |
+| `4`  | Undefined |
+| `5`  | Multi-user mode with graphical interface (RedHat/CentOS) |
+| `6`  | Reboot |
 
-# init
+## init
 
 - **telinit RUNLEVEL** - Changes run level 
     - *Example* > telinit 5
