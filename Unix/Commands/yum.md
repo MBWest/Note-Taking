@@ -4,18 +4,18 @@
 
 ## Format
 
-dnf [options] <command> [<args>...]
+`dnf [options] <command> [<args>...]`
 
 ## Examples
 
-- **yum update** - Updates and upgrades the packages on the system
-    - Requires `sudo`
-- **yum search qpdf** - Searches for the qpdf in the repositories
-- **yum info qpdf** - Provides a brief description of the requested application
-- **yum install qpdf** - Installs the qpdf application
-    - Requires `sudo`
-- **yum remove qpdf** - Uninstalls the qpdf application
-    - Requires `sudo`
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **Examples** |
+| `yum update` | Updates and upgrades the packages on the system |
+| `yum search qpdf` | Searches for the qpdf in the repositories |
+| `yum info qpdf` | Provides a brief description of the requested application |
+| `yum install qpdf` | Installs the qpdf application |
+| `yum remove qpdf`| Uninstalls the qpdf application |
 
 ## Resources
 

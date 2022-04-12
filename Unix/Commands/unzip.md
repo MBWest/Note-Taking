@@ -2,11 +2,14 @@
 
 ## Format
 
-unzip -l [filename.zip]
+`unzip -l [filename.zip]`
 
 ## Examples
 
-- **unzip tmp/backup-files.zip** - Unzips the backup-files.zip file
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **Example** |
+| `unzip tmp/backup-files.zip` | Unzips the backup-files.zip file |
 
 ## Zip
 

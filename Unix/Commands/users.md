@@ -6,11 +6,12 @@ Print the user names of users currently logged in to the current host
 
 users
 
-## Examples
+## Example
 
-- **users** - Print the user names of users currently logged in to the current host
-
-## Options
-
-- **--help** - Display this help and exit
-- **--version** - Output version information and exi
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **Example** |
+| `users` | Print the user names of users currently logged in to the current host |
+| **Options** |
+| `--help` | Display this help and exit |
+| `-version` | Output version information and exit |
