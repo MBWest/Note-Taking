@@ -1,5 +1,6 @@
 # adduser
 
-- **adduser** - Add a User
-    - *Example* > adduser john
-        - Makes a new user named john
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **adduser** |
+| `adduser *name*` | Add a user. `adduser john`. |

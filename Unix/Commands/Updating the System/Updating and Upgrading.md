@@ -1,5 +1,6 @@
 # Updating and Upgrading
 
-How to update the system
-
-- **apt update && apt upgrade** - Update the packages installed on the computer and upgrade the OS
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **How to Update and Upgrade the System** |
+| `apt update && apt upgrade` | Update the packages installed on the computer and upgrade the OS. |

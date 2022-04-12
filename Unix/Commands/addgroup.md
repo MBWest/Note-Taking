@@ -1,4 +1,6 @@
 # addgroup
 
-- **addgroup** - Add a Group
-
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **addgroup** |
+| `addgroup` | Add a Group |
