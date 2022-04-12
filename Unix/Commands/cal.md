@@ -1,3 +1,10 @@
 # cal
 
-- **cal** - Shows calendar
+Shows calendar
+
+## Exmaples 
+
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **cal** |
+| `cal` | Shows Calendar. |

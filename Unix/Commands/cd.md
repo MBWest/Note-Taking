@@ -1,7 +1,10 @@
 # cd
 
-- **cd DirectoryFilePath** - Change to a different directory
-	- *Example* > cd /home/matt
-		- Change the directory to Matt's home folder
-- **cd ..** (Two Periods) - Goes up one level in the filepath, to the parent directory
-	- **.** (Single Period) - Represents the current directory
+## Examples
+
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **cd** |
+| `cd DirectoryFilePath` | Change to a different directory. `cd /home/matt` |
+| `cd ..` | (Two Periods) Goes up one level in the filepath, to the parent directory. |
+| `cd .` | (Single Period) Represents the current directory. |
