@@ -19,16 +19,18 @@ These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/g
 
 ## File Attributes
 
-### File Type
-- **-** - Regular File
-- **d** - Directory
-- **c** - Special File or Device
-- **l** - Symbolic Link
-- **b** - Block Device
-- **s** - Socket
-- **p** - Named Pipe
+| **Letter** | **Description**   |
+| --------------|-------------------|
+| **File Type** |
+| `-` | Regular File |
+| `d` | Directory  |
+| `c` | Special File or Device |
+| `l` | Symbolic Link |
+| `b` | Block Device |
+| `s` | Socket |
+| `p` | Named Pipe |
 
-|Owner|Group|World|
+|**Owner**|**Group**|**World**|
 |---|---|---|
 |rwx|rwx|rwx|
 
@@ -39,34 +41,34 @@ These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/g
 | x | file can be treated as a program to be executed |  allows a directory to be entered or "cd"ed into |
 | - | file cannot be read, modified, or executed depending on the location of the - character  | directory contents cannot be shown, modified, or cd'ed into depending on the location of the - character |
 
-### Examples
+## Examples
 
-|Owner|Group|World|
+|**Owner**|**Group**|**World**|
 |---|---|---|
 |rw-|- - -|- - -|
 
 - In the above example, we see that the file's owner has read and write permissions but NOT execute permissions. No one else has any access.
 
-|Owner|Group|World|
+|**Owner**|**Group**|**World**|
 |---|---|---|
 |rwx|- - -|- - -|
 
 - In the above example, we see that the file's owner has read, write, AND execute permissions. No one else has any access.
 
-|Owner|Group|World|
+|**Owner**|**Group**|**World**|
 |---|---|---|
 |rw-|r- -|r- -|
 
 - In the above example, we see that the file's owner has read, and write BUT NOT execute permissions. Members of the file's owner group can only read the file. Everyone else can read the file too.
 
-|Owner|Group|World|
+|**Owner**|**Group**|**World**|
 |---|---|---|
 |rwx|rwx|- - -|
 
 - In the above example, we see that the directory's owner AND member's of the owner group can enter the directory, rename, and remove files from within the directory. 
 
 
-|Owner|Group|World|
+|**Owner**|**Group**|**World**|
 |---|---|---|
 |rwx|- -x|- - -|
 

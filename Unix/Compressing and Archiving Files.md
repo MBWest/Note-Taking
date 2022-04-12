@@ -2,6 +2,9 @@
 
 ## Commands
 
-- **zip** - Compresses a file
-- **unzip** - Decompresses a file
-- **tar** - Combines files without compressing
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **Compressing and Archiving Files** | 
+| ` zip` | Compresses a file |
+| ` unzip` | Decompresses a file |
+| ` tar` | Combines files without compressing |
