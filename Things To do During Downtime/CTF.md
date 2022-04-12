@@ -2,7 +2,7 @@
 
 ## General CTF
 
-   1. https://www.net-force.nl/challenges/ - Net-Force.nl is a website where people interested in (internet) security can play so-called ‘hack challenges’
+1. https://www.net-force.nl/challenges/ - Net-Force.nl is a website where people interested in (internet) security can play so-called ‘hack challenges’
 2. https://ctfs.me/ - Ctfs.me is a place where you can learn about various category of hacking everytime and get you skill increased.
 3. http://www.wechall.net/challs
 4. http://www.mod-x.co.uk/main.php - You will be tested on everything from javascript/encryptions/encodings to daemon vulnerabilities/disassembling/http knowledge…and most importantly, common sense!

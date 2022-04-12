@@ -1,4 +1,4 @@
-### How to Password-Protect a ZIP File
+# How to Password-Protect a ZIP File
 
 **This topic will cover how to password-protect a ZIP file in Kali Linux. This isn’t a secure method of protecting information, but you will need to know how to do it in order to fully understand and complete the ZIP cracking section of this course.**
 

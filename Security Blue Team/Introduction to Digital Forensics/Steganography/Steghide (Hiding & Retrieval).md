@@ -1,4 +1,4 @@
-### Steghide (Hiding & Retrieval)
+# Steghide (Hiding & Retrieval)
 
 When using Steghide, we will always have a cover document, and our secret document. Below are the file types we can use (note that Cover Documents can only be images or audio files due to their file structure).
 

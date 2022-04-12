@@ -1,4 +1,4 @@
-### Brute-Forcing Attacks
+# Brute-Forcing Attacks
 
 Let\'s try our own dictionary attack, to do this we’re going to need the tool **fcrackzip**. You can check if you have the tool installed by using fcrackzip, if not you can install it using `sudo apt-get install fcrackzip`.
 

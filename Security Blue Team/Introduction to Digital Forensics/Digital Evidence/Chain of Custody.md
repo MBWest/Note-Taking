@@ -1,4 +1,4 @@
-### Chain of Custody
+# Chain of Custody
 
 **Chain of Custody is the**
 > Logical sequence of gathering evidence, whether it be physical or electronic in legal cases

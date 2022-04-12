@@ -1,4 +1,4 @@
-### Dictionary Attacks
+# Dictionary Attacks
 
 Now let\'s get on to how to conduct a dictionary attack against a passworded ZIP file! We\'ll be using fcrackzip again, so we will open a terminal in the same location as our target ZIP. In this example, our target ZIP is **DictionaryAttack.zip** with the password **ummwhateva**. Here\'s the command we’ll be using.
 
