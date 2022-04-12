@@ -12,14 +12,16 @@
 - Loaded on demand
     - Become part of the kernel once loaded
 
-**Module commands**
-- **insmod** - Insert a module into the kernel
-- **rmmod** - Remove a module from the kernel
-- **lsmod** - List the currently loaded modules
-- **modinfo** - Display information about a module
-- **modprobe** - Insert or remove a module from the kernel. Unlike insmod, modprobe automatically handles module dependencies. Dependent modules will be automatically loaded or unloaded with modprobe **-a**
-    - *Example* > modpro [options] modulename params
-    Option
-    - **c** - Show configuration file
-    - **l** - List modules
-    - **r** - Remove modules
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **Module Commands** |
+| `insmod` | Insert a module into the kernel |
+| `rmmod` | Remove a module from the kernel |
+| `lsmod` | List the currently loaded modules |
+| `modinfo` | Display information about a module |
+| `modprobe` |  Insert or remove a module from the kernel. Unlike insmod, modprobe automatically handles module dependencies. |
+| **Options** ||
+| `-c` | Show configuration file |
+| `-l` | List modules |
+| `-r` | Remove modules |
+| `-a` | Dependent modules will be automatically loaded or unloaded with modprobe  |
