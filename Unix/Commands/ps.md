@@ -1,10 +1,11 @@
 # ps
 
-- *Example* > ps
-    - Get a list of processes you have access to
+Get a list of processes you have access to
 
-- *Example* > ps aux 
-    - See a list of every process being ran
+## Examples
 
-- *Example* > top
-    - Provides cpu memory usage and process IDs
+| **Command**   | **Description**   | 
+| --------------|-------------------|
+| **Examples** |
+| `ps aux` | See a list of every process being ran |
+| `top` | Provides cpu memory usage and process IDs |

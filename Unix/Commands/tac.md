@@ -1,3 +1,5 @@
 # tac
 
-- **tac *filename*** - Concatenate and print file in reverse
+Concatenate and print file in reverse
+
+`tac [FileName]`

@@ -1,3 +1,8 @@
 # rev
 
-- **rev *filename*** - Prints out each letter in a file in reverse
+## Examples
+
+| **Command**   | **Description**   | 
+| --------------|-------------------|
+| **Examples** |
+| `rev [filename]` | Prints out each letter in a file in reverse |

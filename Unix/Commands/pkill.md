@@ -1,13 +1,11 @@
 # pkill
 
-- *Example* > kill -l
-    - List all available ways to kill a signal
+## Examples
 
-- *Example* > kill -9 2975
-    - Uses the SIGKILL to kill the 2975 process
-
-- *Example* > pkill firefox
-    - Kills the firefox process
-
-- *Example* > killall firefox
-    - Kills the firefox process
+| **Command**   | **Description**   | 
+| --------------|-------------------|
+| **Examples** |
+| `kill -l` | List all available ways to kill a signal |
+| `pkill firefox` | Kills the firefox process |
+| `killall firefox` | Kills the firefox process |
+| `kill -9 2975` | Uses the SIGKILL to kill the 2975 process |

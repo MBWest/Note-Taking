@@ -5,45 +5,34 @@
 
 ## Format
 
-passwd [options] [LOGIN]
+`passwd [options] [LOGIN]`
 
 ## Examples
 
-- **passwd** - Prompts the user to enter a new password. This will change the current users password
-- **sudo passwd sally** - Promts the user to enter a new Password. This will change sally's passwod
+| **Command**   | **Description**   | 
+| --------------|-------------------|
+| **Examples** |
+| `passwd` | Prompts the user to enter a new password. This will change the current users password |
+| `sudo passwd sally` | Promts the user to enter a new Password. This will change sally's passwod |
 
 ## Files
 
-       /etc/passwd
-           User account information.
-
-       /etc/shadow
-           Secure user account information.
-
-       /etc/pam.d/passwd
-           PAM configuration for passwd.
+| **File**   | **Description**   | 
+| --------------|-------------------|
+| `/etc/passwd` | User account information. |
+| `/etc/shadow` | Secure user account information. |
+| `/etc/pam.d/passwd` | PAM configuration for passwd. |
 
 ## Exit Values
 
-       The passwd command exits with the following values:
+**The passwd command exits with the following values:**
 
-       0
-           success
-
-       1
-           permission denied
-
-       2
-           invalid combination of options
-
-       3
-           unexpected failure, nothing done
-
-       4
-           unexpected failure, passwd file missing
-
-       5
-           passwd file busy, try again
-
-       6
-           invalid argument to option
+| **Exit Value**   | **Description**   | 
+| --------------|-------------------|
+| `0` | Success |
+| `1` | Permission denied |
+| `2` | Invalid combination of options |
+| `3` | Unexpected failure, nothing done |
+| `4` | Unexpected failure, passwd file missing |
+| `5` | Passwd file busy, try again |
+| `6` | Invalid argument to option |

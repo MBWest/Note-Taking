@@ -6,5 +6,7 @@ rmdir [EmptyDirectory]
 
 ## Examples
 
-- **rmdir EmptyDirectory** - Removes the empty directory
-    - Does not remove directories if they are not empty
+| **Command**   | **Description**   | 
+| --------------|-------------------|
+| **Examples** |
+| `rmdir EmptyDirectory` | Removes the empty directory (Does not remove directories if they are not empty) |
