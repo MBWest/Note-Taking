@@ -6,5 +6,5 @@ Shows calendar
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **cal** |
+| **Examples** |
 | `cal` | Shows Calendar. |

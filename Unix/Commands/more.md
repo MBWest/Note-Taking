@@ -4,6 +4,7 @@ Looks inside a text file from beginning to end, with no way to go back once you 
 
 ## Examples
 
-- **more filename.txt** - Shows a page by page layout of the text file 
-    - To scroll to the next page press the space bar
-    - Press `q` to quite
+| **Command**   | **Description**   |
+| --------------|-------------------|
+| **Example** |
+| `more [filename].txt` | Shows a page by page layout of the text file; To scroll to the next page press the space bar; Press `q` to quite |

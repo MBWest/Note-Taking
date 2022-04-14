@@ -9,6 +9,6 @@ bg [job_id...]
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **bg** |
+| **Examples** |
 | `$ bg %0` | Put the job with job id 0 in the background. |
 | `$ long_running_command &` | To start a new process in the background |

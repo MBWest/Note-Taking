@@ -1,3 +1,3 @@
 # ncal
 
-- **ncal** - Shows  new calendar
+Shows  new calendar

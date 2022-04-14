@@ -7,4 +7,4 @@
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | **General** |
-| `ifconfig`/`ip a` | Show our IP address |
+| `ifconfig` or `ip a` | Show interface addresses |

@@ -1,3 +1,3 @@
 # hostname
 
-- **hostname** - Returns the name of the current host 
+Returns the name of the current host 
