@@ -8,7 +8,6 @@ First thing first, we run a quick initial nmap scan to see which ports are open 
 
     sudo nmap -sC -sV -O -oA htb/Nibbles/nmap/initial 10.129.122.71
 
-
 | **Flag** | **Description** |
 | --------------|-------------------|
 | `-sC` | Run default nmap scripts |

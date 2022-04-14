@@ -5,4 +5,4 @@ Query Internet name servers interactively
 
 ## Format 
 
-nslookip [-option] [name | -] [server]
+`nslookip [-option] [name | -] [server]`

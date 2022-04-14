@@ -11,6 +11,8 @@
 | `tcsh` | TC Shell|
 | `zsh` | z Shell; Default Kali Linux Shell |
 
+## Resources
+
 | **Resource**   | **Description**   |
 | --------------|-------------------|
 | **Bash Resource** |

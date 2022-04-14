@@ -2,8 +2,7 @@
 
 An archiving utility
 
-    tar [-] A --catenate --concatenate | c --create | d --diff --compare | --delete | r --append | t --list |
-    --test-label | u --update | x --extract --get [options] [pathname ...]
+    tar [-] A --catenate --concatenate | c --create | d --diff --compare | --delete | r --append | t --list | --test-label | u --update | x --extract --get [options] [pathname ...]
 
 ## Options
 
@@ -24,7 +23,7 @@ An archiving utility
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| `tar cvf backup.tar file?.txt dir? shakespeare.txt` |
+|`tar cvf backup.tar file?.txt dir? shakespeare.txt` |
 |`tar` | The GNU version of the tar archiving utility |
 | `-c, --create` | Create a new archive |
 |`-v, --verbose` | verbosely list files processed |

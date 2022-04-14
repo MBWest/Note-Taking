@@ -8,7 +8,7 @@ tail [filename]
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
+| **Example** |
 | `tail filename` | Prints a portion of a file starting at the end of the file (Default 10 lines) |
 | `tail -n 21 filename`| 
 | `--lines 21` | Equal to *-n 21* |
