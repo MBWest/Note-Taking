@@ -15,15 +15,15 @@
 
 **DODMs**
 
-◇ Implement DOD Policy - Consists of procedures that contains examples for performing specific tasks
+- Implement DOD Policy - Consists of procedures that contains examples for performing specific tasks
 
 **Air Force Instructions**
 
 - Provides/implements guidance and procedures on AF policies
 
-◇ AFI 17-203 Cyber Incident Handling
+- AFI 17-203 Cyber Incident Handling
 
-◇ AFI 17-202V3 Cyberspace Operations and Procedures
+- AFI 17-202V3 Cyberspace Operations and Procedures
 
 **Telecommunications Industry Association Standards**
 
@@ -33,13 +33,13 @@
 
 **Examples**
 
-◇ TIA-568, Cabling Standards
+- TIA-568, Cabling Standards
 
-◇ TIA-569-D, Telecommmunications Pathways and Spaces
+- TIA-569-D, Telecommmunications Pathways and Spaces
 
-◇ TIA-606-B, Administration Standard for Telecommunications Infastructure
+- TIA-606-B, Administration Standard for Telecommunications Infastructure
 
-◇ TIA-607-C, Generic Telecommunications Bonding and Grounding for Customer Premises
+- TIA-607-C, Generic Telecommunications Bonding and Grounding for Customer Premises
 
 **Military Standards**
 

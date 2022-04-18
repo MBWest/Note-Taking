@@ -12,7 +12,7 @@
 
 **Facility Ground System**
 
-1.**Earth Electrode Subsystem**- provides the connection between the earth and other subsytems
+1. **Earth Electrode Subsystem**- provides the connection between the earth and other subsytems
 
 1) Ground rods
 
@@ -40,13 +40,11 @@
 
 1) AKA “The Safety Ground”
 
-1) Electrically seperated from the phase and neutral conductors of the power distrobution system
+2) Electrically seperated from the phase and neutral conductors of the power distrobution system
 
-2) Physically seperated from the signal conductors and the signal reference subsystem
+3) Physically seperated from the signal conductors and the signal reference subsystem
 
-3) Installed in the same conduit as other power conductors
-
-3.
+4) Installed in the same conduit as other power conductors
 
 **Sigal Reference Subsystem**
 
@@ -64,15 +62,11 @@
 
 3. Types
 
-1)
-
 **Permanent Direct**
 
 - contact of the metal mating surfaces
 
-1- Welding, Brazing, Soldering
-
-2)
+1 - Welding, Brazing, Soldering
 
 **Direct semi-permanent**
 
