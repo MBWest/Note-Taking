@@ -1,6 +1,16 @@
 # [BOXNAME]
 
+## Ping Box 
+
+ping [IP]
+
+## Make a new directory
+
 mkdir -p htb/[BOXNAME]/nmap
+
+## Ping Box 
+
+ping [IP]
 
 ## Reconnaissance
 

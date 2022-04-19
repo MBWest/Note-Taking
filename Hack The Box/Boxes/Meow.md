@@ -56,6 +56,8 @@ Submit root flag
 
 # Meow Box
 
+## Make a new directory to work out of
+
 mkdir -p htb/Meow/nmap
 
 ## Reconnaissance
@@ -103,3 +105,4 @@ We get back the following results:
 
 Log into telnet using the `telnet 10.129.92.25` command as `root`.
 
+![image](https://user-images.githubusercontent.com/87195021/164076679-21bf4ed4-b6bf-4adb-bb3d-5d4fa43dae21.png)
