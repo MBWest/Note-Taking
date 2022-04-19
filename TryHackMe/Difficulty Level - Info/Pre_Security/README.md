@@ -1,0 +1,1 @@
+## Before hacking something, you first need to understand the basics. 
