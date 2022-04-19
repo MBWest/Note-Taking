@@ -59,7 +59,7 @@ Similarly, we run an nmap scan with the -sU flag enabled to run a UDP scan.
 | `--reason` | Determine the port and host state |
 | `-oA` | Output all formats and store in file nmap/initial |
 
-`I managed to root the box and write this blog, while this UDP scan still did not terminate.`
+`I managed to root the box and write this all while this UDP scan still did not terminate.`
 
 # Enumeration
 
