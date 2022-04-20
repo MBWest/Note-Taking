@@ -8,10 +8,6 @@ ping [IP]
 
 mkdir -p htb/[BOXNAME]/nmap
 
-## Ping Box 
-
-ping [IP]
-
 ## Reconnaissance
 
 First thing first, we run a quick initial nmap scan to see which ports are open and which services are running on those ports.

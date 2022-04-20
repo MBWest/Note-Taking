@@ -66,10 +66,6 @@ ping 10.129.1.12
 
 mkdir -p htb/Dancing/nmap
 
-## Ping Box 
-
-ping 10.129.1.12
-
 ## Reconnaissance
 
 First thing first, we run a quick initial nmap scan to see which ports are open and which services are running on those ports.
@@ -137,6 +133,6 @@ We get back the following results:
 
 ![image](https://user-images.githubusercontent.com/87195021/164084218-075e94c5-1047-4b13-b80b-52a764e01843.png)
 
-## Box Completed
+## Box Solved
 
 ![image](https://user-images.githubusercontent.com/87195021/164084673-e692cac2-5cf0-4487-9f9b-30e4de38c72c.png)
