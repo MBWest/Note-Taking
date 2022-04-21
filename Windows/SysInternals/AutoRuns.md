@@ -1,5 +1,7 @@
 # Autoruns
 
+Identifies auto startup, registry keys, scheduled tasks, and other autorun components. 
+
 ## Entries
 
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
