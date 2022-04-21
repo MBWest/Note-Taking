@@ -20,5 +20,5 @@
 | `Sc query state=all | find /i "servicename"` | Search services|
 | `sc getkeyname "Service"` | Get key name after searching for service name |
 | `Sc query "NameoftheService"` |Query the key name|
-| `Sc config DPS start=demand` | Change DPS to ondemand start |
+| `Sc config DPS start=demand` | Change DPS to on demand start |
 | `Net start` | List all Windows services that are started |
