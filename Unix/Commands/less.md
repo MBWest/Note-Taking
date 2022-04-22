@@ -27,3 +27,4 @@ Looks inside a text file from beginning to end
 | `-i` | Option tells locate to ignore casing |
 | `-l` | Option tells locate to limit the number of entries that locate retrieves |
 | `-e` | Option will only print entries that actually exist at the time locate is run |
+| `-S` | Disables word wrapping |

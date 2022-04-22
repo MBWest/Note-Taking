@@ -1,11 +1,17 @@
 # ps
 
-Get a list of processes you have access to
+List processes
 
 ## Examples
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
-| `ps aux` | See a list of every process being ran |
-| `top` | Provides cpu memory usage and process IDs |
+| **Standard Syntax Examples** |
+| `ps aux` or `ax` | See every process on the system |
+| `ps -U root -u root u` | See every process owned by root |
+| **BSD Syntax Examples** |
+| `ps -e` or `-ef` or `-eF` or `-ely` | See every process on the system |
+| **Process Tree Examples** |
+| `ps -ejH` or `axjf` or `eh` | Print a process tree |
+|**Thread Information Examples** |
+| `ps -eLf` or `axms` | Get information about threads |
