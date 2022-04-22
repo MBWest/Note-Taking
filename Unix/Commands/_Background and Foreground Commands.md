@@ -14,4 +14,4 @@ Use the `bg` command to move the process from stopped to running but still remai
 
 ## Currently Backgrounded Process
 
-Use the `fg` command to move a process form the background to the foregound. 
+Use the `fg` command to move a process from the background to the foregound. 
