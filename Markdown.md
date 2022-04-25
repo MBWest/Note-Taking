@@ -1,120 +1,247 @@
-# Formatting
+Markdown Cheatsheet<a name="TOP"></a>
+===================
 
-Markdown `.md` pages are plain text documents with a simple human readable syntax that aims to make writing for the internet easier.
+- - - - 
+# Heading 1 #
 
-No special software is required to create an `.md` file. Any basic text editor will do. Just save the file with a `.md` file extension.
+    Markup :  # Heading 1 #
 
-Please see [markdownguide.org](https://www.markdownguide.org/cheat-sheet/) for a full demonstration of the formatting possibilities and best practices.
+    -OR-
 
-!!!
-View the actual [`formatting.md`](https://github.com/retypeapp/retype/blob/main/guides/formatting.md) file used to create this page.
-!!!
+    Markup :  ============= (below H1 text)
 
----
+## Heading 2 ##
 
-## Quick start
+    Markup :  ## Heading 2 ##
 
-The following sample demonstrates a very basic `.md` page sample with page title and one paragraph.
+    -OR-
 
-```md
-# Page title here
+    Markup: --------------- (below H2 text)
 
-This is a paragraph.
-```
+### Heading 3 ###
 
-We can build on the above sample by adding more content and formatting, such as **bold** text, images, and lists.
+    Markup :  ### Heading 3 ###
 
-```md
-# Page title here
+#### Heading 4 ####
 
-This is a paragraph.
+    Markup :  #### Heading 4 ####
 
-Both [internal](README.md) and [external](https://example.com) links work.
 
-![Your logo](logo.png)
+Common text
 
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
+    Markup :  Common text
 
----
+_Emphasized text_
 
-## Lists
+    Markup :  _Emphasized text_ or *Emphasized text*
 
-- First item
-- Second item
-- Third item
+~~Strikethrough text~~
 
-1. First item
-2. Second item
-3. Third item
+    Markup :  ~~Strikethrough text~~
 
-> "Cool! This is a quotation."
+__Strong text__
 
-!!!
-Need to draw attention to something? Use an alert.
-!!!
-```
+    Markup :  __Strong text__ or **Strong text**
 
-At a very basic level, to create a new page for your Retype project, do the following:
+___Strong emphasized text___
 
-1. Make a `readme.md` file
-2. Add a `# title`
-3. Start writing
+    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
 
-### Home page
+[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
-Ideally, your project will include a default file (`readme.md`, `index.md`, or `default.md`) within the root of the project. If a default file is present within the root folder, Retype will use that page as your home page. Clicking on the top-left logo or title will navigate to the home page.
+    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
-Those default files can also be placed inside of any folder within the project. Given the following folder and file structure, where `Guides` is a folder...
+[heading-1](#heading-1 "Goto heading-1")
+    
+    Markup: [heading-1](#heading-1 "Goto heading-1")
+
+Table, like this one :
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 
 ```
-|-- Guides
-    |-- readme.md
-    |-- getting-started.md
-|-- readme.md
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 ```
 
-...Retype will create three pages in your website and the pages will be available at the following locations:
+Adding a pipe `|` in a cell :
 
-1. `/`
-2. `/guides/`
-3. `/guides/getting-started/`
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | \|
 
-!!!
-If your home page is empty or blank, double check that you have a default page in the root of your project folder. The default file can be named `readme.md`, `index.md`, or `default.md`.
-!!!
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  |  \| 
+```
 
----
+Left, right and center aligned table
 
-## Components
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
 
-In addition to the standard Markdown options, Retype includes many custom [components](../components/readme.md) so you can easily add extra [!badge :gem: flair :gem:] to your document.
+```
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
+```
 
-The most commonly used Retype components include [Alert](../components/alert.md) and [Tab](../components/tab.md):
+`code()`
 
-### Alert
+    Markup :  `code()`
 
-!!!
-This is an Alert
-!!!
+```javascript
+    var specificLanguage_code = 
+    {
+        "data": {
+            "lookedUpPlatform": 1,
+            "query": "Kasabian+Test+Transmission",
+            "lookedUpItem": {
+                "name": "Test Transmission",
+                "artist": "Kasabian",
+                "album": "Kasabian",
+                "picture": null,
+                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
+            }
+        }
+    }
+```
 
-~~~ Sample [Alert](../components/alert.md) component
-!!!
-This is an Alert
-!!!
+    Markup : ```javascript
+             ```
+
+* Bullet list
+    * Nested bullet
+        * Sub-nested bullet etc
+* Bullet list item 2
+
+~~~
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
 ~~~
 
-### Tab
+1. A numbered list
+    1. A nested numbered list
+    2. Which is numbered
+2. Which is numbered
 
-+++ Tab 1
-This is Tab 1
-+++ Tab 2
-This is another Tab
-+++
-
-~~~ Sample [Tab](../components/tab.md) component
-+++ Tab 1
-This is Tab 1
-+++ Tab 2
-This is another Tab
-+++
 ~~~
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+~~~
+
+- [ ] An uncompleted task
+- [x] A completed task
+
+~~~
+ Markup : - [ ] An uncompleted task
+          - [x] A completed task
+~~~
+
+- [ ] An uncompleted task
+    - [ ] A subtask
+
+~~~
+ Markup : - [ ] An uncompleted task
+              - [ ] A subtask
+~~~
+
+> Blockquote
+>> Nested blockquote
+
+    Markup :  > Blockquote
+              >> Nested Blockquote
+
+_Horizontal line :_
+- - - -
+
+    Markup :  - - - -
+
+_Image with alt :_
+
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+
+    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+
+Foldable text:
+
+<details>
+  <summary>Title 1</summary>
+  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+</details>
+<details>
+  <summary>Title 2</summary>
+  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
+</details>
+
+    Markup : <details>
+               <summary>Title 1</summary>
+               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+             </details>
+
+```html
+<h3>HTML</h3>
+<p> Some HTML code here </p>
+```
+
+Link to a specific part of the page:
+
+[Go To TOP](#TOP)
+   
+    Markup : [text goes here](#section_name)
+              section_title<a name="section_name"></a>    
+
+Hotkey:
+
+<kbd>⌘F</kbd>
+
+<kbd>⇧⌘F</kbd>
+
+    Markup : <kbd>⌘F</kbd>
+
+Hotkey list:
+
+| Key | Symbol |
+| --- | --- |
+| Option | ⌥ |
+| Control | ⌃ |
+| Command | ⌘ |
+| Shift | ⇧ |
+| Caps Lock | ⇪ |
+| Tab | ⇥ |
+| Esc | ⎋ |
+| Power | ⌽ |
+| Return | ↩ |
+| Delete | ⌫ |
+| Up | ↑ |
+| Down | ↓ |
+| Left | ← |
+| Right | → |
+
+Emoji:
+
+:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+
+    Markup : Code appears between colons :EMOJICODE:
