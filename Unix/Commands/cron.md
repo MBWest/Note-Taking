@@ -2,6 +2,10 @@
 
 The cron service allows you to schedule commands to run at regular intervals
 
+## File Location
+
+/etc/crontab
+
 ## Editing the crontab
 
 To set up a cron job, we need to edit the crontab configuration file. Rather than edit the files directly it is best to use the **crontab -e** command.
