@@ -1,3 +1,6 @@
+# SHEBANG
+#/bin/python3
+
 # ----------Strings----------
 # What is a string?
 print("A string is any information you wish to be treated like text in a program")
@@ -21,7 +24,7 @@ split_var.split(":")  # Use the split function with a deliminator
 f'My first name is {split_var.split(":")[0]}'
 
 # Print each word in a string
-for items in string.split()
+for items in string.split():
       print(items)
 # -----String Examples-----
 # Complete the first_and_last function so that given a
