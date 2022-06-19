@@ -60,3 +60,7 @@ The syntaxx is **find -exec *command* {} ;**
 ## Examples
 
 - **find . -name 'file*.txt'** - Find all files with the pattern denoted in the 'pattern' from the current directory and all sub directories. 
+
+`SETUID and SETGID Bits`
+
+    find / -perm -4000 -ls 2>/dev/null
