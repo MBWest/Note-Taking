@@ -20,6 +20,6 @@ Execute a command as another user
 | --------------|-------------------|
 | **Example** |
 | `sudo` | Execute a command as another user or root |
-| `sudo -l` | Shows all commands that the current user can run as the super user |
+| `sudo -l -l` | Shows all commands that the current user can run as the super user |
 | `sudo su -` | Switch to root user for this instance |
 | `sudo -u sally cat /home/sally/sample.txt` | Allows the current user to read the sample.txt as the user sally |

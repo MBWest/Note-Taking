@@ -13,7 +13,6 @@
     msf > use post/windows/gather/hashdump
     msf > show options
     msf > set SESSION 1
-    msf > run
 
 ### Auxiliary Modules
 
@@ -22,24 +21,24 @@
     msf > use
     auxiliary/scanner/portscan/tcp
     msf > set RHOSTS 10.10.10.0/24
-    msf > run
 
 `DNS Enumeration`
 
     msf > use auxiliary/gather/dns_enum
     msf > set DOMAIN target.tgt
-    msf > run
 
 `FTP Server`
 
     msf > use auxiliary/server/ftp
     msf > set FTPROOT /tmp/ftproot
-    msf > run
 
 `Proxy Server`
 
     msf > use auxiliary/server/socks4
-    msf > run
+
+`SMB Enumeration`
+
+    msf > auxiliary/scanner/smb/smb_version
 
 ------
 
