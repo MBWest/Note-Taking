@@ -16,10 +16,13 @@
 
 ### Auxiliary Modules
 
+`SSH Login`
+
+    msf > use scanner/ssh/ssh_login
+    
 `Port Scanner`
 
-    msf > use
-    auxiliary/scanner/portscan/tcp
+    msf > use auxiliary/scanner/portscan/tcp
     msf > set RHOSTS 10.10.10.0/24
 
 `DNS Enumeration`
