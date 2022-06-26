@@ -1,0 +1,29 @@
+# Linux - Sudo PrivEsc
+
+    sudo -l
+
+**Shell Escaping**
+
+`Using your sudo privileges to escalate privileges.`
+
+**Intended Functionality**
+
+    sudo apache2 -f /etc/shadow
+
+# Resources
+
+`Payload All the Things`
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md#ssh-key
+
+`GTFOBins`
+
+https://gtfobins.github.io/
+
+`Linux Privilege Escalation using Sudo Rights`
+
+https://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/
+
+`wget example`
+
+https://veteransec.com/2018/09/29/hack-the-box-sunday-walkthrough/

@@ -1,0 +1,17 @@
+# Linux - Passwords and File Permissions
+
+**Stored Passwords**
+
+    history
+    cat .bash_history
+    [Automated Tools]
+
+**Weak File Permissions**
+
+    [Modify /etc/shadow if possible]
+
+**Escalation via SSH Keys**
+
+    find / -name authorized_keys 2> /dev/null
+    find / -name id_rsa 2> /dev/null
+    

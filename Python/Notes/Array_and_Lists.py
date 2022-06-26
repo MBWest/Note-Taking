@@ -1,6 +1,10 @@
 # ----------Arrays and Lists----------
+
+name_list = ["neut", "247CTF", "asd"] # A list with 3 items
+name1, name2, name3 = name_list # Assigns a varaible name to each item in the name_list
+
 # Defining an array (list)
-my_array = ["Movies", "Games", "Python"]
+my_array = ["Movies", "Games", "Python"] # A list with 3 items
 "This is my first list: " + '["Movies", "Games", "Python"]'
 f"You can reference a single item using an index number enclosed in []"
 f"The [0] index of my_array would equate to: {my_array[0]}"
