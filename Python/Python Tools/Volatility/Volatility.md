@@ -28,6 +28,7 @@ detection evasion techniques). Can find information about listening sockets that
 
 - **imageinfo** - For a high level summary of the memory sample you’re analyzing, use the imageinfo command. Most often this command is used to identify the operating system, service pack, and hardware architecture (32 or 64 bit), but it also contains other useful information such as the DTB address and time the sample was collected.
 
+```bash
         $ vol.py -f ~/Desktop/win7_trial_64bit.raw imageinfo
         Volatility Foundation Volatility Framework 2.4
         Determining profile based on KDBG search...
@@ -43,7 +44,7 @@ detection evasion techniques). Can find information about listening sockets that
                     KUSER_SHARED_DATA : 0xfffff78000000000L
                 Image date and time : 2012-02-22 11:29:02 UTC+0000
             Image local date and time : 2012-02-22 03:29:02 -0800
-
+```
 > **pslist** - By default, pslist shows virtual offsets for the _EPROCESS but the physical offset can be obtained with the -P switch:
 
         sec504@slingshot:~$ vol.py pslist
