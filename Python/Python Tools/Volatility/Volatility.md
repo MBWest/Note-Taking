@@ -44,7 +44,7 @@ detection evasion techniques). Can find information about listening sockets that
                 Image date and time : 2012-02-22 11:29:02 UTC+0000
             Image local date and time : 2012-02-22 03:29:02 -0800
 
-- **pslist** - By default, pslist shows virtual offsets for the _EPROCESS but the physical offset can be obtained with the -P switch:
+> **pslist** - By default, pslist shows virtual offsets for the _EPROCESS but the physical offset can be obtained with the -P switch:
 
         sec504@slingshot:~$ vol.py pslist
         Offset(V)   Name            PID     PPID    Start
