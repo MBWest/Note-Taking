@@ -26,7 +26,7 @@ detection evasion techniques). Can find information about listening sockets that
 - **svcscan**: Display Windows services
 - **dlllist**: Display libraries associated with running Windows processes
 
-- **imageinfo** - For a high level summary of the memory sample you’re analyzing, use the imageinfo command. Most often this command is used to identify the operating system, service pack, and hardware architecture (32 or 64 bit), but it also contains other useful information such as the DTB address and time the sample was collected.
+> **imageinfo** - For a high level summary of the memory sample you’re analyzing, use the imageinfo command. Most often this command is used to identify the operating system, service pack, and hardware architecture (32 or 64 bit), but it also contains other useful information such as the DTB address and time the sample was collected.
 
         $ vol.py -f ~/Desktop/win7_trial_64bit.raw imageinfo
         Volatility Foundation Volatility Framework 2.4
