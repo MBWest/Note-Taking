@@ -1,3 +1,3 @@
 # man
 
-See `Man Pages and Info Pages.md`
+See `Getting Help / Man Pages and Info Pages.md`

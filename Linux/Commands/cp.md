@@ -1,6 +1,6 @@
 # cp
 
-## Format
+## Syntax
 
 cp [source] [destination]
 
