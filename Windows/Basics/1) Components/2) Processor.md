@@ -3,7 +3,6 @@
 ## Runs in two modes:
 
 > **User Mode - Unprivileged/Restricted**
-
 - Has its own private virtual address space in memory
 - Isolates the app preventing alteration of:
     - Other application data
@@ -15,11 +14,13 @@
 - Possible to overwrite other programs and compromise the entire system (system crash)
 
 ---
+---
+---
 
 ```text
                                            |-----------|
                                            | User-Mode |
-   USER                                    |  Drivers  |
+   User                                    |  Drivers  |
    Mode                                    |           |  
                                            |-----------|
                                                 |
