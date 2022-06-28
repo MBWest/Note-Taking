@@ -26,7 +26,7 @@ detection evasion techniques). Can find information about listening sockets that
 - **svcscan**: Display Windows services
 - **dlllist**: Display libraries associated with running Windows processes
 
-- **imageinfo** - For a high level summary of the memory sample you’re analyzing, use the imageinfo command. Most often this command is used to identify the operating system, service pack, and hardware architecture (32 or 64 bit), but it also contains other useful information such as the DTB address and time the sample was collected.
+> **imageinfo** - For a high level summary of the memory sample you’re analyzing, use the imageinfo command. Most often this command is used to identify the operating system, service pack, and hardware architecture (32 or 64 bit), but it also contains other useful information such as the DTB address and time the sample was collected.
 
         $ vol.py -f ~/Desktop/win7_trial_64bit.raw imageinfo
         Volatility Foundation Volatility Framework 2.4
@@ -43,8 +43,8 @@ detection evasion techniques). Can find information about listening sockets that
                     KUSER_SHARED_DATA : 0xfffff78000000000L
                 Image date and time : 2012-02-22 11:29:02 UTC+0000
             Image local date and time : 2012-02-22 03:29:02 -0800
-
-- **pslist** - By default, pslist shows virtual offsets for the _EPROCESS but the physical offset can be obtained with the -P switch:
+            
+> **pslist** - By default, pslist shows virtual offsets for the _EPROCESS but the physical offset can be obtained with the -P switch:
 
         sec504@slingshot:~$ vol.py pslist
         Offset(V)   Name            PID     PPID    Start
@@ -56,7 +56,7 @@ detection evasion techniques). Can find information about listening sockets that
         0x8b22ab80 taskhost.exe 2740 848 2020-01-18 04:28:55 UTC+0000
         0x89766cc0 cmd.exe 920 528 2020-01-18 04:29:17 UTC+0000
 
-- **pstree** - To view the process listing in tree form, use the pstree command. This enumerates processes using the same technique as `pslist`, so it will also not show hidden or unlinked processes. Child process are indicated using indention and periods.
+> **pstree** - To view the process listing in tree form, use the pstree command. This enumerates processes using the same technique as `pslist`, so it will also not show hidden or unlinked processes. Child process are indicated using indention and periods.
 
         sec504@slingshot~$ vol.py pstree
         Volatility Foundation Volatility Framework 2.6.1
@@ -75,7 +75,7 @@ detection evasion techniques). Can find information about listening sockets that
         .... 0x8963b640:PING.EXE 3980 920 2020-01-18 04:31:27 UTC+0000
         .... 0x8b2113c0:PING.EXE 928 920 2020-01-18 04:31:19 UTC+0000
 
-- **netscan** - Display network connections and listening programs
+> **netscan** - Display network connections and listening programs
 
         sec504@slingshot:~$ vol.py netscan
         ...
@@ -91,7 +91,7 @@ detection evasion techniques). Can find information about listening sockets that
         metsvc.exe
 
 
-- **cmdline** - Display the command lines for running programs
+> **cmdline** - Display the command lines for running programs
 
         sec504@slingshot~$ vol.py cmdline
         ...
@@ -106,7 +106,7 @@ detection evasion techniques). Can find information about listening sockets that
         service
         ************************************************************************
 
-- **psscan** - To enumerate processes using pool tag scanning `(_POOL_HEADER)`, use the `psscan` command. This can find processes that previously terminated (inactive) and processes that have been hidden or unlinked by a rootkit. The downside is that rootkits can still hide by overwriting the pool tag values (though not commonly seen in the wild).
+> **psscan** - To enumerate processes using pool tag scanning `(_POOL_HEADER)`, use the `psscan` command. This can find processes that previously terminated (inactive) and processes that have been hidden or unlinked by a rootkit. The downside is that rootkits can still hide by overwriting the pool tag values (though not commonly seen in the wild).
 
         $ vol.py --profile=Win7SP0x86 -f win7.dmp psscan
         Volatility Foundation Volatility Framework 2.0
@@ -133,7 +133,7 @@ detection evasion techniques). Can find information about listening sockets that
         0x3eac6030 SearchProtocol     2448   1168 0x3ecf15c0 2010-06-16 23:30:52      2010-06-16 23:33:14     
         0x3eb10030 SearchFilterHo     1812   1168 0x3ecf1480 2010-06-16 23:31:02      2010-06-16 23:33:14 
 
-- **dlllist** - To display a process’s loaded DLLs, use the `dlllist` command. It walks the doubly-linked list of `_LDR_DATA_TABLE_ENTRY` structures which is pointed to by the PEB's `InLoadOrderModuleList`. DLLs are automatically added to this list when a process calls LoadLibrary (or some derivative such as LdrLoadDll) and they aren't removed until `FreeLibrary` is called and the reference count reaches zero. The load count column tells you if a DLL was statically loaded (i.e. as a result of being in the exe or another DLL's import table) or dynamically loaded.
+> **dlllist** - To display a process’s loaded DLLs, use the `dlllist` command. It walks the doubly-linked list of `_LDR_DATA_TABLE_ENTRY` structures which is pointed to by the PEB's `InLoadOrderModuleList`. DLLs are automatically added to this list when a process calls LoadLibrary (or some derivative such as LdrLoadDll) and they aren't removed until `FreeLibrary` is called and the reference count reaches zero. The load count column tells you if a DLL was statically loaded (i.e. as a result of being in the exe or another DLL's import table) or dynamically loaded.
 
         $ vol.py -f ~/Desktop/win7_trial_64bit.raw --profile=Win7SP0x64 dlllist 
         ************************************************************************
