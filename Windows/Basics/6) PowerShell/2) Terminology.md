@@ -177,3 +177,23 @@ Id CommandLine
 
 C:\Users\Matthew>
 ```
+---
+---
+---
+
+## **Aliases**
+
+- Like most shell environments, PowerShell supports aliases for commonly used cmdlets and functions
+
+```PowerShell
+C:\Users\Matthew> Get-Command -noun Alias
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Export-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Import-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          New-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Set-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+```
+
