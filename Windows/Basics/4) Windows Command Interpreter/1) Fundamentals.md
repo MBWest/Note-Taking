@@ -141,5 +141,41 @@ C:\>echo A new line >> cwo.txt	# Appends A new line cwo.txt (can create file)
 > **Error redirection (2>, 2>>)**
 
 ```
-C:\>dri C:\ 2> cwo.txt		# Overwrites cwo.txt with the error message
+C:\>dir C:\ 2> cwo.txt		# Overwrites cwo.txt with the error message
+```
+
+---
+---
+---
+## **Streams and Pipes**
+
+> **Streams**
+- Input / Output stream (can be redirected)
+
+```
+C:\>dir /? | find /I “hidden” 	# Sends the STDOUT from dir /? to find “hidden”
+```
+
+> **Pipes**
+- Redirects STDOUT to piped command
+
+```
+C:\>dir /s | find /I “readme”	# Sends the STDOUT from dir /s to find “readme”
+```
+
+---
+---
+---
+
+## **Echo**
+
+- Displays messages to the terminal
+- Using the output redirection operators (>,>>) you can create new files with the specified text
+
+```
+C:\>echo biscuits and gravy		# Displays biscuits and gravy to terminal biscuits and gravy
+
+C:\>echo biscuits and gravy > Yum.txt  	# Redirects biscuits and gravy to Yum.txt
+
+C:\>echo breakfast >> Yum.txt		# Redirects(appends) breakfast to Yum.txt
 ```

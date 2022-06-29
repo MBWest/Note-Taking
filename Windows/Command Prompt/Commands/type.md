@@ -1,5 +1,11 @@
 # Type
 
+Displays contents of text files to the terminal
+
+---
+
+## Examples
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `type C:\CLI.txt` | Display the contents of C:\CLI.txt using the type command |

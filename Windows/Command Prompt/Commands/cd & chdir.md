@@ -1,5 +1,11 @@
 # cd
 
+Changes to specified directory
+
+---
+
+## Examples
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `cd C:\` | Change directory to C:\ |

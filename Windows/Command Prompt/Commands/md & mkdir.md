@@ -1,5 +1,12 @@
 # md
 
+- Makes new directories
+- Can make multiple at one time
+
+---
+
+## Examples
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `md C:\Exercise3a` | In C:\ Create a folder called Excercise3a, change your working directory to that folder |

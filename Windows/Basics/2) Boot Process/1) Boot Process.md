@@ -1,6 +1,6 @@
 # Boot Process
 
-## BIOS Phase (Preboot)
+## **BIOS Phase (Preboot)**
 
 > **1) The UEFI (Unified Extensible Firmware Interface) performs POST**
 - UEFI is essentially the new version of BIOS
@@ -15,7 +15,7 @@
 ---
 ---
 
-## Boot Loader Phase
+## **Boot Loader Phase**
 
 > **1) Windows Boot Manager**
 - Launches Windows Boot Manager
@@ -32,7 +32,7 @@
 ---
 ---
 
-## Kernel Phase (Windows NT OS Kernel)
+## **Kernel Phase (Windows NT OS Kernel)**
 
 - Loads registry and drivers marked as “BOOT_START”
 - Launches the Session Manager (smss.exe)

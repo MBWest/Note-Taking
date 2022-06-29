@@ -20,7 +20,7 @@
 ---
 ---
 
-## Driver Modes
+## **Driver Modes**
 
 > **User Mode**
 - Interface between a Win32 application and kernel-mode drivers or other OS components (not actual hardware).
@@ -32,7 +32,7 @@
 ---
 ---
 
-## Driver Levels
+## **Driver Levels**
 
 > **Highest-level**
 - Always depend on `lower level` drivers for support
@@ -49,7 +49,7 @@
 ---
 ---
 
-## Driver Levels - Intermediate-level
+## **Driver Levels - Intermediate-level**
 
 > **Function Drivers**
 - Handles reads/writes to the device
@@ -66,7 +66,7 @@
 ---
 ---
 
-## Driver Categories
+## **Driver Categories**
 
 > **Software**
 - Created to gain access to data accessible only to the kernel and is not associated with a hardware device

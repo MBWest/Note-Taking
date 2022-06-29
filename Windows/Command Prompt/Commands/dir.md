@@ -1,8 +1,25 @@
 # dir
 
+- Displays what is in a directory
+- By Default it will not show:
+    - Read only files/folders
+    - Hidden files/folders
+    - System files/folder
+
+---
+
+## Examples
+
 | **Command** | **Description** |
 |-------------|-----------------|
-| `dir` | List the contents of your current directory |
+| `dir` | List the contents of your current directory | |
+| `dir /ad` | ONLY display directories |
+| `dir /ah` | ONLY display hidden |
+| `dir /ar` | ONLY display read only attribute |
+| `dir /a` | Shows ALL files/folder regardless of attribute |
+| `dir /a-r C:\CWO` | Shows everything EXCEPT read only; starts at C:\CWO folder |
+| `dir /s` | Look in subfolder/subfiles (recursive) |
+| `dir /s *.exe` | Search for all .exe files; starts with current folder
 | `dir C:\Windows` | List the contents of the C:\Windows directory |
 | `dir /as C:\Windows` | List only the system files in the C:\Windows directory |
 | `dir /ah C:\Windows` | List only the hidden files in the C:\Windows directory |

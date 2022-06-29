@@ -1,6 +1,6 @@
 # Windows Registry
 
-## Registry Definition
+## **Registry Definition**
 > **Definition:** a central hierarchical database that stores necessary configuration information for the system to run
 - Contains information that Windows continually references during operation
 
@@ -8,7 +8,7 @@
 ---
 ---
 
-## Registry Structure
+## **Registry Structure**
 
 > **2 Root Keys**
 - HKEY_LOCAL_MACHINE
@@ -45,7 +45,7 @@
 ---
 ---
 
-## SID
+## **SID**
 
 > **SID**
 - `Unique` value of variable length that is used to identify a security principal 
@@ -73,7 +73,7 @@ Version
 ---
 ---
 
-## GUID
+## **GUID**
 
 > **GUID**
 - 128 bit number used to identify information in computer systems
@@ -85,7 +85,7 @@ Version
 ---
 ---
 
-## Practical Examples
+## **Practical Examples**
 
 > **Run Software when a user logs in:**
 - `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`
@@ -143,6 +143,6 @@ Version
 ---
 ---
 ---
-> **Hex**
+## **Hex**
 - Uses 16 characters `(0-9, A-F)`
 - Used in many languages and operating systems for data storage

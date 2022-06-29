@@ -1,16 +1,18 @@
 # Netstat
 
-# Examples
+- Displays protocol and Ethernet statistics, and current TCP/IP connections
 
-- `nestat -naob`
-    - `n` - Do not resolve names; display IP addresses numerically
-    - `a` -  Display all active TCP connections and listening TCP and UDP ports
-    - `o` - See the process ID numbers for each line in the output
-    - `b` - See the program name associated with each listening port
+---
+
+## Examples
 
 | **Command** | **Description** |
 |-------------|-----------------|
-| `netstat /a` | Display currently listening ports |
+| `netstat` | Displays active connections
 | `netstat /a /o` | Display currently listening ports, and PIDs associated with those ports |
 | `netstat /e` | Display Ethernet statistics |
-| `netstat /r` | Display the routing table for your system |
+| `netstat –a` |Displays all connections (listening ports) |
+| `netstat –b` |Displays executables associated with ports |
+| `netstat –p` |Displays only TCP connections |
+| `netstat –r` |Displays routing table |
+| `netstat –e` |Displays Ethernet statistics |

@@ -6,7 +6,7 @@
 - Applied to every file and folder stored on an NTFS-formatted volume
 - Can be inherited from a root folder to the files and subfolders beneath
 
-### **NTFS** – Determining a user’s level of access to something
+## **NTFS – Determining a user’s level of access to something**
 - If a file is accessed locally, only the NTFS permissions are used
 - If a file is accessed remotely, NTFS and share permissions are both used. The most restrictive permission applies first.
 - User permissions are cumulative with the group permissions that they are a member of.
@@ -37,7 +37,7 @@ Explicit Deny > Explicit Allow > Inherited Deny > Inherited Allow
 
 ---
 
-### **NTFS Permissions** - Copy, Move, & Inheritance
+## **NTFS Permissions - Copy, Move, & Inheritance**
 > **Copying within a NTFS partition**
 - Creates a new file which inherits permissions of target folder
 
@@ -55,8 +55,7 @@ Explicit Deny > Explicit Allow > Inherited Deny > Inherited Allow
 ---
 ---
 ---
-
-> **Share Permissions**
+## **Share Permissions**
 - Less granular than NTFS permissions
 - Full Control, Change, Read
 - Only applies to files on a network share
