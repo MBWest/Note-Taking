@@ -1,6 +1,7 @@
 # Windows Command Interpreter – Fundamentals
 
-## Case Sensitivity
+## **Case Sensitivity**
+
 > **Case Sensitivity**
 - Object creation retains case (files, folders, registry items)
 - Most commands ignore case
@@ -10,7 +11,7 @@
 ---
 ---
 
-## Command-Line Syntax
+## **Command-Line Syntax**
 
 | **DESCRIPTION** | **NOTATION** |
 |-----------------|:------------:|
@@ -25,7 +26,7 @@
 ---
 ---
 
-## Paths
+## **Paths**
 
 > **Absolute path**
 - The entire path, starting with the root partition letter
@@ -47,7 +48,7 @@
 ---
 ---
 
-## Command Arguments
+## **Command Arguments**
 
 - **Definition:** Predefined value, specified during the command's programming, which causes the command to work differently than it would without the specified argument
 - Always follow the command name and is separated by a space
@@ -92,7 +93,7 @@ hello ^
 
 > **Wildcard (\*)**
 - Any Character
-- **Examples:**
+- Examples:
     - *.exe (All files with an “exe” extension)
     - Win* (All files beginning with “Win”)
     - *.* (All files)
@@ -101,5 +102,44 @@ hello ^
 C:\>mkdir C:\exefiles && mkdir C:\winstuff
 C:\>copy C:\Windows\System32\*.exe C:\exefiles
 C:\>copy C:\Windows\System32\win* C:\winstuff
+```
 
+---
+---
+---
+
+## **Three Defined Handlers**
+> **Standard IN (STDIN) - 0**
+- Input from Keyboard (Default)
+
+> **Standard OUT (STDOUT) - 1**
+- Sends output to the Terminal 
+
+> **Standard ERROR (STDERR) - 2**
+- Sends errors to the Terminal
+
+---
+---
+---
+## **Redireection**
+
+> **Input redirection (<)**
+- Can get information from a file instead of the keyboard
+
+```
+C:\>tasklist 1> cwo.txt		# Writes running tasks to cwo.txt (creates file)
+```
+
+> **Output redirection (>, >>)**
+- `>` is used to overwrite information in the destination
+- `>>` is used to append information in the destination
+
+```
+C:\>echo A new line >> cwo.txt	# Appends A new line cwo.txt (can create file)
+```
+
+> **Error redirection (2>, 2>>)**
+
+```
+C:\>dri C:\ 2> cwo.txt		# Overwrites cwo.txt with the error message
 ```

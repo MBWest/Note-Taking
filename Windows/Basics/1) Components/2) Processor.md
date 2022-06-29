@@ -1,6 +1,6 @@
 # Windows Processor
 
-## Runs in two modes:
+## **Runs in two modes:**
 
 > **User Mode - Unprivileged/Restricted**
 - Has its own private virtual address space in memory

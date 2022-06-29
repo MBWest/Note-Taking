@@ -1,25 +1,29 @@
 # ps
 
-List processes
+List processes and their attributes
 
 ## Examples
 
 | **Command**   | **Description**   | 
-| --------------|-------------------|
+|:-------------:|-------------------|
 | **Standard Syntax Examples** |
-| `ps aux` or `ax` | See every process on the system |
+| `ps -aux` or `-ax` | See every process on the system |
 | `ps -U root -u root u` | See every process owned by root |
 | **BSD Syntax Examples** |
 | `ps -e` or `-ef` or `-eF` or `-ely` | See every process on the system |
 | **Process Tree Examples** |
 | `ps -ejH` or `axjf` or `eh` | Print a process tree |
 |**Thread Information Examples** |
-| `ps -eLf` or `axms` | Get information about threads |
+| `ps -eLf` or `-axms` | Get information about threads |
+| **Display the process for the cron command** |
+| `ps -C cron` | Get information about the cron process |
+| **Sort processes by the 3rd column** |
+| `ps -A \| sort -k 3` | Sorts all shown processes by the third column |
 
 ## PS Command Attributes
 
 | **Attribute** | **Description** |
-|---------------|-----------------|
+|--------------:|-----------------|
 | `F:` | Flags associated with the process (different meaning depending on the UNIX variant |
 | `S:` | State of the process (varies depending on the UNIX variant) |
 | `UID:` | The effective user ID of the process or the associated username if the -f option is used |

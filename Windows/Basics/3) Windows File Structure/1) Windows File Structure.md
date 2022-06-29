@@ -8,7 +8,7 @@
 ---
 ---
 
-## File Systems - FAT
+## **File Systems - FAT**
 
 > **File Allocation Table (FAT)**
 - File System initially developed for Windows systems starting from MS-DOS up to Windows ME.
@@ -23,7 +23,7 @@
 ---
 ---
 
-## File Systems - NTFS
+## **File Systems - NTFS**
 
 > **New Technology File System (NTFS)**
 - The primary file system introduced in Windows NT and currently in use on Windows 10. 
