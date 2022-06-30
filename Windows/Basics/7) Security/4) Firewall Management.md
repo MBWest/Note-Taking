@@ -45,8 +45,6 @@
 - Introduced with Windows 2000
 - Interacts with underlying services, just like GUI/PowerShell
 - Support may be removed by Microsoft in the future
-- Included as reference, we will not cover netsh in this block
-
 ---
 ---
 ---
