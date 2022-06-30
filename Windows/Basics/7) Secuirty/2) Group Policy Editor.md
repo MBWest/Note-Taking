@@ -51,7 +51,7 @@
     - When a user shuts down a computer
     - Actions taken by installed services
 
-> **Logon events**
+> ## **Logon events**
 - Logs an event for logon events that are occurring on this machine regardless of where the validation is taking place
     - Example: You’re logging into your AFNET account from a NIPR workstation. Your local workstation will log the event, - as well as the Domain Controller, assuming both have Logon Events enabled
 - Note:
