@@ -40,7 +40,7 @@
 - Logs an event each time a user attempts, successfully or unsuccessfully, to use special privileges
     - Example:  changing system time
 
-> **Process tracking**
+> ## **Process tracking**
 - Logs an event for each program or process that a user launches while accessing a system
 - Administrators can use this information to track the details of a user’s activities while he or she is accessing a - system.
 

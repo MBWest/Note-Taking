@@ -1,7 +1,7 @@
 # Windows Registry
 
 ## **Registry Definition**
-> **Definition:** a central hierarchical database that stores necessary configuration information for the system to run
+> ## **Definition:** a central hierarchical database that stores necessary configuration information for the system to run
 - Contains information that Windows continually references during operation
 
 ---
@@ -10,13 +10,13 @@
 
 ## **Registry Structure**
 
-> **2 Root Keys**
+> ## **2 Root Keys**
 - HKEY_LOCAL_MACHINE
     - Configuration Information for the operating system
 - HKEY_USERS
     - User profile information
 
-> **3 Linked Keys**
+> ## **3 Linked Keys**
 - HKEY_CLASSES_ROOT
     - Shortcut to: `HKLM\SOFTWARE\Classes`
 - HKEY_CURRENT_USER
@@ -24,7 +24,7 @@
 - HKEY_CURRENT_CONFIG
     - Shortcut to: `HKLM\SYSTEM\CurrentControlSet\HardwareProfiles\Current`
 
-> **Structure of the Registry**
+> ## **Structure of the Registry**
 - `Keys` - Comparable to Folders in the File System
 - `Values` - Comparable to Files in the File System
     - **6 different “Types,” similar to file extensions in the file system**
@@ -47,16 +47,16 @@
 
 ## **SID**
 
-> **SID**
+> ## **SID**
 - `Unique` value of variable length that is used to identify a security principal 
 - SIDs that identify generic users or groups (ie: `Administrators`) are called “well known SIDs” – their values are static
 - `Example:` HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileListGUID 
     - This location shows user accounts with active profiles
 
-> **SID Domain Identifier**
+> ## **SID Domain Identifier**
 - Unique to the Domain the SID was created in. No other domain in the enterprise has this value.
 
-> **SID Relative ID**
+> ## **SID Relative ID**
 - Unique to the user, group, or computer account the SID was generated for. No other account or group in the domain has a SID with the same RID.
 
 ```Text
@@ -75,7 +75,7 @@ Version
 
 ## **GUID**
 
-> **GUID**
+> ## **GUID**
 - 128 bit number used to identify information in computer systems
 - Commonly used to identify `hardware` and `software` versions
 - Example - installed software, listed by GUID:
@@ -87,7 +87,7 @@ Version
 
 ## **Practical Examples**
 
-> **Run Software when a user logs in:**
+> ## **Run Software when a user logs in:**
 - `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`
     - System location – any user logging in will run
 - `HKU\Software\Microsoft\Windows\CurrentVersion\Run`
@@ -98,7 +98,7 @@ Version
 - Commonly used by malware for persistence
     - Use the `Autoruns` utility from `SysInternals` to find software that is set to start from this location
 
-> **Make the Windows Command Interpreter autorun a command when you start cmd.exe:**
+> ## **Make the Windows Command Interpreter autorun a command when you start cmd.exe:**
 - `HKLM\Software\Microsoft\Command Processor`
     - **Value:** AutoRun
     - **Data:** command (that exists in the PATH variable) or filepath to a program
@@ -112,7 +112,7 @@ Version
         - Create the REG_SZ value AutoRun with the data cmd
             - When you launch cmd.exe – it will launch cmd.exe, which will launch cmd.exe, which will launch cmd.exe…
 
-> **Remote Desktop Configuration**
+> ## **Remote Desktop Configuration**
 - Remote Desktop Protocol (RDP) normally enabled in Enterprise Environments for remote management purposes
 - `HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server`
     - **Value:** fDenyTSConnections
@@ -123,13 +123,13 @@ Version
     - You’re a member of a security team, and want to enable/disable RDP for a legitimate reason
     - You’re a malicious person and want to create a Denial of Service, so you turn off RDP on machines
 
-> **Modify Services through the registry**
+> ## **Modify Services through the registry**
 - Registry location for all installed services:
     - `HKLM\SYSTEM\CurrentControlSet\Services`
 - Browse to the location and modify/create your own service
 - Caveat…the binary must know how to communicate with the services controller, otherwise it will be terminated shortly after execution
 
-> **Exclusion location for Windows Defender**
+> ## **Exclusion location for Windows Defender**
 - `HKLM\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths`
     - **Value:** Absolute Filepath to a folder
     - **Data:** REG_DWORD 0x0
