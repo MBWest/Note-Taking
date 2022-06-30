@@ -10,7 +10,7 @@ $ python -m SimpleHTTPServer 8000
 $ python -m http.server 8000
 ```
 
-### Twisted <sub><sup>(Python)</sup></sub>
+### Twisted (Python)
 
 ```shell
 $ twistd -n web -p 8000 --path .
@@ -36,7 +36,7 @@ $ ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => Dir.
 $ ruby -run -ehttpd . -p8000
 ```
 
-### adsf <sub><sup>(Ruby)</sup></sub>
+### adsf (Ruby)
 
 ```shell
 $ gem install adsf   # install dependency
@@ -45,7 +45,7 @@ $ adsf -p 8000
 
 *No directory listings.*
 
-### Sinatra <sub><sup>(Ruby)</sup></sub>
+### Sinatra (Ruby)
 
 ```shell
 $ gem install sinatra   # install dependency
@@ -61,14 +61,14 @@ $ cpan HTTP::Server::Brick   # install dependency
 $ perl -MHTTP::Server::Brick -e '$s=HTTP::Server::Brick->new(port=>8000); $s->mount("/"=>{path=>"."}); $s->start'
 ```
 
-### Plack <sub><sup>(Perl)</sup></sub>
+### Plack (Perl)
 
 ```shell
 $ cpan Plack   # install dependency
 $ plackup -MPlack::App::Directory -e 'Plack::App::Directory->new(root=>".");' -p 8000
 ```
 
-### Mojolicious <sub><sup>(Perl)</sup></sub>
+### Mojolicious (Perl)
 
 ```shell
 $ cpan Mojolicious::Lite   # install dependency
@@ -77,7 +77,7 @@ $ perl -MMojolicious::Lite -MCwd -e 'app->static->paths->[0]=getcwd; app->start'
 
 *No directory listings.*
 
-### http-server <sub><sup>(Node.js)</sup></sub>
+### http-server (Node.js)
 
 ```shell
 $ npm install -g http-server   # install dependency
@@ -86,7 +86,7 @@ $ http-server -p 8000
 
 *Note: This server does funky things with relative paths. For example, if you have a file `/tests/index.html`, it will load `index.html` if you go to `/test`, but will treat relative paths as if they were coming from `/`.*
 
-### node-static <sub><sup>(Node.js)</sup></sub>
+### node-static (Node.js)
 
 ```shell
 $ npm install -g node-static   # install dependency
@@ -95,7 +95,7 @@ $ static -p 8000
 
 *No directory listings.*
 
-### PHP <sub><sup>(>= 5.4)</sup></sub>
+### PHP (>= 5.4)
 
 ```shell
 $ php -S 127.0.0.1:8000
