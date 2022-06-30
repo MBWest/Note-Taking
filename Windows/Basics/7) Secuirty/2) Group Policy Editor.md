@@ -20,7 +20,7 @@
 - In an enterprise environment, these logs will be written on a Domain Controller. No Account Logon Events logs are stored on end-user systems for domain authentication
 - On a standalone system, these logs will be written locally
 
-> **Account management**
+>> **Account management**
 - Logs an event each time an account is managed
 - This is a useful function if you are concerned about changes being made to user accounts in your environment
 - Examples:
