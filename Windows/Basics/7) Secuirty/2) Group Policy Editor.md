@@ -14,7 +14,7 @@
 
 ## **Security Settings > Local Policies > Audit Policy**
 
-> **`Account logon events`**
+## **Account logon events**
 - Logs an event each time a user attempts to use this machine to authenticate
 - Can log failed as well as successful attempts
 - In an enterprise environment, these logs will be written on a Domain Controller. No Account Logon Events logs are stored on end-user systems for domain authentication
