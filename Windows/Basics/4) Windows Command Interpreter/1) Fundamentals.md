@@ -2,7 +2,7 @@
 
 ## **Case Sensitivity**
 
-> **Case Sensitivity**
+> ### **Case Sensitivity**
 - Object creation retains case (files, folders, registry items)
 - Most commands ignore case
 - Very few commands with case sensitive switches
@@ -28,7 +28,7 @@
 
 ## **Paths**
 
-> **Absolute path**
+> ### **Absolute path**
 - The entire path, starting with the root partition letter
 
 ```
@@ -37,7 +37,7 @@
     C:\Program Files> cd “Internet Explorer”
 ```
 
-> **Relative path**
+> ### **Relative path**
 - The path relative to the current directory
 
 ```
@@ -62,7 +62,7 @@ C:\>Time /t
 02:40 PM
 ```
 
-> **Help Argument**
+> ### **Help Argument**
 - Specified as an argument to the command
 - May be specified by typing "help" or "/?“ after the command
 
@@ -73,7 +73,7 @@ C:\>net help
 C:\>net /?
 ```
 
-> **Double Quote and Escape**
+> ### **Double Quote and Escape**
 - Necessary to use metacharacters for their literal meaning
 - The caret "^" is the escape character
 
@@ -91,7 +91,7 @@ C:\>echo hello ^^
 hello ^
 ```
 
-> **Wildcard (\*)**
+> ### **Wildcard (\*)**
 - Any Character
 - Examples:
     - *.exe (All files with an “exe” extension)
@@ -109,13 +109,13 @@ C:\>copy C:\Windows\System32\win* C:\winstuff
 ---
 
 ## **Three Defined Handlers**
-> **Standard IN (STDIN) - 0**
+> ### **Standard IN (STDIN) - 0**
 - Input from Keyboard (Default)
 
-> **Standard OUT (STDOUT) - 1**
+> ### **Standard OUT (STDOUT) - 1**
 - Sends output to the Terminal 
 
-> **Standard ERROR (STDERR) - 2**
+> ### **Standard ERROR (STDERR) - 2**
 - Sends errors to the Terminal
 
 ---
@@ -123,14 +123,14 @@ C:\>copy C:\Windows\System32\win* C:\winstuff
 ---
 ## **Redireection**
 
-> **Input redirection (<)**
+> ### **Input redirection (<)**
 - Can get information from a file instead of the keyboard
 
 ```
 C:\>tasklist 1> cwo.txt		# Writes running tasks to cwo.txt (creates file)
 ```
 
-> **Output redirection (>, >>)**
+> ### **Output redirection (>, >>)**
 - `>` is used to overwrite information in the destination
 - `>>` is used to append information in the destination
 
@@ -138,7 +138,7 @@ C:\>tasklist 1> cwo.txt		# Writes running tasks to cwo.txt (creates file)
 C:\>echo A new line >> cwo.txt	# Appends A new line cwo.txt (can create file)
 ```
 
-> **Error redirection (2>, 2>>)**
+> ### **Error redirection (2>, 2>>)**
 
 ```
 C:\>dir C:\ 2> cwo.txt		# Overwrites cwo.txt with the error message
@@ -149,14 +149,14 @@ C:\>dir C:\ 2> cwo.txt		# Overwrites cwo.txt with the error message
 ---
 ## **Streams and Pipes**
 
-> **Streams**
+> ### **Streams**
 - Input / Output stream (can be redirected)
 
 ```
 C:\>dir /? | find /I “hidden” 	# Sends the STDOUT from dir /? to find “hidden”
 ```
 
-> **Pipes**
+> ### **Pipes**
 - Redirects STDOUT to piped command
 
 ```

@@ -2,16 +2,16 @@
 
 ## **Terms**
 
-> **Module**
+> ### **Module**
 - Package that contains PowerShell commands, such as cmdlets, providers, functions, workflows, variables, and aliases
 
-> **Cmdlet**
+> ### **Cmdlet**
 - Compiled code written in a .NET language such as C#
 
-> **Function**
+> ### **Function**
 - A list of PowerShell statements that has an assigned, callable name
 
-> **Script**
+> ### **Script**
 - Plain text file ending in a .ps1 file extension that contains one or more PowerShell commands
 
 ---
@@ -103,7 +103,7 @@ Get-Help about_objects
 
 ## **Variables**
 
-> **User Created Variables**
+> ### **User Created Variables**
     - Variables defined by the user to store data
 
 ```PowerShell
@@ -121,7 +121,7 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 Get-Help about_objects
 ```
 
-> **Automatic Variables**
+> ### **Automatic Variables**
 
 - Variables defined and used by PowerShell that cannot be changed
 - The below variable holds the current version information for PowerShell
@@ -150,7 +150,7 @@ At line:1 char:1
     + FullyQualifiedErrorId : VariableNotWritable
 ```
 
-> **Preference Variables**
+> ### **Preference Variables**
 
 - Variables defined and used by PowerShell that modify user preferences – can be modified by the user
 - The below example demonstrates changing $MaximumHistoryCount

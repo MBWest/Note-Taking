@@ -2,15 +2,15 @@
 
 ## **Event Viewer – eventvwr.msc**
 
-> **System**
+> ### **System**
 - Contains events logged by the Windows system components that failed during startup
 - Such as drivers or other system components 
 
-> **Application**
+> ### **Application**
 - Contains events logged by applications or programs
 - The program developer decides which events to record
 
-> **Security**
+> ### **Security**
 - If configured to do so, records security events, such as valid and invalid logon attempts
 - Events related to resource use-such as creating, opening, or deleting files—can also be logged
 
@@ -19,13 +19,13 @@
 
 ## Application and System Logs
 
-> **Error**
+> ### **Error**
 - A significant problem, such as loss of data or loss of functionality
 
-> **Warning**
+> ### **Warning**
 - An event that is not necessarily significant but might indicate a possible future problem
 
-> **Information**
+> ### **Information**
 - An event that describes the successful operation of an application, driver, or service
 
 ---
@@ -33,10 +33,10 @@
 
 ## Found in Security Logs
 
-> **Success Audit**
+> ### **Success Audit**
 - An audited security event in which a user’s attempt to access a resource succeeds
 
-> **Failed Audit**
+> ### **Failed Audit**
 - An audited security event in which a user’s attempt to access a resource fails
 
 ---

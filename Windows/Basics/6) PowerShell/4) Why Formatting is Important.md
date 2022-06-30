@@ -10,7 +10,7 @@
             - C:\windows\systems32\windowspowershell\v1.0\Types.ps1xml
 - If you want to see all properties in your output, provide formatting at the very end of your command
 
-> **No Specified Formatting**
+> ### **No Specified Formatting**
 
 - Process objects default to a table, and 8 properties are shown
 
@@ -22,7 +22,7 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
      70       6     5192       5128       0.02  19252   7 cmd
 ```
 
-> **Format as a List**
+> ### **Format as a List**
 
 - Process objects display 5 properties
 
@@ -117,7 +117,7 @@ Site                       :
 Container                  :
 ```
 
-> **Final note on formatting...***
+> ### **Final note on formatting...**
 
 - Always format last – do not try to filter or manipulate objects after they’ve been formatted
 - Formatting is for viewing and presenting the data, so take advantage of it

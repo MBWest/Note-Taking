@@ -1,6 +1,6 @@
 # Windows File Structure
 
-> **What is a file system?**
+> ### **What is a file system?**
 - A file system is implemented by the OS designed to store and retrieve data when necessary.
 - Typically starting from a root drive and expanding out into a tree-like structure.
 
@@ -10,7 +10,7 @@
 
 ## **File Systems - FAT**
 
-> **File Allocation Table (FAT)**
+> ### **File Allocation Table (FAT)**
 - File System initially developed for Windows systems starting from MS-DOS up to Windows ME.
 - Still in use today due to compatibility w/ a variety of devices and older OS’s. 
 - Does not support file compression or security features (i.e. encryption).
@@ -25,7 +25,7 @@
 
 ## **File Systems - NTFS**
 
-> **New Technology File System (NTFS)**
+> ### **New Technology File System (NTFS)**
 - The primary file system introduced in Windows NT and currently in use on Windows 10. 
 - Features:
     - Can support hard drives up to just under 16EB with a max volume size of 256TB.

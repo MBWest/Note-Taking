@@ -2,7 +2,7 @@
 
 ## **net**
 
-> **user**
+> ### **user**
 
 - Allows creating or modifying user accounts
 
@@ -24,7 +24,7 @@ C:\>net user TestUser /active:no 	# Disables the account
 C:\>net user student.dmn.adm Tr@!n3d2D3f3nd /domain         # Changes the domain account “Student.dmn.adm” password to Tr@!n3d2D3f3nd
 ```
 
-> **localgroup**
+> ### **localgroup**
 
 - Allows managing local group accounts
 
@@ -38,7 +38,7 @@ C:\>net localgroup testgroup		        # Displays information about testgroup
 C:\>net localgroup testgroup testuser /add	# Adds “testuser” to the group “testgroup”
 ```
 
-> **group**
+> ### **group**
 
 - Allows managing domain group accounts
 

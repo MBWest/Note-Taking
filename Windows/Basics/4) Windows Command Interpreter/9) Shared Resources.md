@@ -2,7 +2,7 @@
 
 ## **net**
 
-> **use**
+> ### **use**
 
 - Connects a computer to a shared resource or disconnects a computer from a shared resource. When used without options, it lists the computer’s connections.
 
@@ -14,7 +14,7 @@ C:\>net use X: \\DC01\C$	# Mounts DC01’s C$ share to the X drive
 C:\>net use X: /delete		# Stops using this resource
 ```
 
-> **share**
+> ### **share**
 
 - Manage local resources to share with other users.
 

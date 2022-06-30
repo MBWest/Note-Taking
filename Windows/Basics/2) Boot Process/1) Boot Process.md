@@ -2,14 +2,14 @@
 
 ## **BIOS Phase (Preboot)**
 
-> ## **1) The UEFI (Unified Extensible Firmware Interface) performs POST**
+> ### **1) The UEFI (Unified Extensible Firmware Interface) performs POST**
 - UEFI is essentially the new version of BIOS
 - `POST (Power On Self Test)` – Hardware checks
 
-> ## **2) The Master Boot Record (MBR) is read in**
+> ### **2) The Master Boot Record (MBR) is read in**
 - Identifies where the system partition is, this is used to start the OS
 
-> ## **3) Searches and runs the “bootmgr” file**
+> ### **3) Searches and runs the “bootmgr” file**
 
 ---
 ---
@@ -17,12 +17,12 @@
 
 ## **Boot Loader Phase**
 
-> ## **1) Windows Boot Manager**
+> ### **1) Windows Boot Manager**
 - Launches Windows Boot Manager
 - Reads in the BCD
 - Is loaded into HKLM\BCD00000000
 
-> ## **2) Windows Boot Loader**
+> ### **2) Windows Boot Loader**
 - Launches Windows Boot Loader
 - Finds and starts the Winloader (Winload.exe)
 

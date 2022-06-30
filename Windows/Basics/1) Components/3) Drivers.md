@@ -1,6 +1,6 @@
 # Windows Drivers
 
-> ## **Definition:** Software component that enables communication between hardware and the OS:
+> ### **Definition:** Software component that enables communication between hardware and the OS:
 - Can communicate directly with the hardware
 - Can communicate with lower-level drivers 
     - Ex: Graphics Cards
@@ -22,7 +22,7 @@
 
 ## **Driver Modes**
 
-> ## **User Mode**
+> ### **User Mode**
 - Interface between a Win32 application and kernel-mode drivers or other OS components (not actual hardware).
 
 > **Kernel Mode**
@@ -34,7 +34,7 @@
 
 ## ## **Driver Levels**
 
-> ## **Highest-level**
+> ### **Highest-level**
 - Always depend on `lower level` drivers for support
 - Examples include file system drivers for: NTFS, FAT, CDFS
 > **Intermediate-level**
@@ -51,15 +51,15 @@
 
 ## **Driver Levels - Intermediate-level**
 
-> ## **Function Drivers**
+> ### **Function Drivers**
 - Handles reads/writes to the device
 - Manages device power policy
 
-> ## **Filter Drivers**
+> ### **Filter Drivers**
 - Optional component, Provides additional functionality
 - Communicates with other `filter` drivers or `function` drivers
 
-> ## **Software Bus Drivers**
+> ### **Software Bus Drivers**
 - Provides an interface for higher-level drivers to attach to a set of child devices
 
 ---
@@ -68,15 +68,15 @@
 
 ## **Driver Categories**
 
-> ## **Software**
+> ### **Software**
 - Created to gain access to data accessible only to the kernel and is not associated with a hardware device
 Always runs in `kernel` mode
 
-> ## **Bus**
+> ### **Bus**
 - Provides communication to the several devices sharing a bus
 - Always runs in `kernel` mode
 - Example - peripheral component interconnect (PCI) bus, USB bus
 
-> ## **Device**
+> ### **Device**
 - Refers to drivers necessary for the OS to communicate with an attached device
 - Can run in `User or Kernel` mode

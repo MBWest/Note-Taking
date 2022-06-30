@@ -1,6 +1,6 @@
 # File Systems – NTFS Permissions
 
-> **NTFS Permissions**
+> ### **NTFS Permissions**
 - Basic Permissions: Read, Read and Execute, Write, Modify, List Folder Contents, and Full Control
 - Advanced Permissions: available for more granular control
 - Applied to every file and folder stored on an NTFS-formatted volume
@@ -16,7 +16,7 @@
 ```
 Explicit Deny > Explicit Allow > Inherited Deny > Inherited Allow
 ```
-> **NTFS File/Folder Permissions**
+> ### **NTFS File/Folder Permissions**
 
 | **Permissions** | **Basic Full Control** | **Basic Modify** | **Basic Read & Execute** | **Basic List Folder Contents** | **Basic Read** | **Basic Write** |
 |-----------------|:----------------------:|:----------------:|:------------------------:|:------------------------------:|:--------------:|:---------------:|
@@ -38,16 +38,17 @@ Explicit Deny > Explicit Allow > Inherited Deny > Inherited Allow
 ---
 
 ## **NTFS Permissions - Copy, Move, & Inheritance**
-> **Copying within a NTFS partition**
+
+> ### **Copying within a NTFS partition**
 - Creates a new file which inherits permissions of target folder
 
-> **Moving across a NTFS partition**
+> ### **Moving across a NTFS partition**
 - Creates a new file and deletes the old one and Inherits the target folders permissions
 
-> **Moving within a NTFS partition**
+> ### **Moving within a NTFS partition**
 - Does not create a new file, updates location in directory and file keeps its original permissions
 
-> **Moving from NTFS partition to FAT partition**
+> ### **Moving from NTFS partition to FAT partition**
 - Do not retain their attributes or security descriptors
 - Do retain their long file names
 

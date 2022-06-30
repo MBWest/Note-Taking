@@ -155,19 +155,19 @@ if "%VAR%" == "before" (
 - Comparison evaluates to see if two things are the same
 - When creating variables you must use the assignment operator
 
-> **Assignment Operators**
+> ### **Assignment Operators**
 - = (Put the value on the right in the variable on the left)
 
-> **Increment Assignment Operator**
+> ### **Increment Assignment Operator**
 - += (Increase the variable on the left by the amount indicated on the right)
 
-> **Decrement Assignment Operator**
+> ### **Decrement Assignment Operator**
 - -= (Decrease the variable on the left by the amount indicated on the right)
 
-> **Multiply Assignment Operator**
+> ### **Multiply Assignment Operator**
 - *= (Multiply the variable on the left by the amount indicated on the right)
 
-> **Divide Assignment Operator**
+> ### **Divide Assignment Operator**
 - \= (Divide the variable on the left by the amount indicated on the right)
 
 ```batch
@@ -190,11 +190,11 @@ C:\>script.bat	    C:\>script.bat	    C:\>script.bat
 ## **Comparison Operators**
 - Performs an operation depending on the operators definition (Returns T/F)
 
-> **String Comparison**
+> ### **String Comparison**
 
 - `==` (Are the two strings equal)
 
-> **Integer Comparison**
+> ### **Integer Comparison**
 
 - `EQU` (Are the two equal)
 - `NEQ` (Are the two different)

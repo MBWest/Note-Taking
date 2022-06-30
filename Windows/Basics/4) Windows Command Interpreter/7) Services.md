@@ -2,7 +2,7 @@
 
 ## **sc**
 
-> **sc query / queryex**
+> ### **sc query / queryex**
 
 - Lists all active services by default
 
@@ -16,7 +16,7 @@ C:\>sc query state= all			# Lists all services
 C:\>sc query state= all | find /I “firewall”        # Will find string “firewall”
 ```
 
-> **sc qc**
+> ### **sc qc**
 
 - Queries the configuration of a service
 - Must have the service name to use
@@ -31,7 +31,7 @@ SERVICE NAME: SHAREDACCESS
 ---------------------------------------------
 ```
 
-> **sc config**
+> ### **sc config**
 
 - Change configuration settings for services
 - Takes the service key name as an argument
@@ -42,7 +42,7 @@ C:\>sc config sharedaccess start= demand		# Changes start to demand (manual)
 ```
 
 
-> **sc getdisplayname**
+> ### **sc getdisplayname**
 
 - Helpful if you need to know the display name for a service when you only know the service key name
 
@@ -51,7 +51,7 @@ C:\>sc getdisplayname DHCP
 [SC] GetServiceDisplayName Success Name = “DHCP Client”
 ```
 
-> **sc getkeyname**
+> ### **sc getkeyname**
 - Helpful if you need to know the service key name for a service when you only know the display name
 
 ```
@@ -59,7 +59,7 @@ C:\>sc getkeyname “DHCP Client”
 [SC] GetServiceKeyName Success Name = DHPC
 ```
 
-> **sc start**
+> ### **sc start**
 
 - Starts a service (Must use Service Name)
 
@@ -67,7 +67,7 @@ C:\>sc getkeyname “DHCP Client”
 C:\>sc start dhcp       # Starts dhcp serivce.
 ```
 
-> **sc stop**
+> ### **sc stop**
 
 - Stops a service (Must use Service Name)
 
@@ -80,7 +80,7 @@ C:\>sc stop dhcp		# Stops dhcp service.
 ---
 ## **net**
 
-> **start**
+> ### **start**
 
 - Starts specified service using either the display name or key name
 - Without arguments, lists display names of all running services
@@ -93,7 +93,7 @@ C:\>net start 			    # Lists running services by their display name
 C:\>net start "net logon" 	# Starts the Net Logon service
 ```
 
-> **stop**
+> ### **stop**
 
 - Stops running services
 
