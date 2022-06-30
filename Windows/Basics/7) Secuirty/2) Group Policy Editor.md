@@ -13,7 +13,8 @@
 ---
 
 ## **Security Settings > Local Policies > Audit Policy**
-> **Account logon events**
+
+> **`Account logon events`**
 - Logs an event each time a user attempts to use this machine to authenticate
 - Can log failed as well as successful attempts
 - In an enterprise environment, these logs will be written on a Domain Controller. No Account Logon Events logs are stored on end-user systems for domain authentication
@@ -33,8 +34,8 @@
 
 > **Policy changes**
 - Logs an event each time a policy is successfully or unsuccessfully changed in your environment.
-- Example:  Changing Policy Change to success, Changing the max password age to 30
+    - Example:  Changing Policy Change to success, Changing the max password age to 30
 
 > **Privilege use**
 - Logs an event each time a user attempts, successfully or unsuccessfully, to use special privileges
-- Example:  changing system time
+    - Example:  changing system time
