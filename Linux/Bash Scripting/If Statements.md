@@ -1,8 +1,10 @@
 # If Statements
 
-    if [ $# -ne 2 ]
-    then
-        echo "Error in $0 - Invalid Argument Count"
-        echo "Syntax: $0 <push|pull> <Product Name>"
-        exit
-    fi
+```bash
+if [ condition-is-true]
+then
+    command 1
+    command 2
+    command N
+fi
+```

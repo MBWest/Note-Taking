@@ -7,6 +7,8 @@ Compilation of Resources from TCM's OSINT Course
 
 ### General Links
 
+IntelTechniques: https://inteltechniques.com/tools/
+
 TCM-Security: https://tcm-sec.com/
 
 Links to Course:
@@ -49,7 +51,7 @@ Fake Name Generator - https://www.fakenamegenerator.com/
 
 This Person Does not Exist - https://www.thispersondoesnotexist.com/
 
-Privacy.com - https://privacy.com/join/LADFC *$5 credit given on signup
+Privacy.com - https://privacy.com/
 
 ### Search Engine OSINT
 
