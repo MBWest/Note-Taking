@@ -1,6 +1,19 @@
-# File System
+# Linux File Structure - Filenames
 
-## Spaces in Paths and Filenames
+- Letters, numbers, and certain punctuation allowed
+- Avoid special characters
+    - ``? , ( ) | { } [ ] ~ `` etc… 
+    - These characters have special meaning to the shell
+- Keep filenames simple 
+- If special characters and spaces are used, they must be accounted for
+    - Escape them with a backslash (\)
+    - Use quotes 
+
+---
+
+> ## **File System**
+
+### **Spaces in Paths and Filenames**
 
 - Spaces in filenames and Paths can cause problems when trying to open files or folders. Use a `\` in front of the space to have the system treat the space as part of the arguement. 
 - **cat file\ name.txt** Opens the 'file name.txt' file
@@ -8,25 +21,24 @@
 
 **Official Filesystem Hierarchy Standard:** https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
 
-## Soft Links (see ln.md)
+### **Soft Links (see ln.md)**
 
 - Can cross the file systems
 - Allows you to link between directories
 - Has different inodes number and file permissions than original file
 - Permissions will not be updated
 
-## Hard Links (see ln.md)
+### **Hard Links (see ln.md)**
 
 - Cant cross the file system
 - Cant link directories
 - Has the same inodes number and permissiosn of original file
 - Permissions will be updated if we change the permissions of source file
 
-## Descriptions
+### **Descriptions**
 
 | **Directory**   | **Description**   |
 | --------------|-------------------|
-| **Locations** |
 | `man hier` | Description of the filsystem hierarchy |
 | `/boot` | Holds important files during boot-up process, including Linux Kernel  |
 | `/root` | This is the home directory of root user and should never be confused with ‘/‘ |
@@ -54,7 +66,6 @@
 
 | **Directory**   | **Description**   |
 | --------------|-------------------|
-| **Locations** |
 | `/boot/vmlinuz` | The Linux Kernel file |
 | `/dev/hda` | Device file for the first IDE HDD (Hard Disk Drive) |
 | `/dev/hdc` | Device file for the IDE Cdrom, commonly |
