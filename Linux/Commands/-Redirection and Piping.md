@@ -18,7 +18,7 @@
 The **>** operator default to 1 as the file descriptor number which is why we dont need to specify **1>** to redirect standard output. 
 The **<** operator uses a default file descriptor number of 0, so we dont ned to specify **0<** to redirect to standard input, although you can. 
 
-| **Information**   |
+| **Information** |
 | --------------|
 | **Standard Input** |
 | Standard input is where a program or command get its input from. By default, the shell directs standard input from the keyboard. The input information could come from a keyboard, a file, or even from another command.  |
