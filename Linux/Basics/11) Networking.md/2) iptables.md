@@ -51,3 +51,19 @@
      
                     |-----POSTROUTING-----------------|---------------------------------------OUTPUT---------------------------------------|     
 ```
+> ## **Chains**
+
+### **PREROUTING**
+- Apply to packets as they just arrive on the network interface	
+
+### **`INPUT`**
+- Apply to packets just before they’re given to a local process
+
+### **`OUTPUT`**
+- Apply to packets just after they’ve been produced by a process. 
+
+### **`FORWARD`**
+- Apply to any packets that are routed through the current host
+
+### **POSTROUTING**
+- Apply to packets as they just leave the network interface
