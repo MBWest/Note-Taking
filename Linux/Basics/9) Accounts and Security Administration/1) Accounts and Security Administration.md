@@ -164,6 +164,7 @@ Minimum number of days between password change		: 7
 Maximum number of days between password change		: 60
 Number of days of warning before password expires		: 15
 ```
+---
 
 > ## **su [OPTION]... [-] [USER [ARG]...]**
 - Change the EUID and effective group ID (EGID) to that of USER
