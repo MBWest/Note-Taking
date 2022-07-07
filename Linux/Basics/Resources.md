@@ -25,11 +25,6 @@
 | | https://0xdf.gitlab.io/ |
 | | https://xapax.github.io/security/ |
 | `Hex Packet Decoder` | https://hpd.gasmi.net/ |
-
-# Resources
-
-| **Resource**   | **Website**   |
-| --------------|-------------------|
 | `LinEnum`  | https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh |
 | `Hacktricks` | https://book.hacktricks.xyz/ |
 | `Payload All The Things` | https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Bind%20Shell%20Cheatsheet.md |

@@ -67,3 +67,10 @@ Shell changed.
 [guru@CentOS ~]$ grep guru /etc/passwd
 guru:x:500:500::/home/guru:/bin/sh
 ```
+
+> ## **Resources**
+
+| **Resource**   | **Description**   |
+| --------------|-------------------|
+| **Bash Resource** |
+| `Bash manual` | https://www.gnu.org/software/bash/manual/bash.html |

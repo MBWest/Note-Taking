@@ -1,4 +1,4 @@
-# Device Names
+# Linux File Structure - Device Names
 
 | **Device Name** | **Description** |
 |-----------------|-----------------|

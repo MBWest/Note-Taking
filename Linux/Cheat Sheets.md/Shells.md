@@ -1,6 +1,6 @@
 # Shells
 
-|**Commands** |**Description**|
+|**Command** |**Description**|
 |---|---|
 | `xfreerdp /v:10.129.x.x /u:htb-student /p:HTB_@cademy_stdnt!` | CLI-based tool used to connect to a Windows target using the Remote Desktop Protocol |
 | `env` | Works with many different command language interpreters to discover the environmental variables of a system. This is a great way to find out which shell language is in use |

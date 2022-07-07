@@ -76,3 +76,4 @@ root:$6$eTJc5PVwMRTUvMLP$IjWWxcsIYuUIsj30Duzkh6DVaXbIkKKC3Bh4PJ6ut3uejj36eTt1d5Z
 | `Subfield 2` | Password salt  |
 | `Subfield 3` | Encrypted or Hashed password |
 | `Field 3-8` | Password metadata (last password change, etc…)  |
+

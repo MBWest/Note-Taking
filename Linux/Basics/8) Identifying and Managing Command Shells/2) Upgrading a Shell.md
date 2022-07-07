@@ -1,4 +1,6 @@
-# Upgrading TTY
+# Linux - Identifying and Managing Command Shells - Upgrading a shell
+
+> ## **Upgrade**
 
 **In our `netcat` shell, we will use the following command to use python to upgrade the type of our shell to a full TTY:**
 
@@ -20,7 +22,8 @@
     [Enter]
     www-data@remotehost$
 
-## Resize
+---
+> ## **Resize**
 
 **We can open another terminal window on our system, maximize the windows or use any size we want, and then input the following commands to get our variables:**
 
