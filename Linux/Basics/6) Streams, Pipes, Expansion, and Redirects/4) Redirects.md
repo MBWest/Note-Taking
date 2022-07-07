@@ -1,17 +1,34 @@
-# Piping
+# Streams, Pipes, Expansion, and Redirects - Redirects
 
-| **Command**   | **Description**   |
-| --------------|-------------------|
-| **Piping vs Redirection** |
-| `>` | Connects a command to some file |
-| `\|` | Pipe the standard output from one command into the standard input of another command |
-| **Piping** |
-| `ls -l /etc/ \| less` | Pipes the output from the ls -l /etc/ into the less command |
-| `ls -l /etc/ \| head -n 20 \| tail -n 5` | Pipes the output from the ls -l /etc/ into the head command and pipes that output into the tail command |
-| `find / -name 'sample.txt' \| less` | Pipes the output from the find / -name 'sample.txt' into the less command |
-| `find / -name 'sample.txt' \|& less` | Pipes the find / -name 'sample.txt' into the less command with standard error |
+> ## **File descriptors**
+- A non-negative integer that represents an opened file
+    - In-use file descriptors are managed and tracked by the kernel
+    - Each process maintains a record of its own file descriptors
+- Each process created has 3 file descriptors by default:
+    - STDIN→0
+    - STDOUT→1
+    - STDERR →2
 
-# Redirection
+---
+
+> ## **Redirection**
+
+### **Redirect output**
+- `[n]>word`
+    - Causes the file word to be opened for writing on file descriptor n, or STDOUT (fd 1) if n is no specified
+    - If the file does not exist, it is created; if it does exist, it is truncated to zero size
+- `[n]>>word`
+    - Causes the file word to be opened for appending on file descriptor n, or STDOUT (fd 1) if n is not    specified
+    - If the file does not exist, it is created
+
+### **Redirect output and error**
+- `&>word`
+- `>&word`
+- `> word 2>&1`
+    - All 3 versions allow both STDOUT (fd 1) and STDERR (fd 2) to be redirected to the file word
+    - Can be done in append (>>) mode as well 
+
+--- 
 
 *Standard Input* -> **Command** -> *Standard Output* or -> *Standard Error*
 
@@ -40,4 +57,3 @@ The **<** operator uses a default file descriptor number of 0, so we dont ned to
 | In linux the /dev/null is like a blackhole. Send errors here if you dont wish to view them at a later date. `find / -name 'sample.txt' 2> /dev/null` |
 | **Redirecting Standard Output and Standard Error at the Same Time (&>)** |
 | Newer versions of bash allow for (&>) to redirect both standard output and standard error to the same file. `find / -name 'sample.txt' &> all.txt` |
-
