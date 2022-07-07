@@ -1,3 +1,3 @@
 # ShareEnum
 
-Scan File Shares on your network and view the security settings. 
+- Scan File Shares on your network and view the security settings. 

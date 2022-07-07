@@ -4,9 +4,9 @@ Identifies auto startup, registry keys, scheduled tasks, and other autorun compo
 
 ## Entries
 
-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Runonce
-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunonceEx
+- HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+- HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Runonce
+- HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunonceEx
 
 ## Registry Query CLI
 

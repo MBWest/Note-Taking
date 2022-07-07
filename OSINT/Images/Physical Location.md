@@ -1,9 +1,11 @@
 # Phyiscal Location
 
-**Location Websites**
+> ## **Location Websites**
 
 https://www.google.com/maps
 
-**Geogrpahical Location Tips**
+---
+
+> ## **Geogrpahical Location Tips**
 
 https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/

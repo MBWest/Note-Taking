@@ -1,3 +1,3 @@
 # Process Explorer
 
-Task manager and system monitor appplication to view data about any process
+- Task manager and system monitor appplication to view data about any process

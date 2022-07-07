@@ -5,7 +5,9 @@
 # Open-Source-Intelligence-Resources
 Compilation of Resources from TCM's OSINT Course
 
-### General Links
+---
+
+> ## **General Links**
 
 IntelTechniques: https://inteltechniques.com/tools/
 
@@ -23,7 +25,9 @@ YouTube: https://youtube.com/c/thecybermentor
 
 Discord: https://tcm-sec.com/discord/
 
-### Note Keeping
+---
+
+> ## **Note Keeping**
 
 KeepNote: http://keepnote.org/
 
@@ -39,7 +43,9 @@ Greenshot - https://getgreenshot.org/
 
 Flameshot - https://github.com/flameshot-org/flameshot
 
-### Sock Puppets
+---
+
+> ## **Sock Puppets**
 
 Intro to Creating an Effective Sock Puppet (wayback archive): https://web.archive.org/web/20210307173507/https://jakecreps.com/sock-puppets/
 
@@ -53,7 +59,9 @@ This Person Does not Exist - https://www.thispersondoesnotexist.com/
 
 Privacy.com - https://privacy.com/
 
-### Search Engine OSINT
+---
+
+> ## **Search Engine OSINT**
 
 Google - https://www.google.com/
 
@@ -73,7 +81,9 @@ DuckDuckGo Search Guide - https://help.duckduckgo.com/duckduckgo-help-pages/resu
 
 Baidu - http://www.baidu.com/
 
-### Image OSINT
+---
+
+> ## **Image OSINT**
 
 Google Image Search - https://images.google.com
 
@@ -81,7 +91,9 @@ Yandex - https://yandex.com
 
 TinEye - https://tineye.com
 
-### Email OSINT
+---
+
+> ## **Email OSINT**
 
 Hunter.io - https://hunter.io/
 
@@ -95,7 +107,9 @@ Email Checker - https://email-checker.net/validate
 
 Clearbit Connect - https://chrome.google.com/webstore/detail/clearbit-connect-supercha/pmnhcgfcafcnkbengdcanjablaabjplo?hl=en
 
-### Password OSINT 
+---
+
+> ## **Password OSINT**
 
 Dehashed - https://dehashed.com/
 
@@ -109,7 +123,9 @@ Scylla.sh - https://scylla.sh/
 
 HaveIBeenPwned - https://haveibeenpwned.com/
 
-### Username OSINT
+---
+
+> ## **Username OSINT**
 
 NameChk - https://namechk.com/
 
@@ -117,7 +133,9 @@ WhatsMyName - https://whatsmyname.app/
 
 NameCheckup - https://namecheckup.com/
 
-### People OSINT
+---
+
+> ## **People OSINT**
 
 WhitePages - https://www.whitepages.com/
 
@@ -145,7 +163,9 @@ CallerID Test - https://calleridtest.com/
 
 Infobel - https://infobel.com/
 
-### Social Media OSINT
+---
+
+> ## **Social Media OSINT**
 
 Twitter Advanced Search - https://twitter.com/search-advanced
 
@@ -179,7 +199,9 @@ ImgInn - https://imginn.com/
 
 Snapchat Maps - https://map.snapchat.com
 
-### Website OSINT
+---
+
+> ## **Website OSINT**
 
 BuiltWith - https://builtwith.com/
 
@@ -207,17 +229,23 @@ Shodan - https://shodan.io
 
 Wayback Machine - https://web.archive.org/
 
-### Business OSINT
+---
+
+> ## **Business OSINT**
 
 Open Corporates - https://opencorporates.com/
 
 AI HIT - https://www.aihitdata.com/
 
-### Wireless OSINT
+---
+
+> ## **Wireless OSINT**
 
 WiGLE - https://wigle.net/
 
-### Building an OSINT Lab
+---
+
+> ## **Building an OSINT Lab**
 
 VMWare Workstation Player - https://www.vmware.com/ca/products/workstation-player/workstation-player-evaluation.html
 
@@ -227,7 +255,9 @@ TraceLabs OSINT VM - https://www.tracelabs.org/initiatives/osint-vm
 
 TraceLabs OSINT VM Installation Guide - https://download.tracelabs.org/Trace-Labs-OSINT-VM-Installation-Guide-v2.pdf
 
-### Working with OSINT Tools
+---
+
+> ## **Working with OSINT Tools**
 
 breach-parse - https://github.com/hmaverickadams/breach-parse
 
@@ -241,7 +271,9 @@ Amass - https://github.com/OWASP/Amass
 
 GoWitness - https://github.com/sensepost/gowitness/wiki/Installation
 
-### Additional Resources
+---
+
+> ## **Additional Resources**
 
 TraceLabs - https://www.tracelabs.org/
 
