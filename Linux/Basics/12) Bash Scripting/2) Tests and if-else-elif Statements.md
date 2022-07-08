@@ -1,4 +1,11 @@
-# Tests
+# Linux - Bash Scripting - Tests and if-else-elif Statements
+
+
+> ## **test [EXPRESSION]**
+
+- Check file types and compare values 
+- Returns a status of 0 or 1 depending on the evaluation of the conditional expression EXPRESSION.
+- The brackets in the if statements are a synonym for the test command
 
 To create a test use the sytax, `[ conditon-to-test-for ]`
     - Example, `[ -e /etc/passwd]` 
@@ -28,8 +35,26 @@ To view what items you can test for use the `man test` command
 | `-gt` | True if arg1 is more than arg2 |
 | `-ge` | True if arg1 is more than or equal to arg2
 
+## **Example**
+
+
+```
+[root@CentOS ~]# test stuff == things
+
+[root@CentOS ~]# echo $?
+1
+
+[root@CentOS ~]# test stuff == stuff
+
+[root@CentOS ~]# echo $?
+0
+```
+
 ---
-# if Statements
+> ## **if Statements**
+
+- If the expression in the if statement is true, then perform a given set of actions.  If the same expression is false, do not perform those actions.
+
 
 ## **Syntax**
 
@@ -57,7 +82,9 @@ fi
 ```
 ---
 
-# if/else Statements
+> ## **if/else Statements**
+
+- Perform a set of actions in the event that is no other expression evaluates to true 
 
 ## **Syntax**
 
@@ -86,7 +113,7 @@ else
 fi
 ```
 ---
-# if/else/elif Statements
+> ## **if/else/elif Statements**
 
 ## **Syntax**
 

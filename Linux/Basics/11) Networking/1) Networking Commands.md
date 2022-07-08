@@ -100,3 +100,26 @@ student.lcl.adm@10.0.0.227’s password:
 Last login: Mon Oct 30 16:39:51 2017
 ```
 
+---
+
+> ## **netstat [OPTIONS]...**
+- Print network connections
+- `-a` – show both listening and non-listening sockets
+- `-n` – numerical addresses instead of resolving host, port, or user names
+- `-p` – show PID and name of the program to which each socket belongs
+- `-t` – show only tcp protocol
+
+```
+# netstat –anpt
+tcp	0      0 *:22	*:*	LISTEN	456/sshd
+tcp	0      0 *:80	*:*	LISTEN	9056/httpd
+tcp	0      0 10.0.1.3:80   	10.0.12.227:57642 		TIME_WAIT   -
+tcp	0      0 10.0.1.3:80 	10.0.12.227:57783 		TIME_WAIT   -
+tcp	0      0 10.0.1.3:80 	10.0.12.227:57769	 	TIME_WAIT   -
+tcp	0      0 10.0.1.3:80 	10.0.12.227:35270		TIME_WAIT   -
+tcp	0      0 10.0.1.3:80 	10.0.12.227:41614 		TIME_WAIT   -
+tcp	0      0 10.0.1.3:22	10.0.12.227:31765		ESTABLISHED
+```
+
+---
+

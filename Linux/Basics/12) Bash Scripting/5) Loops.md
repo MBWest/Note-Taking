@@ -1,6 +1,6 @@
-# Loops
+# Linux - Bash Scripting - Loops
 
-## **Syntax**
+> ## **Syntax**
 
 ```bash
 #!/bin/bash
@@ -12,7 +12,7 @@ do
     command N
 done
 ```
-## **Examples**
+> ## **Examples**
 
 ```bash
 #!/bin/bash
@@ -31,8 +31,9 @@ for COLOR in $COLORS
 do
     echo "COLOR: $COLOR"
 done
-```
-### Take all .JPG pictures and rename them
+---```
+
+### **Take all .JPG pictures and rename them**
 ```bash
 #!/bin/bash
 PICTURES=$(ls *jpg)
@@ -44,8 +45,9 @@ do
     mv ${PCITURE} ${DATE}-${PICTURE}
 done
 ```
+---
 
-### Looping through directory listing
+### **Looping through directory listing**
 
 ```bash
 #!/bin/bash
@@ -55,8 +57,9 @@ for i in $( ls ); do
 done
 ```
 
+---
 
-### Loop through a file (dirs.txt) with a list of directories and copy
+### **Loop through a file (dirs.txt) with a list of directories and copy**
 
 ```bash
 #!/bin/bash
@@ -66,16 +69,18 @@ while read p; do
     cp PRODUCT_INFO.md $p
 done < dirs.txt
 ```
+---
 
-### Range
+### **Range**
 
 ```bash
 #!/bin/bash
 
 for i in {0..40}; do wget http://10.10.10.245/data/${i}; done
 ```
+---
 
-### Infinite loop
+### **Infinite loop**
 
 ```bash
 #!/bin/bash
