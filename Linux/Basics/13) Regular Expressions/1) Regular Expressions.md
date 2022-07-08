@@ -143,7 +143,7 @@ Regex - /[:upper:]/g
 > ## **Regex Special Characters**
 
 | **Character** | **Meaning** |	**Example** |
-|---------------|-------------|-------------|
+|:-------------:|-------------|-------------|
 | `*` 	| Match zero, one or more of the previous |	Ah* matches "Ahhhhh" or "A"| 
 | `?` 	| Match zero or one of the previous |	Ah? matches "Al" or "Ah"| 
 | `+` 	| Match one or more of the previous |	Ah+ matches "Ah" or "Ahhh" but not "A"| 
