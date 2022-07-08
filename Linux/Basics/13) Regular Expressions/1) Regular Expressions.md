@@ -13,7 +13,7 @@
 - `-B NUM`  - print NUM lines of leading context before matches
 - `-A NUM`  - print NUM lines of trailing context after matches
 - `-r or -R`   - read all files under each directory
-- `-e PATTERN - use PATTERN as the pattern
+- `-e PATTERN` - use PATTERN as the pattern
     - This can be used to specify multiple search patterns
 
 > ## **Literal Characters**
