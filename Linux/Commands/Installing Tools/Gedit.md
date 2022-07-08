@@ -4,9 +4,10 @@
 
 ## Using gedit
 
-- *Example* > gedit test.txt
-    - Opens a new text document named test.txt
-
+**Opens a new text document named test.txt**
+```
+gedit test.txt
+```
 ## Alternatives
 
 - Nano
