@@ -1,5 +1,9 @@
 # Process and Service Management
 
+---
+
+> ## **Examples**
+
 | **Command** | **Description** |
 |----------|-----------------|
 | `sc` | Communicating with the services control manager|

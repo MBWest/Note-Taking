@@ -2,7 +2,7 @@
 
 Finds Beacons
 
-## Examples
+> ## **Examples**
 
 - **./findbeacons.py  -i 5 -c 10 172.16.42.107 access.log**
     - **-i 5** - look for beacons that are at 5-second intervals

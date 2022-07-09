@@ -1,10 +1,10 @@
 # cd
 
-Changes to specified directory
+- Changes to specified directory
 
 ---
 
-## Examples
+> ## **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|

@@ -21,6 +21,7 @@
 | `yum remove qpdf`| Uninstalls the qpdf application |
 
 ---
+---
 
 > ## **Resources**
 

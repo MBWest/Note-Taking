@@ -6,7 +6,7 @@ GNU History Library
 
 > ## **Syntax**
 
-`history`
+- history
 
 ---
 
@@ -14,7 +14,6 @@ GNU History Library
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Examples** |
 | `history` | View previous run commands |
 | `history \| less` | Easier way to manage a long history |
 | `![number]` | Rerun a command using its line number from the history |
@@ -28,7 +27,6 @@ GNU History Library
 
 | **Key**   | **Description**   |
 | --------------|-------------------|
-| **Arrow Keys** |
 | `Left/Right` | Move the cursor along the command |
 | `Up` | Cycle through previous commands |
 | `Down` | Cycle through recent commands |
@@ -39,7 +37,6 @@ GNU History Library
 
 | **File**   | **Description**   |
 | --------------|-------------------|
-| **Files and Configurations** |
 | `~/.history` | Default filename for reading and writing saved history |
 | `.bash_history` | Where the history is saved |
 | `$HISTFILESIZE` | Number of items stored in history (Stored in ~/.bashrc)  |

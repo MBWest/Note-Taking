@@ -1,6 +1,6 @@
 # Security - Group Policy Editor
 
-## **Group Policy Editor**
+> ## **Group Policy Editor**
 - Local group policy editor (gpedit.msc) 
 - Expand to "computer\windows settings" to see security settings
 - Our focus is on the first two:
@@ -9,10 +9,10 @@
     - Local Policies
         - Configure auditing for event logs
 
----
+
 ---
 
-## **Security Settings > Local Policies > Audit Policy**
+> ## **Security Settings > Local Policies > Audit Policy**
 
 > ### **Account logon events**
 - Logs an event each time a user attempts to use this machine to authenticate

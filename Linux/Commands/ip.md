@@ -86,7 +86,6 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **maddr** |
 | `ip maddr` | Display multicast information for all devices |
 | `ip maddr show dev em1` | Display multicast information for device em1 |
 
@@ -99,7 +98,6 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **help** |
 | `ip help` | Display ip commands and arguments |
 | `ip addr help` | Display address commands and arguments |
 | `ip link help` | Display link commands and arguments |

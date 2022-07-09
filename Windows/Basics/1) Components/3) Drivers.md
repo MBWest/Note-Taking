@@ -5,8 +5,7 @@
 - Can communicate with lower-level drivers 
     - Ex: Graphics Cards
 
----
----
+
 ---
 
 ```Text
@@ -16,8 +15,7 @@
 |           |       |           |       |           |       |           |
 |-----------|       |-----------|       |-----------|       |-----------|
 ```
----
----
+
 ---
 
 ## **Driver Modes**
@@ -28,11 +26,10 @@
 > **Kernel Mode**
 - Interface with I/O, Plug and play memory, process and thread management, security, etc.
 
----
----
+
 ---
 
-## ## **Driver Levels**
+## ##**Driver Levels**
 
 > ### **Highest-level**
 - Always depend on `lower level` drivers for support
@@ -45,8 +42,7 @@
 - Does `not` depend on lower-level drivers
 - Example: AGP/PCI `hardware` bus drivers
 
----
----
+
 ---
 
 ## **Driver Levels - Intermediate-level**
@@ -62,8 +58,7 @@
 > ### **Software Bus Drivers**
 - Provides an interface for higher-level drivers to attach to a set of child devices
 
----
----
+
 ---
 
 ## **Driver Categories**

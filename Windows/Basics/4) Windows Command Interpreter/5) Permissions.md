@@ -1,6 +1,6 @@
 # Windows Command Interpreter - Permissions
 
-## **icacls**
+> ## **icacls**
 
 - Displays or modifies access control list (ACL) of files or folders
 - Allows editing of inheritance of permissions
@@ -26,10 +26,8 @@ C:\>icacls C:\Exercise /inheritance:d		    # Disabled inheritance while keeping 
 ```
 
 ---
----
----
 
-## **takeown**
+> ## **takeown**
 
 - Forces ownership change on files/folders
 - Used by administrators to regain access to files/folder locations

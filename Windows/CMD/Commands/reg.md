@@ -1,24 +1,25 @@
 # reg
 
-## **query**
+> ## **query**
 
 - Queries the registry
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
 | `reg query hklm /s` | Displays HKLM recursively |
 | `reg query hklm /s /k /f SAM` | Searches HKLM recursively for the Key SAM |
 | `reg query hklm /s /e /f Wallpaper` |	Searches HKLM recursively for the exact string Wallpaper | 
----
+
 ---
 
-## **add**
+
+> ## **add**
 
 - Queries the registry
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -29,13 +30,13 @@
 | `reg add hklm\software\cwo /v Expand /t reg_expand_sz /d ^%SystemDrive^%”\Program Files”` |Adds the value with the name expand type expandable and data %SystemDrive%\Program Files |
 
 ---
----
 
-## **delete**
+
+> ## **delete**
 
 - Deletes keys or values from the registry
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -44,80 +45,80 @@
 | `reg delete hklm\software\cwo /v string` | Deletes the value string under cwo |
 
 ---
----
 
-## **export**
+
+> ## **export**
 
 - Exports .reg backups
 
-### Examples 
+> ### **Examples** 
 
 | **Command** | **Description** |
 |-------------|-----------------|
 | `reg export hklm\software C:\backup.reg` | Makes a registry file backup.reg |
 
 ---
----
 
-## **import**
+
+> ## **import**
 
 - Imports .reg files and merges any changes.
 
-### Examples 
+> ### **Examples** 
 
 | **Command** | **Description** |
 |-------------|-----------------|
 | `reg import C:\backup.reg` | Imports backup.reg to hklm\software |
 
 ---
----
 
-## **save**
+
+> ## **save**
 
 - Saves a backup hive file
 
-### Examples 
+> ### **Examples** 
 
 | **Command** | **Description** |
 |-------------|-----------------|
 | `reg save hklm\software C:\backuphive` | Saves hive of hklm\software as backuphive |
 
 ---
----
 
-## **restore**
+
+> ## **restore**
 
 - Restores hive files permanently
 - Overwrites all keys/values within hive.
 
-### Examples 
+> ### **Examples** 
 
 | **Command** | **Description** |
 |-------------|-----------------|
 | `reg restore hklm\software C:\backuphive` | Restores backuphive to hklm\software |
 
----
+
 ---
 
-## **load**
+> ## **load**
 
 - Loads hive files to edit temporarily
 
-### Examples 
+> ### **Examples** 
 
 | **Command** | **Description** |
 |-------------|-----------------|
 | `reg load hklm\temp C:\backuphive.hiv` | Loads a BLANK hive file to hklm\temp |
 | `reg load hklm\temp C:\backuphive` | Loads the hive backuphive to hklm\temp |
 
----
+
 ---
 
-## **unload**
+> ## **unload**
 
 - Unloads a previously loaded hive file, saving any changes made.
 
-### Examples 
+> ### **Examples** 
 
 | **Command** | **Description** |
 |-------------|-----------------|

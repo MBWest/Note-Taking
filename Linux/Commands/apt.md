@@ -20,7 +20,6 @@
 
 | **Apt Option**  | **Description**  | **Apt-Get Equivalent**  |
 --------------|-------------------|--------------|
-| **Options** |
 | `list` | list is used to display a list of packages. It supports shell pattern for matching package names and the following options: --installed, --upgradable, --all-versions are supported. |  |
 |`search` |Search for the given term(s) and display matching packages. | `apt‑cache search` |
 |`show` |Show the package information for the given package(s). |`apt-cache show` |
@@ -32,12 +31,12 @@
 |`full‑upgrade` | Perform the function of upgrade but may also remove installed packages if that is required in order to resolve a package conflict. | `apt‑get dist‑upgrade` |
 
 ---
+---
 
 > ## **Example** 
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `apt update` | Ensures the sysetm has the most up to date information. Should be ran with `sudo`. |
 | `apt upgrade` | Installs new dependecies and programs. |
 | `apt install pdftk` | Installs the PDF viewer tool (pdftk).  |

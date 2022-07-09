@@ -8,5 +8,4 @@ Shows calendar
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Examples** |
 | `cal` | Shows Calendar |

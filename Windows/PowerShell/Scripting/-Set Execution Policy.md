@@ -1,8 +1,8 @@
 # Set Execution Policy
 
-Allow Scripts
+- Allow Scripts
 
-## Command
+> ## **Command**
 
 ```PowerShell
 Set-ExecutionPolicy Bypass

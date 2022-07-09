@@ -2,29 +2,33 @@
 
 > ## **Fake Profile Information and Pictures**
 
-`Fake Name Generator` 
+- Fake Name Generator 
 
 https://www.fakenamegenerator.com/
 
-`This Person Does not Exist`
+- This Person Does not Exist
 
 https://www.thispersondoesnotexist.com/
 
+---
+
 > ## **Sock Puppet Articles**
 
-`Creating an Effective Sock Puppet for OSINT Investigations`
+- Creating an Effective Sock Puppet for OSINT Investigations
 
 https://jakecreps.com/sock-puppets/
 
-`The Art Of The Sock`
+- The Art Of The Sock
 
 https://www.secjuice.com/the-art-of-the-sock-osint-humint/
+
+---
 
 > ## **Reddit - My process for setting up anonymous sockpuppet accounts**
 
 https://www.reddit.com/r/OSINT/comments/dp70jr/my_process_for_setting_up_anonymous_sockpuppet/
 
-`This is my process for setting up an anonymous sockpuppet account.`
+- This is my process for setting up an anonymous sockpuppet account.
 
 1. Come up with a persona for the sockpuppet account.
 

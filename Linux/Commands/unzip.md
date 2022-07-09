@@ -15,6 +15,7 @@
 | `unzip tmp/backup-files.zip` | Unzips the backup-files.zip file |
 
 ---
+---
 
 > ## **Zip**
 

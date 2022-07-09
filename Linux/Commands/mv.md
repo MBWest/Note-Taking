@@ -10,7 +10,6 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `mv source destination` | When you specify a file(s) as the source and a directory as the destination, you are moving the files into the directory |
 | `mv app.css styles/` | Will move the app.css file into the styles directory |
 | `mv fileone filetwo filethree destination/` | Moves multiple files into one directory |

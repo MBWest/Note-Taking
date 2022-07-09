@@ -1,5 +1,7 @@
 # Alternate Data Stream
 
+> ## **Examples**
+
 | **Description** | **Command** |
 |----------|-----------------|
 | `Add Content` | Echo "ThisText" >> C:\User\Desktop\file.txt:NameofAS | 

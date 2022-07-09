@@ -1,5 +1,9 @@
 # Registry Management
 
+---
+
+> ## **Examples**
+
 | **Command** | **Description** |
 |----------|-----------------|
 | `Reg Add` | Add keys or values to the registry |

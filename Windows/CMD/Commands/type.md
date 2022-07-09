@@ -4,7 +4,8 @@ Displays contents of text files to the terminal
 
 ---
 
-## Examples
+> ## **Examples**
+
 
 | **Command** | **Description** |
 |-------------|-----------------|

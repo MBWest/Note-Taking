@@ -1,8 +1,8 @@
 # net
 
-## **accounts**
+> ## **accounts**
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -10,12 +10,12 @@
 | `net accounts minpwlen:0 /maxpwage:90 /uniquepw:10` | Change the password policy so users have to change their password every 90 days, the minimum length to 0 and remembers the last 10  passwords | 
 
 ---
----
-## **user**
+
+> ## **user**
 
 - Allows creating or modifying user accounts
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -32,14 +32,14 @@
 | `net user TestUser /active:no` | Disables the account |
 | `net user student.dmn.adm Tr@!n3d2D3f3nd /domain` | Changes the domain account “Student.dmn.adm” password to Tr@!n3d2D3f3nd |
 
----
+
 ---
 
-## **localgroup**
+> ## **localgroup**
 
 - Allows managing local group accounts
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -52,12 +52,12 @@
 | `net localgroup testgroup testuser /add` | Adds “testuser” to the group “testgroup” |
 
 ---
----
-## **group**
+
+> ## **group**
 
 - Allows managing domain group accounts
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -67,11 +67,11 @@
 | `net group testgroup testuser /add /domain` | Adds “testuser” to the group “testgroup” |
 
 ---
----
 
-## **share**
 
-### Examples
+> ## **share**
+
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -81,14 +81,14 @@
 | `net share Exercise3a$` | Ensure you new share is properly configured | 
 
 ---
----
 
-## **start**
+
+> ## **start**
 
 - Starts specified service using either the display name or key name
 - Without arguments, lists display names of all running services
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -96,13 +96,13 @@
 | `net start "Print Spooler"` | Start the Print Spooler service | 
 
 ---
----
 
-## **stop**
+
+> ## **stop**
 
 - Stops running services
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -110,13 +110,13 @@
 | `net start "Print Spooler"` | Start the Print Spooler service | 
 
 ---
----
 
-## **use**
+
+> ## **use**
 
 - Connects a computer to a shared resource or disconnects a computer from a shared resource. When used without options, it lists the computer’s connections.
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|
@@ -125,13 +125,13 @@
 | `net use X: /delete` | Stops using this resource |
 
 ---
----
 
-## **share **
+
+> ## **share**
 
 - Manage local resources to share with other users.
 
-### Examples
+> ### **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|

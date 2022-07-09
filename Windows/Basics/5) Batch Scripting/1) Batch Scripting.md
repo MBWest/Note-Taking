@@ -1,6 +1,6 @@
 # Batch Scripting
 
-## Scripting with Batch Basics
+> ## Scripting with Batch Basics
 
 | **Command** | **Description** |
 |----------|-----------------|
@@ -13,11 +13,10 @@
 | `@REM` | Turns echo off for the whole script |
 | `goto:[label]` | Creates sections of codes and separate them with labels |
 
----
----
+
 ---
 
-## **Scripting Uses**
+> ## **Scripting Uses**
 
 - Automate tasks that are:
     - Repetitive
@@ -25,20 +24,18 @@
     - May take a while
 - As easy as putting a group of commands together in a file
 
----
----
+
 ---
 
-## **The @ Symbol**
+> ## **The @ Symbol**
 
 - Generally an `@echo off` goes on the first line so that commands aren’t printed to the screen
 - When done, only the output of a script (if any) goes to the screen
 
----
----
+
 ---
 
-## **REM**
+> ## **REM**
 
 - For `comments` in your script
     - Used to explain what the script is for
@@ -48,11 +45,10 @@
 REM This is what a comment looks like
 ```
 
----
----
+
 ---
 
-## **Script Creation**
+> ## **Script Creation**
 - To make a batch script you should save a text file as .bat, echo a new file, or copy con a new file
 
 ```
@@ -60,11 +56,10 @@ C:\>echo your_text_here > filename.bat
 C:\>copy con filename.bat
 ```
 
----
----
+
 ---
 
-## **Running A Script**
+> ## **Running A Script**
 
 - To execute your batch script, enter an absolute or relative path to your script.
 
@@ -74,11 +69,10 @@ C:\>C:\Users\Student.dmn.adm\HelloWorld.bat
 Hello World
 ```
 
----
----
+
 ---
 
-## **Batch Parameters**
+> ## **Batch Parameters**
 - These are the arguments specified at the command-line
 - There are ten variables available for use:
     - %0 - %9
@@ -93,11 +87,10 @@ Echo %1 %0			    # %0 is the name of script, %1 is first argument
 ---------------------
 44 myscript.bat 
 ```
----
----
+
 ---
 
-## **Variables**
+> ## **Variables**
 
 - Variables are used to store a value
 - Values are assigned to variables using the = character
@@ -115,22 +108,20 @@ C:\>Script.bat
 1, 1337
 ```
 
----
----
+
 ---
 
-## **setlocal and endlocal**
+> ## **setlocal and endlocal**
 - Makes all variables local to the script
     - Place `setlocal` at the beginning of the script, just after the @echo off statement
     - Place `endlocal` at the end of the script
         - Ends localization of variables, it is `IMPLIED` by default
         - Good programming practice to always specify it
 
----
----
+
 ---
 
-## **ENABLEDELAYEDEXPANSION**
+> ## **ENABLEDELAYEDEXPANSION**
 - Necessary when using variables within loops or nested statements
 - By wrapping your variable in “!”s it will wait until it’s line is read to be expanded
 
@@ -146,28 +137,27 @@ if "%VAR%" == "before" (
 )
 ```
 
----
----
+
 ---
 
-## **Assignment Operator VS Comparison Operator**
+> ## **Assignment Operator VS Comparison Operator**
 - Assignment places a value into a variable
 - Comparison evaluates to see if two things are the same
 - When creating variables you must use the assignment operator
 
-> ### **Assignment Operators**
+### **Assignment Operators**
 - = (Put the value on the right in the variable on the left)
 
-> ### **Increment Assignment Operator**
+### **Increment Assignment Operator**
 - += (Increase the variable on the left by the amount indicated on the right)
 
-> ### **Decrement Assignment Operator**
+### **Decrement Assignment Operator**
 - -= (Decrease the variable on the left by the amount indicated on the right)
 
-> ### **Multiply Assignment Operator**
+### **Multiply Assignment Operator**
 - *= (Multiply the variable on the left by the amount indicated on the right)
 
-> ### **Divide Assignment Operator**
+### **Divide Assignment Operator**
 - \= (Divide the variable on the left by the amount indicated on the right)
 
 ```batch
@@ -183,18 +173,17 @@ C:\>script.bat	    C:\>script.bat	    C:\>script.bat
 - The /a switch specifies that the string to the right of the equal sign is a numerical expression that is evaluated.
 ```
 
----
----
+
 ---
 
-## **Comparison Operators**
+> ## **Comparison Operators**
 - Performs an operation depending on the operators definition (Returns T/F)
 
-> ### **String Comparison**
+### **String Comparison**
 
 - `==` (Are the two strings equal)
 
-> ### **Integer Comparison**
+### **Integer Comparison**
 
 - `EQU` (Are the two equal)
 - `NEQ` (Are the two different)
@@ -215,11 +204,10 @@ C:\>script.bat			    C:\>script.bat
 it works!				    Y is less than 10
 ```
 
----
----
+
 ---
 
-## **IF Statement**
+> ## **IF Statement**
 - If the expression in the if statement is true, then perform a given set of actions.  If the same expression is false, do not perform those actions.
 
 ```batch
@@ -231,11 +219,10 @@ if %size%==womprat (
 )
 ```
 
----
----
+
 ---
 
-## **Sequential IF Statement**
+> ## **Sequential IF Statement**
 - With sequential if statements, multiple possible outcomes may be defined
 
 ```batch
@@ -249,8 +236,9 @@ if %host%==mailserver (
 	ping 192.168.1.25
 )
 ```
+---
 
-## **ELSE Statement**
+> ## **ELSE Statement**
 - Perform a set of actions in the event that is no other expression evaluates to true
 
 ```batch
@@ -267,11 +255,10 @@ if EXIST %BackupDir% (
 )
 ```
 
----
----
+
 ---
 
-## **IF, ELSE Statement**
+> ## **IF, ELSE Statement**
 
 ```batch
 @echo Off
@@ -285,13 +272,12 @@ If %var%==4 (
 )
 ```
 
----
----
+
 ---
 
-## **Nested IF Statements**
+> ## **Nested IF Statements**
 
-### **Example 1**
+> ### **Example 1**
 ```batch
 @echo Off
 Setlocal
@@ -306,7 +292,7 @@ If %var1%==4 (
 	echo “must have not been 4.”
 )
 ```
-### **Example 2**
+> ### **Example 2**
 ```batch
 @echo Off
 Setlocal
@@ -321,7 +307,7 @@ If %var1%==4 (
 	echo “must have not been 4.”
 )
 ```
-### **Example 3**
+> ### **Example 3**
 ```batch
 @echo Off
 Setlocal
@@ -337,24 +323,22 @@ If %var1%==4 (
 )
 Echo “jk” > ans.txt
 ```
----
----
+
 ---
 
-## **Input Validation**
+> ## **Input Validation**
 - Ensures information collected from the user will not cause any unexpected errors
 - Examples:
     - If your script will only execute with one argument then make sure the user provided a single argument
     - If you are asking for a Y or N response and you get something else, make sure your script knows what to do with those other responses
     - If you are asking for a year in the past and you get a year in the future, make sure your script knows how to handle a future date
 
----
----
+
 ---
 
-## **Example Batch Script Usage**
+> ## **Example Batch Script Usage**
 
-### **Requirements**
+> ### **Requirements**
 
 - Create a Batch script that meets the following requirements		
 - The first argument is an absolute path of a folder		

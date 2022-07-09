@@ -1,5 +1,7 @@
 # Firewall Control
 
+> ## **Examples**
+
 | **Command** | **Usage** |
 |-------------|-----------| 
 | `Get-NetConnectionProfile` | Determine the currently Active Profile |

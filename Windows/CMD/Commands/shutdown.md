@@ -1,5 +1,9 @@
 # shutdown
 
+---
+
+> ## **Examples**
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `shutdown /r /t 600` | Tell the system to restart in 600 seconds (10 minutes) |

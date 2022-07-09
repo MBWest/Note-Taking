@@ -6,7 +6,7 @@
 
 ---
 
-## Examples
+> ## **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|

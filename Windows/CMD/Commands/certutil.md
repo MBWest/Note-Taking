@@ -1,5 +1,9 @@
 # Certutil
 
-## Download file from url
+- Download file from url
 
-`certutil.exe -urlcache -f [IP/FileName] [FileName]
+---
+
+> ## **Syntax**
+
+- certutil.exe -urlcache -f [IP/FileName] [FileName]

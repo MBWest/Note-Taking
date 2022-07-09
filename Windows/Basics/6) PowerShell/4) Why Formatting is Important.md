@@ -1,6 +1,6 @@
 # PowerShell - Why Formatting is Important
 
-## **Formating**
+> ## **Formating**
 
 - PowerShell returns objects, each with their own properties
 - The number of properties displayed can change depending on formatting
@@ -9,6 +9,8 @@
             - C:\windows\systems32\windowspowershell\v1.0\DotNetTypes.format.ps1xml
             - C:\windows\systems32\windowspowershell\v1.0\Types.ps1xml
 - If you want to see all properties in your output, provide formatting at the very end of your command
+
+---
 
 > ### **No Specified Formatting**
 
@@ -21,6 +23,8 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
      70       6     5192       5128       0.02  19252   7 cmd
 ```
+
+---
 
 > ### **Format as a List**
 
@@ -116,6 +120,8 @@ WorkingSet64               : 5234688
 Site                       :
 Container                  :
 ```
+
+---
 
 > ### **Final note on formatting...**
 

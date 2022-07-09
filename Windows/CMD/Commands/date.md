@@ -1,5 +1,7 @@
 # date
 
+> ## **Examples**
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `date /t` | Display the date so you are not prompted to change it |

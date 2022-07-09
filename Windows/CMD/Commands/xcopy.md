@@ -1,5 +1,9 @@
 # xcopy
 
+---
+
+> ## **Examples**
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `xcopy /s C:\Windows\web C:\Exercise3a\This\is\a\test` | Copy all of the files, including subfolders and subfiles in C:\Windows\web into the this\is\a\test directory |

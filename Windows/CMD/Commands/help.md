@@ -1,5 +1,9 @@
 # Help
 
+---
+
+> ## **Examples**
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `help` | Print a list of available commands |

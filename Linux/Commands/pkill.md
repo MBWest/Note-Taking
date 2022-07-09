@@ -8,7 +8,6 @@ Allows you to use the name of a process instead of the PID
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
 | `kill -l` | List all available ways to kill a signal |
 | `pkill firefox` | Kills the firefox process |
 | `killall firefox` | Kills the firefox process |

@@ -1,5 +1,9 @@
 # Executions
 
+---
+
+> ## **Examples**
+
 | **Command** | **Description** |
 |----------|-----------------|
 | `&`	| Execute one command and then another |
@@ -7,7 +11,9 @@
 | `\|\|` |	Execute one command and then another if the first failed |
 
 
-# Variables
+---
+
+> ## **Variables**
 
 | **Command** | **Description** |
 |----------|-----------------|

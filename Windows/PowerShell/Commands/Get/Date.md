@@ -1,8 +1,10 @@
 # Date
 
-`Displays the current date and time`
+- Displays the current date and time
 
-## Example
+---
+
+> ## **Examples**
 
 ```PowerShell
 Get-Date

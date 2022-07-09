@@ -2,7 +2,6 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Basic Command Structure** |
 | `Options` | Options are prefixed by a `-`, can be combined together |
 | `Options with Parameters` | Some options require us to pass an additional value |
 | `Arguments` | Values that we give to a command to work with or operate on |
@@ -18,7 +17,6 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Types of Commands** |
 | `Executable Program` | Compiled binary files. Usually stored in /bin, /usr/bin, /usr/local/bin. | 
 |`Built-in shell command` | Part of the shell `help command` Similar to Man Pages but for built-in shell commands |
 | `Shell Function` |

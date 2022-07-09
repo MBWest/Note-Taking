@@ -1,6 +1,6 @@
 # Windows Command Interpreter - Processes
 
-## **tasklist**
+> ## **tasklist**
 
 - Allows you to view running processes
 
@@ -21,10 +21,8 @@ C:\>tasklist /fi "imagename eq cmd.exe" /svc  	# Show all services hosted by cmd
 ```
 
 ---
----
----
 
-## **taskill**
+> ## **taskill**
 
 - Terminates processes based on PID or IMAGENAME
 
@@ -41,10 +39,8 @@ C:\>taskkill /fi “imagename eq cmd.exe”	    # Terminate cmd.exe
 ```
 
 ---
----
----
 
-## **schtasks**
+> ## **schtasks**
 
 - Create, delete, query, change, run and end scheduled tasks on a local or remote system. 
 

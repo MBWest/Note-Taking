@@ -1,5 +1,7 @@
 # Common PowerShell Verbs
 
+> ## **Examples**
+
 | **Verb** | **Usage** |
 |----------|-----------|
 | `Get` | To search for something |

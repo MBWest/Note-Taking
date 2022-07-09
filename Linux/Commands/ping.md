@@ -13,6 +13,7 @@
 | `ping [IP] or URL` | Send ICMP packets to the IP address |
 
 ---
+---
 
 > ## **Options**
 

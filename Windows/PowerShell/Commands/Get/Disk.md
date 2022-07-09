@@ -1,8 +1,10 @@
 # Disk
 
-`Display insformation about local disks`
+- Display insformation about local disks
 
-## Examples
+---
+
+> ## **Examples**
 
 ```PowerShell
 Get-Disk

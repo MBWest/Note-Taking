@@ -1,6 +1,6 @@
 # Tool List
 
-## Exploitation Tools
+> ## **Exploitation Tools**
 
 - Auto-Root-Exploit - Find exploits on Linux Kernel
 - AutoSploit - Automated Mass Exploiter
@@ -17,7 +17,9 @@
 - UACME - Defeating Windows User Account Control
 - WinPwnage - Elevate, UAC bypass, privilege escalation, dll hijack techniques
 
-## Forensics Tools
+---
+
+> ## **Forensics Tools**
 
 - Autopsy - Digital forensics platform
 - bulk_extractor - Scans a disk image, a file, or a directory of files
@@ -30,7 +32,9 @@
 - volatility - Volatile memory extraction utility framework
 - whatsapp-viewer - Small tool to display chats from the Android msgstore.db database
 
-## Information Gathering
+---
+
+> ## **Information Gathering**
 
 - bing-ip2hosts - Enumerate hostnames from Bing
 - datasploit - OSINT Framework to perform various recon techniques
@@ -60,14 +64,18 @@
 - xray - A tool for recon, mapping and OSINT gathering from public networks
 - zmap - Fast single packet network scanner
 
-## Keyloggers
+---
+
+> ## **Keyloggers**
 
 - BeeLogger - Generate Gmail Emailing Keyloggers to Windows
 - Blackcat-Keylogger - Blackcat Keylogger is 100% invisible keylogger
 - Keylogger - A simple keylogger for Windows, Linux and Mac
 - Radium-Keylogger - Python keylogger with multiple features
 
-## Maintaining Access
+---
+
+> ## **Maintaining Access**
 
 - EggShell - iOS/macOS/Linux Remote Administration Tool
 - Metasploit - The world’s most used penetration testing framework
@@ -80,7 +88,9 @@
 - WMImplant - PowerShell based tool that is designed to act like a RAT
 - AhMyth - Android RAT
 
-## Password Attacks
+---
+
+> ## **Password Attacks**
 
 - BEWGor - Bull's Eye Wordlist Generator
 - bruteforce-wallet - Try to find the password of an encrypted Peercoin (or Bitcoin, Litecoin, etc...) wallet file
@@ -98,7 +108,9 @@
 - thc-hydra - Parallelized login cracker which supports numerous protocols to attack
 - WCE - Windows Credentials Editor
 
-## Sniffing Spoofing
+---
+
+> ## **Sniffing Spoofing**
 
 - bettercap - The Swiss Army knife for 802.11, BLE and Ethernet networks reconnaissance and MITM attacks
 - macchanger - Utility that makes the manipulation of MAC addresses of network interfaces easier
@@ -107,7 +119,9 @@
 - sslstrip - SSL/TLS man-in-the-middle attack tool
 - Wireshark - The world’s foremost and widely-used network protocol analyzer
 
-## Social Engineering
+---
+
+> ## **Social Engineering**
 
 - evilginx2 - Standalone man-in-the-middle attack framework
 - Gophish - Open-Source Phishing Framework
@@ -117,7 +131,9 @@
 - social-engineer-toolkit - Open-source penetration testing framework designed for social engineering
 - SocialFish - An Advanced Phishing Tool
 
-## Vulnerability Analysis
+---
+
+> ## **Vulnerability Analysis**
 
 - Am-I-affected-by-Meltdown - Meltdown Exploit - Proof-of-concept
 - InSpectre - Examine Windows for Meltdown and Spectre attack
@@ -131,7 +147,9 @@
 - Windows-Exploit-Suggester - Find exploits on Windows
 - Mobile Security Framework (MobSF) - Mobile Security Framework is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing framework
 
-## Web Applications
+---
+
+> ## **Web Applications**
 
 - Burp Suite - Web vulnerability scanner
 - CLOUDKiLL3R - Bypasses Cloudflare protection service via TOR Browser using crimeflare !
@@ -145,14 +163,18 @@
 - WPscan - WordPress vulnerability scanner
 - JCS - Joomla Vulnerability Component Scanner
 
-## Web Shells
+---
+
+> ## **Web Shells**
 
 - weevely3 - Weaponized web shell
 - b374k - PHP Webshell with handy features
 - Miyachung - PHP BackConnect Shell
 - wso-2.8-web-shell - Automatically exported from code.google.com/p/wso-web-shell-2-8
 
-## Wireless Attacks 
+---
+
+> ## **Wireless Attacks**
 
 - Aircrack-ng - A complete suite of tools to assess WiFi network security
 - airgeddon - Multi-use bash script for Linux systems to audit wireless networks

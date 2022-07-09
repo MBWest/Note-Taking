@@ -8,7 +8,7 @@
 
 ---
 
-## Examples
+> ## **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|

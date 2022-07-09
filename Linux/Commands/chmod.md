@@ -24,7 +24,6 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Examples** |
 | `chmod a= hello.txt` | Remove all permissions for all users. |
 | `chmod g+w file.txt` | Add write permissions to the group. |
 | `chmod a-w file.txt` | Remove write permissions from all. |

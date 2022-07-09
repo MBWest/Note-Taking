@@ -1,8 +1,10 @@
 # Transcript
 
-`Used to stop the currently recording transcript`
+- Used to stop the currently recording transcript
 
-## Examples
+---
+
+> ## **Examples**
 
 ```PowerShell
 Stop-Transcript

@@ -1,6 +1,6 @@
 # PowerShell - Basic Logic
 
-## **If, elseif, else**
+> ## **If, elseif, else**
 
 - Tests to see if a condition is True. If True, do a thing. If false, do something else
 - The below example was ran 3 times, with a new value being provided via Read-Host each time
@@ -18,10 +18,8 @@ if ($promptedVariable -eq "taco") {
 
 
 ---
----
----
 
-## **While**
+> ## **While**
 
 - Do things when a certain condition is True. Once the condition is false, stop doing the things. Will run forever if the condition does not change
 

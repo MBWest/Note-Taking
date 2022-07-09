@@ -1,8 +1,10 @@
 # Content
 
-`Displays a file`
+- Displays a file
 
-## Examples
+---
+
+> ## **Examples**
 
 ```PowerShell
 Get-Content C:\scripts\script01.txt

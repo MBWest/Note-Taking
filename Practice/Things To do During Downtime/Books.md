@@ -12,14 +12,18 @@
 10. Learn Python the hard way
 11. Violent Python
 
-## Modern Cyber Books
+---
+
+> ## **Modern Cyber Books**
 
 1. Dark Territory by Fred Kaplan
 2. Future Crimes by Marc Goodman
 3. Cybersecurity and Cyber Warfare: What Everyone Needs to Know by P.W. Singer and Allan 
 4. Playing to the Edge: American Intelligence in the Age of Terror by Michael Hayden
 
-## Fiction that you can learn from
+---
+
+> ## **Fiction that you can learn from**
 
 1. Ghost Fleet by P.W. Singer and August Cole
 2. Dissecting the Hack series

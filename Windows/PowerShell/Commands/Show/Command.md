@@ -1,8 +1,10 @@
 # Command
 
-`Displays a list of PowerShell Commands in a new window`
+- Displays a list of PowerShell Commands in a new window
 
-## Examples
+---
+
+> ## **Examples**
 
 ```PowerShell
 Show-Command

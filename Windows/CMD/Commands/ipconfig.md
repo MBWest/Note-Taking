@@ -4,7 +4,7 @@
 
 ---
 
-## Example
+> ## **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|

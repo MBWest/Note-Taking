@@ -1,6 +1,6 @@
 # Windows Command Interpreter - Networking
 
-## **ipconfig**
+> ## **ipconfig**
 
 - Displays network adapter information
 
@@ -13,10 +13,8 @@ C:\>ipconfig /renew	        # Renews DHCP address
 ```
 
 ---
----
----
 
-## **ping**
+> ## **ping**
 
 - Sends four ICMP requests and waits for a response to see if the specified system is up (is there connectivity to the device?)
 
@@ -29,10 +27,8 @@ C:\>ping –t 10.10.0.3			# Pings 10.10.0.3 until it’s stopped
 ```
 
 ---
----
----
 
-## **tracert**
+> ## **tracert**
 
 - Traces each hop (next router interface) between the source and destination IPs
 
@@ -45,10 +41,8 @@ C:\>tracert –w 50 www.google.com	# Traces hops to www.google.com – only wait
 ```
 
 ---
----
----
 
-## **netstat**
+> ## **netstat**
 
 - Displays protocol and Ethernet statistics, and current TCP/IP connections
 

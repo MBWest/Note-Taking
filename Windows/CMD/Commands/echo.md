@@ -1,5 +1,7 @@
 # Echo
 
+> ## **Examples**
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `echo I am a CLImaster` | Display the message I am a CLImaster to the cmd window |

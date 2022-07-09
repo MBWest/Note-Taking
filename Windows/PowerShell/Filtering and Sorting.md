@@ -1,5 +1,8 @@
 # Filtering and Sorting
 
+
+> ## **Examples**
+
 | **Command** | **Usage** |
 |-------------|-----------|
 | `-Show` | Pops out data into new window |

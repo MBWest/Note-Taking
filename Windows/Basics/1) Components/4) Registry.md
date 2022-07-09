@@ -4,8 +4,7 @@
 > ### **Definition:** a central hierarchical database that stores necessary configuration information for the system to run
 - Contains information that Windows continually references during operation
 
----
----
+
 ---
 
 ## **Registry Structure**
@@ -41,8 +40,7 @@
         - Quadruple Word: `REG_QWORD`
             - 64 Bit Number
 
----
----
+
 ---
 
 ## **SID**
@@ -70,8 +68,6 @@ Version
 ```
 
 ---
----
----
 
 ## **GUID**
 
@@ -81,8 +77,7 @@ Version
 - Example - installed software, listed by GUID:
     - HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
 
----
----
+
 ---
 
 ## **Practical Examples**
@@ -140,9 +135,8 @@ Version
     - Multiple Antivirus solutions offer similar solutions
 
 
+
 ---
----
----
-## **Hex**
+> ## **Hex**
 - Uses 16 characters `(0-9, A-F)`
 - Used in many languages and operating systems for data storage

@@ -1,6 +1,6 @@
 # PowerShell - Manipulating Output
 
-## **Select-Object**
+> ## **Select-Object**
 - The `Select-Object` cmdlet selects specified properties of an object or set of objects. It can also select unique objects, a specified number of objects, or objects in a specified position in an array
 
 ```PowerShell
@@ -11,11 +11,10 @@ Name Threads StartTime
 cmd  {824}   6/29/2022 3:48:30 PM
 ```
 
----
----
+
 ---
 
-## **Where-Object**
+> ## **Where-Object**
 
 - The `Where-Object` cmdlet selects objects that have particular property values from the collection of objects that are passed to it
 - Sometimes cmdlets can filter by themselves, but this can be limited. Where-Object is the solution in those cases
@@ -45,7 +44,7 @@ Get-Help about_Comparison_Operators
 specified patterns. PowerShell includes the following comparison operators: 
 
 | **Type** | **Operators** | **Description** |
-|----------|---------------|-----------------|
+|:--------:|---------------|-----------------|
 |  `Equality` |     -eq           | equals |
 |           |     -ne           | not equals |
 |           |     -gt           | greater than |

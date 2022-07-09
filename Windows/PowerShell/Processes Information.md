@@ -1,5 +1,7 @@
 # Processes
 
+> ## **Examples**
+
 | **Command** | **Usage** |
 |-------------|-----------|
 | `Get-Process` | List all processes |

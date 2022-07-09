@@ -1,6 +1,6 @@
 # Example PowerShell Script
 
-## Requirements
+> ## **Requirements**
 
 - Create a Powershellscript that does the following, only runs PowerShell code, Prompts the user for an absolute filepath.		
 - After the value is provided the script checks to see if the file exists, if it does write "File Exists", if it does not ask the user if they want to make a file or folder.		

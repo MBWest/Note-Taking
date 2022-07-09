@@ -15,9 +15,9 @@
 - Events related to resource use-such as creating, opening, or deleting files—can also be logged
 
 ---
----
 
-## Application and System Logs
+
+> ## **Application and System Logs**
 
 > ### **Error**
 - A significant problem, such as loss of data or loss of functionality
@@ -29,9 +29,9 @@
 - An event that describes the successful operation of an application, driver, or service
 
 ---
----
 
-## Found in Security Logs
+
+> ## **Found in Security Logs**
 
 > ### **Success Audit**
 - An audited security event in which a user’s attempt to access a resource succeeds
@@ -40,9 +40,9 @@
 - An audited security event in which a user’s attempt to access a resource fails
 
 ---
----
 
-## **Searching**
+
+> ## **Searching**
 
 - Search for events with specified strings
 - Accessing find:
@@ -51,9 +51,8 @@
     - Action menu; Select Find
 
 ---
----
 
-## **Filtering**
+> ## **Filtering**
 
 - Filter events with specified criteria
 - Accessing filter wizard:

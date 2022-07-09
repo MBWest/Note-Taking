@@ -12,8 +12,6 @@
 > ### **3) Searches and runs the “bootmgr” file**
 
 ---
----
----
 
 ## **Boot Loader Phase**
 
@@ -28,8 +26,6 @@
 
 > ### **3) The Boot Manager and Boot Loader work together to load the Kernel into memory**
 
----
----
 ---
 
 ## **Kernel Phase (Windows NT OS Kernel)**

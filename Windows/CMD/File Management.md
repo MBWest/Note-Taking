@@ -1,5 +1,9 @@
 # File Management
 
+---
+
+> ## **Examples**
+
 | **Command** | **Description** |
 |----------|-----------------|
 | `cd` | Display the name of or changes the current directory |

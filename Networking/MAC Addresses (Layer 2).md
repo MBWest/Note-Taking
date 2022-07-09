@@ -5,8 +5,8 @@
 	- Switches communicate over Layer 2 (physical addresses)
 	- The first 3 pairs in a MAC address is the OUI (Identifiers) 
 
-## Linux
+> ## **Linux**
 
-### Command
+> ### **Command**
 
-**ifconfig** - Your *ether* is your MAC address (Physical address)
+- **`ifconfig`** - Your *ether* is your MAC address (Physical address)

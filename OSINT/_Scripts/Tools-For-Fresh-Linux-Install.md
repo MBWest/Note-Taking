@@ -11,8 +11,9 @@ These instructions are provided 'as is' without warranty of any kind
 In no event shall the copyright holder be liable for any claim, damages or other liability
 Full license information and restrictions at https://inteltechniques.com/osintbook9/license.txt
 ```
+---
 
-# VM CREATION
+> # VM CREATION
 
 - Install, configure, and launch VirtualBox
 - Download Ubuntu 22.04 Desktop from https://releases.ubuntu.com/22.04/
@@ -51,8 +52,9 @@ Full license information and restrictions at https://inteltechniques.com/osintbo
 - Allow Ubuntu to complete the installation, and reboot
 - Strike "Enter" when prompted to reboot
 
+---
 
-# VM CONFIGURATION
+> # VM CONFIGURATION
 
 - Click 'Skip'
 - Select 'No' and then 'Next' when asked to help improve Ubuntu
@@ -92,8 +94,9 @@ Full license information and restrictions at https://inteltechniques.com/osintbo
 - Click 'Install Now' to apply all updates
 - If prompted, restart the VM
 
+---
 
-# VIRTUALBOX MAINTENANCE
+> # VIRTUALBOX MAINTENANCE
 
 - Some readers have reported the inability to resize VM windows within VirtualBox with the "Auto-resize Guest Display" greyed out. The following commands within Terminal of the Linux VM should repair. There is no harm running these if you are unsure.
 
@@ -104,8 +107,9 @@ sudo rcvboxadd setup
 reboot
 ```
 
+---
 
-# INSTALL OSINT TOOLS-BASIC
+> # INSTALL OSINT TOOLS-BASIC
 
 ```bash
 sudo snap install vlc
@@ -229,8 +233,9 @@ sudo apt --fix-broken install
 sudo -H pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 sudo -H pip install -U
 reboot
 ```
+---
 
-# INSTALL FIREFOX PROFILE
+> # INSTALL FIREFOX PROFILE
 
 - Launch and then close Firefox
 - Click the Applications Menu, launch Terminal, and execute the following commands
@@ -246,8 +251,9 @@ rm ff-template.zip
 ```
 - Open Firefox and update all add-ons
 
+---
 
-# INSTALL SEARCH TOOLS
+> # INSTALL SEARCH TOOLS
 
 ```bash
 cd ~/Desktop
@@ -255,8 +261,9 @@ curl -u osint9:book143wt -O https://inteltechniques.com/osintbook9/tools.zip
 unzip tools.zip -d ~/Desktop/
 rm tools.zip
 ```
+---
 
-# INSTALL OSINT TOOLS-ADVANCED
+> # INSTALL OSINT TOOLS-ADVANCED
 
 ```bash
 cd ~/Downloads/Programs
@@ -283,8 +290,9 @@ git clone https://github.com/mxrch/ghunt
 cd ghunt
 sudo -H pip install -r requirements.txt -I
 ```
+---
 
-# USER INTERFACE CONFIGURATION
+> # USER INTERFACE CONFIGURATION
 
 ```bash
 gsettings set org.gnome.desktop.background picture-uri ''
@@ -294,8 +302,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'google-chrome.desktop', 'torbrowser.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'updates.desktop', 'tools.desktop', 'youtube_dl.desktop', 'ffmpeg.desktop', 'streamlink.desktop', 'instagram.desktop', 'gallery.desktop', 'usertool.desktop', 'eyewitness.desktop', 'domains.desktop', 'metadata.desktop', 'httrack.desktop', 'metagoofil.desktop', 'elasticsearch.desktop', 'reddit.desktop', 'internetarchive.desktop', 'spiderfoot.desktop', 'recon-ng.desktop', 'mediainfo-gui.desktop', 'google-earth-pro.desktop', 'kazam.desktop', 'keepassxc_keepassxc.desktop', 'gnome-control-center.desktop']"
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
 ```
+---
 
-# SOFTWARE UPDATES
+> # SOFTWARE UPDATES
 
 ```bash
 sudo apt update
@@ -334,8 +343,9 @@ cd ~/Downloads/Programs/ghunt
 git pull https://github.com/mxrch/ghunt.git
 sudo apt autoremove -y
 ```
+---
 
-# OPTIONAL CALLER ID SCRIPT
+> # OPTIONAL CALLER ID SCRIPT
 
 ```bash
 cd ~/Documents/scripts

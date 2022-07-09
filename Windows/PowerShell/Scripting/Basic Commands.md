@@ -1,5 +1,7 @@
 # Basic Scripting Commands
 
+> ## **Examples**
+
 | **Command** | **Usage** |
 |-------------|-----------|
 | `Clear-Host` | Clears the display in the host program |

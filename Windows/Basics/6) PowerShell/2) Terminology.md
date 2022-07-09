@@ -14,8 +14,7 @@
 > ### **Script**
 - Plain text file ending in a .ps1 file extension that contains one or more PowerShell commands
 
----
----
+
 ---
 
 ## **Verb-Noun Syntax**
@@ -31,11 +30,10 @@
     - Want to remove Services? `Remove-Service` (available in PowerShell 7.0+)
 - Verb/Noun syntax is a standard, not a language specific requirement. You can name your own custom functions however you want
 
----
----
+
 ---
 
-## **Objects**
+> ## **Objects**
 
 - Exist in all object-oriented programming languages
 - A collection of data that represents an item
@@ -56,11 +54,10 @@ C:\Windows\System32> Get-Process notepad++ | Get-Member
 Get-Help about_objects
 ```
 
----
----
+
 ---
 
-## **Properties**
+> ## **Properties**
 
 - Data that is associated with an object
 - Different types of objects have different properties
@@ -77,11 +74,10 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
      70       6     5180       5124       0.02   5288   7 cmd
 ```
 
----
----
+
 ---
 
-## **Parameters**
+> ## **Parameters**
 
 - Options provided by users to modify how a function, cmdlet, or script will operate
 - A Parameter name is preceded by a `hyphen`, not a forward slash
@@ -97,11 +93,10 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 Get-Help about_objects
 ```
 
----
----
+
 ---
 
-## **Variables**
+> ## **Variables**
 
 > ### **User Created Variables**
     - Variables defined by the user to store data
@@ -177,11 +172,10 @@ Id CommandLine
 
 C:\Users\Matthew>
 ```
----
----
+
 ---
 
-## **Aliases**
+> ## **Aliases**
 
 - Like most shell environments, PowerShell supports aliases for commonly used cmdlets and functions
 

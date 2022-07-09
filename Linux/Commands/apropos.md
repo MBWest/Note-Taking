@@ -2,7 +2,7 @@
 
 > ## **Syntax** 
 
-`apropos [OPTION..] KEYWORD...`
+- apropos [OPTION..] KEYWORD...
 
 ---
 
@@ -10,9 +10,15 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **apropos** |
 | `apropos *keyword*` | Show all the related commands and short descriptions or functionality. `apropos compress`. |
-| **Options** |
+
+---
+---
+
+> ## **Options** 
+
+| **Options** |**Description**   |
+| --------------|-------------------|
 | `-v` | Print verbose warning messages. |
 | `-e` | Search each keyword for exact match.  |
 | `-w` | This option is used when the keyword(s) contain wildcards. |

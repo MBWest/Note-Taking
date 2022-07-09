@@ -13,6 +13,7 @@
 | `-r` | Reboots instead of shutting down the computer |
 
 ---
+---
 
 > ## **Examples**
 

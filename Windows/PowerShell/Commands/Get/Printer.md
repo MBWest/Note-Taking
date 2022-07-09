@@ -1,8 +1,10 @@
 # Printer
 
-`Displays list of installed printers`
+- Displays list of installed printers
 
-## Exaples
+---
+
+> ## **Examples**
 
 ```PowerShell
 Get-Printer

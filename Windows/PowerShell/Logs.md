@@ -1,6 +1,6 @@
 # Logs
 
-## Event Logs
+> ## **Event Logs**
 
 | **Command** | **Usage** |
 |-------------|-----------|

@@ -1,10 +1,11 @@
 # set 
 
-Without specifying any arguments, this command displays all environment variables that have been set
+- Without specifying any arguments, this command displays all environment variables that have been set
 
 ---
 
-## Examples
+> ## **Examples**
+
 
 | **Command** | **Description** |
 |-------------|-----------------|

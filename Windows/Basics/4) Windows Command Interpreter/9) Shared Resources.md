@@ -1,6 +1,6 @@
 # Windows Command Interpreter - Shared Resources
 
-## **net**
+# **net**
 
 > ### **use**
 

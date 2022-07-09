@@ -18,10 +18,9 @@
 | `Write-Output` | echo |
 
 ---
----
----
 
-## **Nuances with PowerShell**
+
+> ## **Nuances with PowerShell**
 
 **A not all-encompassing list of some nuances with PowerShell:**
 - Escape character is the backtick character (`) shift + tilde

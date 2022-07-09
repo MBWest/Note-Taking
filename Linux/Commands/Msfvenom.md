@@ -50,7 +50,8 @@ Reverse TCP payload as an EXE creating the Wise.exe program
 | `raw` | Raw shellcode |
 | `c` | C code |
 
-------
+---
+---
 
 > ## **Encoders**
 

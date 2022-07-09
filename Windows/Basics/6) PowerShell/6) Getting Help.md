@@ -1,6 +1,6 @@
 # PowerShell - Getting Help
 
-## Help
+> ## **Help**
 
 - Open help for a command in a separate searchable window? Check
 - Open help with lots of examples for reference? Check

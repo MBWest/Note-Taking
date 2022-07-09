@@ -1,6 +1,6 @@
 # Security - SysInternals
 
-## **Basic Information**
+> ## **Basic Information**
 
 - **Free suite of more than 70 Windows applications**
     - Developed in 1996 by Mark Russinovich and Bryce Cogswell
@@ -13,18 +13,17 @@
     - Available in the following location on your machines:
         - C:\SysInternalsSuite
 
----
----
+
 ---
 
-## **Autoruns**
+> ## **Autoruns**
 
 - Identifies auto startup, registry keys, scheduled tasks, and other auto executed components on PC boot.
 - Hides everything that is built into Windows and set to auto start
     - Can enable, not recommended
 - Should be run as Administrator for full functionality
 
-### **Autorun Tabs**
+> ### **Autorun Tabs**
 
 - `Logon Tab` – Checks “normal” startup locations (Run, RunOnce, Start Menu, etc.)
 - `Explorer Tab` – Add-on components that load themselves into Windows Explorer
@@ -40,11 +39,10 @@
 - `Winlogon, Winsock Providers, Print Monitors, LSA Providers, Network Providers Tabs` – Contain add-ons that extend various aspects of Windows
 - `Sidebar Gadgets` – Shows gadgets for Vista/Windows 7
 
----
----
+
 ---
 
-## **Process Explorer**
+> ## **Process Explorer**
 
 - Task manager and system monitor application
     - Only supported by Windows XP and up
@@ -54,11 +52,10 @@
 - Kill an entire process tree, recursively
 - Suspend a process, freezing all threads
 
----
----
+
 ---
 
-## **TCP View**
+> ## **TCP View**
 
 - Graphical User Interface to see what applications are connecting to what services over the network
 - Similar to netstat with additional functionality

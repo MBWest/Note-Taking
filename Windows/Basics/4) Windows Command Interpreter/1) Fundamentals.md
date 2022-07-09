@@ -7,8 +7,7 @@
 - Most commands ignore case
 - Very few commands with case sensitive switches
 
----
----
+
 ---
 
 ## **Command-Line Syntax**
@@ -22,8 +21,7 @@
 | `Separator for mutually exclusive items; choose one` | Vertical bar ( \| )
 | `Items that can be repeated` | Ellipsis ( … ) |
 
----
----
+
 ---
 
 ## **Paths**
@@ -44,8 +42,7 @@
     C:\Program Files\Internet Explorer>cd ..\
     C:\Program Files>cd .\Internet Explorer
 ```
----
----
+
 ---
 
 ## **Command Arguments**
@@ -104,8 +101,7 @@ C:\>copy C:\Windows\System32\*.exe C:\exefiles
 C:\>copy C:\Windows\System32\win* C:\winstuff
 ```
 
----
----
+
 ---
 
 ## **Three Defined Handlers**
@@ -118,8 +114,7 @@ C:\>copy C:\Windows\System32\win* C:\winstuff
 > ### **Standard ERROR (STDERR) - 2**
 - Sends errors to the Terminal
 
----
----
+
 ---
 ## **Redireection**
 
@@ -144,8 +139,7 @@ C:\>echo A new line >> cwo.txt	# Appends A new line cwo.txt (can create file)
 C:\>dir C:\ 2> cwo.txt		# Overwrites cwo.txt with the error message
 ```
 
----
----
+
 ---
 ## **Streams and Pipes**
 
@@ -163,8 +157,7 @@ C:\>dir /? | find /I “hidden” 	# Sends the STDOUT from dir /? to find “hid
 C:\>dir /s | find /I “readme”	# Sends the STDOUT from dir /s to find “readme”
 ```
 
----
----
+
 ---
 
 ## **Echo**

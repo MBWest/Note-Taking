@@ -1,10 +1,10 @@
 # del
 
-Deletes files
+- Deletes files
 
 ---
 
-## Examples
+> ## **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|

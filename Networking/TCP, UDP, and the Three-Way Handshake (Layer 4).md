@@ -1,6 +1,6 @@
 # TCP vs UDP
 
-## TCP
+> ## **TCP**
 
 **Transmission Control Protocol**
 - Connection oriented protocol
@@ -12,7 +12,9 @@
 	- Receive - **SYN/ACK** packet 
 	- Send out - **ACK** packet
 
-## UDP
+---
+
+> ## **UDP**
 
 **User Datagram Protocol**
 - Connectionless protocol

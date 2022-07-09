@@ -1,6 +1,6 @@
 # PowerShell - The Pipeline
 
-## Piping Commands
+> ## **Piping Commands**
 
 - Allows the stringing of powerful “one-liners” to do complex tasks
 - When sending output over the pipeline, the receiving cmdlet/function must know how to work with it

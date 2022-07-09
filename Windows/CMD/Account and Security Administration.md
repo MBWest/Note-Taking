@@ -1,5 +1,7 @@
 # Account and Security Administration
 
+> ## **Commands**
+
 | **Command** | **Description** |
 |----------|-----------------|
 | **Net**| 
@@ -11,7 +13,14 @@
 | `-Start` | Start a network service or list running network services |
 | `-Stop` | Stop command is used to stop a network service |
 | `-User` | Add, delete, and otherwise manage the users on a computer |
-| **Examples** |  |
+
+---
+---
+
+> ## **Examples**
+
+| **Command** | **Description** |
+|----------|-----------------|
 | `Net user TestUser /add` | Add a new user, "TestUser", with a blank password |
 | `Net user TestUser pw /add` | Add a new user, "TestUser", with "pw" as their password |
 | `Net user TestUser * /add` | Add a new user, "TestUser", and be prompted for a password |

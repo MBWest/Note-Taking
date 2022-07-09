@@ -9,4 +9,4 @@
 
 > ## **Example**
 
-`hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt ssh://192.168.57.134:22 -t 4 -V`
+- hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt ssh://192.168.57.134:22 -t 4 -V

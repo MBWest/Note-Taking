@@ -1,5 +1,8 @@
 # Gathering System Information
 
+> ## **Examples**
+
+
 | **Command** | **Description** |
 |----------|-----------------|
 | `Hostname` | Displays the current Hostname |

@@ -1,6 +1,10 @@
 # move
 
-Moves a file from one location to the other
+- Moves a file from one location to the other
+
+---
+
+> ## **Examples**
 
 | **Command** | **Description** |
 |-------------|-----------------|

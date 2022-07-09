@@ -8,12 +8,13 @@
     - Other application data
     - The OS itself
 
+---
+
 > ### **Kernel Mode - Privileged/Unrestricted**
 
 - Everything shares the same virtual address space
 - Possible to overwrite other programs and compromise the entire system (system crash)
 
----
 ---
 ---
 

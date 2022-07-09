@@ -1,6 +1,6 @@
 # Security - Windows Firewall
 
-## **The Basics**
+> ## **The Basics**
 
 > ### **Stateful, Host-Based Firewall**
 - Filter network packets based on the full context of a connection
@@ -17,8 +17,7 @@
 - Custom rules for Public, Private, or Domain profiles
 - Deny traffic for one profile, allow on another
 
----
----
+
 ---
 
 ## **Firewall Management Options**
@@ -36,8 +35,7 @@
 > ### **Command Line options: netsh advfirewall, PowerShell**
 - More granular means to interact with the underlying components
 
----
----
+
 ---
 
 ## **netsh**
@@ -45,8 +43,7 @@
 - Introduced with Windows 2000
 - Interacts with underlying services, just like GUI/PowerShell
 - Support may be removed by Microsoft in the future
----
----
+
 ---
 
 ## **PowerShell**
@@ -69,11 +66,9 @@
 - Be cautious…you can disable all rules at once this way
 - Or maybe that’s your goal! `Get-NetFireWallRule | Disable-NetFirewallRule`
 
-> ### **Create a rule with New-NetFirewallRule**
-
-> ### **Modify a rule with Set-NetFirewallRule**
-
-> ### **Remove a rule with Remove-NetFirewallRule**
+- Create a rule with New-NetFirewallRule
+- Modify a rule with Set-NetFirewallRule
+- Remove a rule with Remove-NetFirewallRule
 
 > ### **Viewing port information with Get-NetFirewallPortFilter**
 - Port information can only be revealed using the PortFilter function

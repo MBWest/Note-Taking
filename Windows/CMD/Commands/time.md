@@ -1,5 +1,10 @@
 # time
 
+---
+
+> ## **Examples**
+
+
 | **Command** | **Description** |
 |-------------|-----------------|
 | `time /t` | Display the current time where your not prompted to change it |

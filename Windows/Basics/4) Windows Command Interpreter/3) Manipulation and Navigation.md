@@ -19,8 +19,6 @@ C:\>echo %Random%			# Predefined Variable, produces random number
 ```
 
 ---
----
----
 ## **dir**
 - Displays what is in a directory
 - By Default it will not show:
@@ -44,8 +42,6 @@ C:\>dir /s		# Look in subfolder/subfiles (recursive)
 C:\>dir /s *.exe		# Search for all .exe files; starts with current folder
 ```
 ---
----
----
 ## **cd or chdir**
 
 - Changes to specified directory
@@ -54,8 +50,6 @@ C:\>dir /s *.exe		# Search for all .exe files; starts with current folder
 C:\>cd “C:\Program Files”
 ```
 
----
----
 ---
 ## **md or mkdir**
 
@@ -68,8 +62,6 @@ C:\>md CWO CWO2     # Make the CWO and CWO2 directory
 C:\CWO>md Testing\All\The\Things    # Make the Testing\All\The\Things directories
 ```
 
----
----
 ---
 
 ## **rd or rmdir**
@@ -84,8 +76,6 @@ C:\>rd CWO /s	# Removes all subfolders/files starting at CWO
 ```
 
 ---
----
----
 
 ## **more**
 
@@ -99,8 +89,6 @@ C:\>dir /s | more	# Displays the output of dir /s one page at a time
 C:\>more Yum.txt	# Displays contents of Yum.txt one page at a time
 ```
 
----
----
 ---
 
 ## **copy and xcopy**
@@ -119,8 +107,6 @@ C:\>xcopy C:\CWO\file1.txt C:\CWO\Exercise\ -k 	# Copies file1.txt keeping file 
 ```
 
 ---
----
----
 
 ## **move**
 
@@ -131,8 +117,6 @@ C:\>move file1.txt C:\CWO		# Moves C:\file1.txt to C:\CWO folder
 ```
 
 ---
----
----
 
 ## **ren or rename**
 
@@ -142,8 +126,6 @@ C:\>move file1.txt C:\CWO		# Moves C:\file1.txt to C:\CWO folder
 C:\>ren file1.txt CWOFile.txt		# Renames file1.txt to CWOFile.txt
 ```
 
----
----
 ---
 
 ## **type**
@@ -156,8 +138,6 @@ biscuits and gravy
 breakfast
 ```
 
----
----
 ---
 
 ## **find**
@@ -175,8 +155,6 @@ C:\>find file1.txt /v “hacker”	    # Finds everything EXCEPT “hacker”
 C:\>dir /? | find /I “subfolder”	# Searches output of dir /? for the string “subfolder”
 ```
 
----
----
 ---
 
 ## **findstr**
@@ -196,8 +174,6 @@ $			end of line
 xyz\>			end of word
 ```
 
----
----
 ---
 
 ## **del**
@@ -221,8 +197,6 @@ C:\>del /a-s c:\Temp		# Delete all files except system files and read
 ```
 
 ---
----
----
 
 ## **attrib**
 
@@ -240,8 +214,6 @@ C:\>attrib -s c:\desktop.ini 	      # Removes system attribute
 C:\>attrib /s +r c:\windows\*.exe	  # Adds read only to .exe files recursively
 ```
 
----
----
 ---
 ## **sort**
 

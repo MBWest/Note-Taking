@@ -1,6 +1,6 @@
 # CTF
 
-## General CTF
+> ## **General CTF**
 
 1. https://www.net-force.nl/challenges/ - Net-Force.nl is a website where people interested in (internet) security can play so-called ‘hack challenges’
 2. https://ctfs.me/ - Ctfs.me is a place where you can learn about various category of hacking everytime and get you skill increased.
@@ -33,7 +33,9 @@
 29. https://ctf.hackerfire.com/ - Welcome to HackerFire! A learning CTF from the developers of CTFd. Play around, don’t be mean, and have fun.
 30. http://ctf.infosecinstitute.com/index.php - The Infosec Instite n00bs CTF Labs is a web application that hosts 15 mini Capture the Flag (CTF) challenges intended for beginners.
 
-## Web Exploitation
+---
+
+> ## **Web Exploitation**
 
 1. https://hack.me/s/ - Hack.me is a FREE, community based project powered by eLearnSecurity. The community can build, host and share vulnerable web application code for educational and research purposes. It aims to be the largest collection of “runnable” vulnerable web applications, code samples and CMS’s online.
 2. http://www.gameofhacks.com/ - This game was designed to test your application hacking skills. You will be presented with vulnerable pieces of code and your mission if you choose to accept it is to find which vulnerability exists in that code as quickly as possible
@@ -45,13 +47,17 @@
 8. https://redtiger.labs.overthewire.org/ - This hackit is for people who want to test their knowledge in PHP / SQL security.
 9. https://chall.stypr.com/ - This wargame is intended for offensive security experts who are willing to overcome situations of getting stuck in breaking into web services or web-based solutions.
 
-## Boot2root
+---
+
+> ## **Boot2root**
 
 1. https://www.hackthebox.eu/ - Hack The Box is an online platform allowing you to test your penetration testing skills and exchange ideas and methodologies with thousands of people in the security field.
 2. https://www.vulnhub.com/ - To provide materials that allows anyone to gain practical ‘hands-on’ experience in digital security, computer software & network administration.
 3. https://lab.pentestit.ru/ - Penetration testing laboratories “Test lab” emulate an IT infrastructure of real companies and are created for a legal pen testing and improving penetration testing skills.
 
-## Reverse Engineering
+---
+
+> ## **Reverse Engineering**
 
 1. https://microcorruption.com/ - Given a debugger and a device, find an input that unlocks it. Solve the level with that input.
 2. http://reversing.kr/challenge.php - This site tests your ability to Cracking & Reverse Code Engineering.
@@ -63,7 +69,9 @@
 8. http://flare-on.com/ - FireEye’s challenge RE.
 9. https://ropemporium.com/ - Learn return-oriented programming through a series of challenges designed to teach ROP techniques in isolation, with minimal reverse-engineering and bug-hunting.
 
-## Pwn
+---
+
+> ## **Pwn**
 
 1. http://pwnadventure.com/ - Pwn Adventure 3: Pwnie Island is a limited-release, first-person, true open-world MMORPG set on a beautiful island where anything could happen. That’s because this game is intentionally vulnerable to all kinds of silly hacks! Flying, endless cash, and more are all one client change or network proxy away. Are you ready for the mayhem?!
 2. https://exploit.education/ - exploit.education provides a variety of resources that can be used to learn about vulnerability analysis, exploit development, software debugging, binary analysis, and general cyber security issues.
@@ -75,7 +83,9 @@
 8. http://overthewire.org/wargames/ - The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games. To find out more about a certain wargame, just visit its page linked from the menu on the left.
 9. http://www.underthewire.tech/wargames.htm -
 
-## Cryptography
+---
+
+> ## **Cryptography**
 
 1. http://cryptopals.com/ - This site will host all eight sets of our crypto challenges, with solutions in most mainstream languages.
 2. https://id0-rsa.pub/ - Below are some problems related to computer security (specifically poorly implemented security). Do Them. You are free to use any language and environment you like to complete them. The problems require familiarity with programming, but not necessarily with applied cryptography or computer security in general.
@@ -83,6 +93,8 @@
 4. https://www.trytodecrypt.com/index.php - … is a website to train your brain.
 5. https://www.cryptoclub.org/challenges/index.php - Crack mysterious messages, submit jokes for others to decrypt, and access secret messages within your private groups.
 
-## Network Forensics
+---
+
+> ## **Network Forensics**
 
 1. https://forensicscontest.com/ - PCAP forensics

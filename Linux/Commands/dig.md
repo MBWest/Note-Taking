@@ -14,7 +14,6 @@ DNS lookup utility
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `dig @172.30.0.254 A www.falsimentis.com` |
 | `@172.30.0.254` | The @ sign indicates that the query should be sent the server identified by a host name or IP address; here the DNS request is sent to 172.30.0.254. |
 | `A` | The DNS record type to interrogate; an A record is an address record, returning an IPv4 address. |

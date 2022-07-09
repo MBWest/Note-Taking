@@ -1,6 +1,6 @@
 # Variables
 
-## Special Variables
+> ## **Special Variables**
 
 | **Variable** | **Usage** |
 |--------------|-----------|
