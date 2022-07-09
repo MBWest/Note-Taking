@@ -11,3 +11,15 @@
         - Pointers to data blocks storing the file’s contents 
 - Always unique on their respective partitions
 - Directories are files that contain the table that links filenames to inodes 
+
+```text
+            Hard-Link
+            |
+|---|       |
+|HDD|-----INODE
+|---|       |           
+            |
+            Original File
+            |
+            |
+            Soft-Link

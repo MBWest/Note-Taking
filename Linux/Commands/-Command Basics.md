@@ -11,7 +11,10 @@
 | **.bashrc** |
 | `.bashrc` | When updating the `.bashrc` file with alias' you must run `source .bashrc` command if you want the current shel to recognize the new alias |
 
-# Type of Commands
+---
+---
+
+> ## **Type of Commands**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

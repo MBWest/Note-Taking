@@ -2,7 +2,9 @@
 
 Allows you to use the name of a process instead of the PID
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|

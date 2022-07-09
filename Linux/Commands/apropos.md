@@ -1,6 +1,12 @@
 # apropos
 
+> ## **Syntax** 
+
 `apropos [OPTION..] KEYWORD...`
+
+---
+
+> ## **Example** 
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

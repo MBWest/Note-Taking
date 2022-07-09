@@ -19,6 +19,7 @@
 | `[^A-Z]` | Represents a range of characters to **NOT** match ([^A-Z], [^a-z], [^0-9]) |
 
 ---
+---
 
 > ## **Pathname Expansion (*)**
 
@@ -30,6 +31,7 @@
 | `cat blue` | Matches any files that start with "blue" |
 | `ls **/*.txt` |Searches the current directory and all sub directories for a file that matches the *.txt pattern; If this command doesnt run you need to set the following command `shopt -s globstar` |
 
+---
 ---
 
 > ## **Brace Expansion {}**
@@ -145,6 +147,8 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 | `%` | Modulo |
 | **Example** |
 | `(echo $((10+7)))` | 
+
+---
 ---
 
 > ## **Tilde Expansion**
@@ -155,6 +159,7 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 | `echo ~` | Returns the current users home directory |
 | `echo ~User` |Returns the specific users home directory |
 
+---
 ---
 
 > ## **Parameter Expansion**

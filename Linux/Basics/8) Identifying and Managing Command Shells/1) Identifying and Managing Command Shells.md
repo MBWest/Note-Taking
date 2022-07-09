@@ -28,7 +28,7 @@ sh-4.1$
 ### **$shell**	
 - When available, contains currently logged in shell
 
-### **ps –f**
+> ## **ps –f**
 - Displays PID and PPID
 - Can be used to trace PPIDs back to the PID of the calling shell
 
@@ -40,7 +40,7 @@ guru	24809	24718	0	02:46	pts/1	00:00:00		sh
 guru	24810	24809	0	02:46	pts/1	00:00:00		ps -f
 ```
 
-### **ps -p $$**
+> ## **ps -p $$**
 - `$$` is a special parameter that expands out to the PID of the current shell
 
 ```
@@ -67,6 +67,9 @@ Shell changed.
 [guru@CentOS ~]$ grep guru /etc/passwd
 guru:x:500:500::/home/guru:/bin/sh
 ```
+
+---
+
 
 > ## **Resources**
 

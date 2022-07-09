@@ -6,6 +6,8 @@
     - Even though regex is taught here using grep, regex can be used in many situations with many different tools performing the pattern search 
         - Notepad++, programming languages, other nix utilities, etc… 
 
+---
+
 > ## **grep [OPTIONS] PATTERN [FILE...] || grep [OPTIONS] [-e PATTERN|-f FILE] [FILE...]**
 - `-E` - Interpret PATTERN as an extended regex
 - `-i` - ignore case
@@ -15,6 +17,8 @@
 - `-r or -R`   - read all files under each directory
 - `-e PATTERN` - use PATTERN as the pattern
     - This can be used to specify multiple search patterns
+
+---
 
 > ## **Literal Characters**
 - Normal characters are referred to as `literal characters`

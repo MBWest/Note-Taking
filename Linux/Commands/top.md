@@ -2,6 +2,10 @@
 
 Process viewer, find the CPU-intensive programs currently running. See ps for explanations of the field descriptors
 
+---
+
+> ## **Options**
+
 |**Options**| **Description** |
 |--|--|
 | `top` | Provides cpu memory usage and process IDs |

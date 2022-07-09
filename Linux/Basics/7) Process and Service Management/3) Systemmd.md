@@ -1,5 +1,7 @@
 # Linux Process and Service Management - systemmd
 
+> ## **systemmd**
+
 - New init system that improves upon older systems (upstart, SysV, etc…)
 - First process started by the kernel, has a PID of 1
 - Initializes the components that need to be started after the kernel is booted
@@ -8,7 +10,7 @@
     - We’re primarily concerned with service units and target units
     - A service unit is for managing daemons while a target unit is just a collection of other units
 
-## **Example systemd service unit**
+> ## **Example systemd service unit**
 
 ```
 [root@wkstn ~]# cat /lib/systemd/system/sshd.service

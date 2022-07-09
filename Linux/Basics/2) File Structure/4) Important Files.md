@@ -60,8 +60,7 @@ The /etc/group file is a text file that defines the groups on the system. There 
 
 - stores user account password information
 
-### /etc/shadow Fields
-
+### **/etc/shadow Fields**
 
 ```
 root:$6$eTJc5PVwMRTUvMLP$IjWWxcsIYuUIsj30Duzkh6DVaXbIkKKC3Bh4PJ6ut3uejj36eTt1d5Zn3aWZwD1Wfg/lzQIhIF1olydTYhd8/0:15904:0:99999:7:::

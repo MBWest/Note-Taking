@@ -2,9 +2,10 @@
 
 (This command is deprecated, use ip instead)
 
-## Examples 
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **General** |
 | `ifconfig` or `ip a` | Show interface addresses |

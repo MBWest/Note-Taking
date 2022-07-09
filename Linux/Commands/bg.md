@@ -3,9 +3,14 @@
 - Send the specified jobs to the background. A background job is executed simultaneously with fish, and does not have access to the keyboard. If no job is specified, the last job to be used is put in the background.
   - bg takes a “job ID” available from jobs, not a PID
 
-bg [job_id...]
+> ## **Syntax** 
 
-## Examples
+
+- bg [job_id...]
+
+---
+
+> ## **Example** 
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

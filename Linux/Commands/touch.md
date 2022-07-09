@@ -2,15 +2,18 @@
 
 Change file timestamps and create files
 
-## Syntax
+---
 
-    touch <options> <file or directory name>
+> ## **Syntax**
 
-## Examples
+- touch [options] [file or directory name]
+
+---
+
+> ## **Examples**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `touch filename filename...` | Create multiple files at once; If you wish to have a space in the file name you must wrap the name in "quotation marks" |
 |`touch ../filename` | Creates a file in the parent directory |
 | `touch file.txt` | Updates file.txt last modified time to the second you ran the command |
@@ -26,7 +29,9 @@ Change file timestamps and create files
 || `ss` - the seconds |
 
 
-## Options
+---
+
+> ## **Options**
 
 | **Options**   | **Description**   |
 | --------------|-------------------|
@@ -41,8 +46,9 @@ Change file timestamps and create files
 | `--help` | Opens the help menu. |
 | `-v` `--version` | Prints the program version. |
 
-------
+---
+---
 
-## References
+> ## **References**
 
 https://phoenixnap.com/kb/touch-command-in-linux

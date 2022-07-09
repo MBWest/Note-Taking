@@ -1,10 +1,12 @@
 # cp
 
-## Syntax
 
-cp [source] [destination]
+> ## **Syntax**
+- cp [source] [destination]
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

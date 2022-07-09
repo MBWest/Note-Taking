@@ -2,6 +2,8 @@
 
 Debian Package Installer
 
-## Example
+---
+
+> ## **Syntax**
 
 `dpkg -i [Package File]`

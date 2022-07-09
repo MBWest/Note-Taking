@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if [ "$1" = "foo" ]; then
 case "$2" in
 

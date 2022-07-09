@@ -1,10 +1,9 @@
 # sort
 
-## Examples
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
 | `sort [filename]` | Outputs the contents of a file alphabetically (Lowercase letters come before uppercase letters) |
 | `sort -r [filename]` | Alpabetically reverses the output of a file (-`-reverse - Equal to -r`) |
 | `sort -n [filename]` | Sorts the numeric value (`--numeric - Equal to -n`)

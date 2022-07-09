@@ -6,15 +6,15 @@
 - Linux is the trademark owned by Linus Torvalds
 - *NIX or nix is often used to refer to all three 
 
-> ### **Unix Operating Systems**
+> ## **Unix Operating Systems**
 - Mac OS X (Apple)
 - Solaris (Sun, then later Oracle)
 - AIX (IBM) 
 - UX (HP)
 
-> ### **Linux**
+> ## **Linux**
 - Too many distributions (distros) to list
 
->  ### **AF Unix Systems**
+> ## **AF Unix Systems**
 - Theater Battle Management Core Systems (TBMCS)
 - Global Command and Control Systems (GCCS)

@@ -1,12 +1,21 @@
 # Ping
 
-`ping [IP] or URL`
+> ## **Syntax**
 
-## Examples
+- ping [IP] or URL
+
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
 | `ping [IP] or URL` | Send ICMP packets to the IP address |
-| **Options** |
+
+---
+
+> ## **Options**
+
+| **Option** |**Description**   | 
+| --------------|-------------------|
 | `-c` | Assign a count of how many times you want the ping command sent out|

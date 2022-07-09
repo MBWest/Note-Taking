@@ -1,19 +1,22 @@
 # Linux File Structure - File Privileges
 
-> ### **User Privileges**
+> ## **User Privileges**
 - Users can affect any file/folder to which they have appropriate permissions
 
-> ### **Root User Privileges**
+---
+
+> ## **Root User Privileges**
 - Has all privileges
 - Can use su command and switch to any user without knowledge of their password
 
-## **Terminal**
+### **Terminal**
 
 - If you are logged into the system as a normal user the command prompt will end in a **dollar sign ($)**
 - If you are logged into the system as a normal user the command prompt will end in a **pound sign (#)**
+
 ---
 
-## **Groups**
+> ## **Groups**
 
 On Unix systems, a single user may be the User of files and directories, meaning that they have control over their access. 
 Additionally, users can belong to groups which are given access to particular files and folders by their owners. 
@@ -25,7 +28,7 @@ whoami
 
 ---
 
-## **User and Group IDs**
+> ## **User and Group IDs**
 
 When a new user account is made, it is assigned a user ID. The user is also assigned a group ID. 
 These user IDs are stored in /etc/passwd, and the group IDs are stored in /etc/group.
@@ -37,7 +40,7 @@ id
 
 ---
 
-## **File Attributes**
+> ## **File Attributes**
 
 | **Letter** | **Description**   |
 | --------------|-------------------|
@@ -52,7 +55,7 @@ id
 
 |**User**|**Group**|**World**|
 |---|---|---|
-|rwx|rwx|rwx|
+|`rwx`|`rwx`|`rwx`|
 
 | **Character** | **Effect On Files**| **Effect On Directories** |
 |--|--|--|
@@ -63,11 +66,10 @@ id
 
 ---
 
-## The Sticky Bit 
+> ## **The Sticky Bit** 
 The sticky bit is to tell the OS to run the executable as its User. Indicated by the ‘s’ instead of ‘x’
 - **-rwsrwx---** - This is very important to configure correctly. If you have a root based executable with the sticky bit set for everyone then anyone can run it as root!
 
-***Example**
 ```
 -rw-r--r--.  1 student student   	 531 Jul 16 18:13 .bashrc
 -rwsrwx---.  2 student cadre	    4096 Sep 25 07:00 Assignments
@@ -76,7 +78,7 @@ drwx------.  2 student student  	4096 Sep 25 07:00 .ssh
 
 ---
 
-## **Examples**
+> ## **File Privileges Examples**
 
 |**User**|**Group**|**World**|
 |---|---|---|

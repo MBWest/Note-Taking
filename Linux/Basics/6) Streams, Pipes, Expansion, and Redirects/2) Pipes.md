@@ -6,7 +6,7 @@
 - The STDOUT (fd 1) of command is connected via a pipe to the STDIN (fd 0) of command2
     - If `|&` is used, the STDERR (fd 2) of command is connected to command2's STDIN (fd 1) through the pipe
 
-### **Information**
+> ## **Information**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

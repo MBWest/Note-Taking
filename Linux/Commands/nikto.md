@@ -1,5 +1,6 @@
 # Nikto Webpage Scanning
 
-## Syntax
 
-    nikto -host <Website IP>
+> ## **Syntax**
+
+- nikto -host [Website IP]

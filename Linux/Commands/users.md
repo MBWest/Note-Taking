@@ -2,16 +2,26 @@
 
 Print the user names of users currently logged in to the current host
 
-## Format 
+---
 
-users
+> ## **Syntax** 
 
-## Example
+- users
+
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `users` | Print the user names of users currently logged in to the current host |
-| **Options** |
+
+---
+---
+
+> ## **Options**
+
+| **Options** |**Description**   |
+| --------------|-------------------|
 | `--help` | Display this help and exit |
 | `-version` | Output version information and exit |

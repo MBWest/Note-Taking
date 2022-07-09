@@ -9,7 +9,7 @@
 - Contains information about `failed login` attempts
 - Viewed by using the `lastb` command
 
-> ## **lastb [OPTION]...**
+> ### **lastb [OPTION]...**
 - Same as the last command, except that by default it shows the contents of /var/log/btmp
 - `-f FILE` - use a specific file instead of wtmp
 - `-n NUM` - show NUM lines instead of the whole file
@@ -35,7 +35,7 @@ lrwxrwxrwx. 1 root root     4 Dec  8 16:14 lastb -> last
 - Viewed by using the `last` command
 
 
-> ## **last [OPTION]...**
+> ### **last [OPTION]...**
 - Searches back through `/var/log/wtmp` and displays a list of all users logged in (and out) since that file was created
 - `-f FILE` - use a specific file instead of wtmp
 - `-n NUM` - show NUM lines instead of the whole file

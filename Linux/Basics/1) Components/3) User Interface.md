@@ -1,6 +1,6 @@
 # Linux Components - User Interface
 
-> ### **User Interface**
+> ## **User Interface**
 - The User Interface (UI) is also known as a shell
     - The shell is how a user interacts with the OS
     - Originally only a Command Line Interface (CLI) was offered
@@ -10,8 +10,9 @@
 ```
 User↔Shell↔Kernel↔Hardware 
 ```
+---
 
-> ### **Shell Functions**
+> ## **Shell Functions**
 
 - Acts as a command interpreter 
     - Passes commands from the user to the kernel 
@@ -20,7 +21,7 @@ User↔Shell↔Kernel↔Hardware
 - Manages the environment
 - Performs variable and filename substitution
 
-> ### **Common Shells**
+> ## **Common Shells**
 
 | **Shell**   | **Description**   |
 | --------------|-------------------|

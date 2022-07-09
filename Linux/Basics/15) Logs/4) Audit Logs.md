@@ -20,6 +20,3 @@
 - Reads rules from /etc/audit/audit.rules when the service starts 
 - Alternativley, `augenrules` program reads rules from `/etc/audit/rules.d/` and compliles them into `audit.rules`
 - If you stop the service, auditing will stop
-
----
-

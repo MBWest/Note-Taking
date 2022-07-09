@@ -2,11 +2,15 @@
 
 GNU History Library
 
-## Format
+---
+
+> ## **Syntax**
 
 `history`
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
@@ -18,7 +22,9 @@ GNU History Library
 | `!cat` | Reruns the last commands that started with 'cat' |
 | `Ctrl-r` | Search through your history |
 
-## Arrow Keys
+---
+
+> ## **Arrow Keys**
 
 | **Key**   | **Description**   |
 | --------------|-------------------|
@@ -27,7 +33,9 @@ GNU History Library
 | `Up` | Cycle through previous commands |
 | `Down` | Cycle through recent commands |
 
-## Files and Configurations
+---
+
+> ## **Files and Configurations**
 
 | **File**   | **Description**   |
 | --------------|-------------------|

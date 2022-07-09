@@ -11,7 +11,9 @@
 | `-a\|-b` | 		-a and -b cannot be used together |
 | `argument...` | 	argument is repeatable	 |
 
-### **Examples**
+---
+
+> ## **Examples**
 
 ```
 route [-v] [-A family] del [-net|-host] target

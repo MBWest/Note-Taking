@@ -1,12 +1,13 @@
 # Linux Process and Service Management - Proc Directory
 
+> ## **Proc Directory**
 - Pseudo-filesystem
 - Contains information about all currently running processes
 - Provides an interface to kernel data structures
 - Most of it is read-only, but some files allow kernel variables to be changed
 - Created every time a system is booted and disappears every time a system is shutdown
 
-## **/proc Structure**
+> ## **/proc Structure**
 - /proc/PID (Process ID or PID can be any running process)
 - Files/folders that provide information about the process
     - `cmdline` - command and arguments used to invoke the process

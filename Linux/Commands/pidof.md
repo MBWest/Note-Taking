@@ -1,8 +1,7 @@
 # Get a Process ID (pidof)
 
-## Examples
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
 | `pidof firefox` | Returns the process id of firefox |

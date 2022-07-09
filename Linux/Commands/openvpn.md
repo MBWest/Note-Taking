@@ -1,8 +1,8 @@
 # openvpn
 
-## Examples
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `sudo openvpn user.ovpn` | Connect to VPN |

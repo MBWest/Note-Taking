@@ -1,4 +1,6 @@
-## cURL
+# Web Request Cheat Sheet
+
+> ## **cURL**
 
 | **Command** | **Description** |
 | --------------|-------------------|
@@ -6,10 +8,7 @@
 | `curl inlanefreight.com` | Basic GET request |
 | `curl -s -O inlanefreight.com/index.html` | Download file |
 | `curl -k https://inlanefreight.com` | Skip HTTPS (SSL) certificate validation |
-| `curl inlanefreight.com -v` | Print full HT## cURL
-
-| **Command** | **Description** |
-| --------------|-------------------|
+| `curl inlanefreight.com -v` | Print full HT
 | `curl -h` | cURL help menu |
 | `curl inlanefreight.com` | Basic GET request |
 | `curl -s -O inlanefreight.com/index.html` | Download file |
@@ -26,7 +25,11 @@
 | `curl -b 'PHPSESSID=c1nsa6op7vtk7kdis7bcnbadf1' http://<SERVER_IP>:<PORT>/` | Set request cookies |
 | `curl -X POST -d '{"search":"london"}' -H 'Content-Type: application/json' http://<SERVER_IP>:<PORT>/search.php` | Send POST request with JSON data |
 
-## APIs
+---
+---
+
+> ## **APIs**
+
 | **Command** | **Description** |
 | --------------|-------------------|
 | `curl http://<SERVER_IP>:<PORT>/api.php/city/london` | Read entry |
@@ -35,7 +38,10 @@
 | `curl -X PUT http://<SERVER_IP>:<PORT>/api.php/city/london -d '{"city_name":"New_HTB_City", "country_name":"HTB"}' -H 'Content-Type: application/json'` | Update (modify) entry |
 | `curl -X DELETE http://<SERVER_IP>:<PORT>/api.php/city/New_HTB_City` | Delete entry |
 
-## Browser DevTools
+---
+---
+
+> ## **Browser DevTools**
 
 | **Shortcut** | **Description** |
 | --------------|-------------------|
@@ -53,7 +59,11 @@
 | `curl -b 'PHPSESSID=c1nsa6op7vtk7kdis7bcnbadf1' http://<SERVER_IP>:<PORT>/` | Set request cookies |
 | `curl -X POST -d '{"search":"london"}' -H 'Content-Type: application/json' http://<SERVER_IP>:<PORT>/search.php` | Send POST request with JSON data |
 
-## APIs
+---
+---
+
+> ## **APIs**
+
 | **Command** | **Description** |
 | --------------|-------------------|
 | `curl http://<SERVER_IP>:<PORT>/api.php/city/london` | Read entry |
@@ -62,7 +72,10 @@
 | `curl -X PUT http://<SERVER_IP>:<PORT>/api.php/city/london -d '{"city_name":"New_HTB_City", "country_name":"HTB"}' -H 'Content-Type: application/json'` | Update (modify) entry |
 | `curl -X DELETE http://<SERVER_IP>:<PORT>/api.php/city/New_HTB_City` | Delete entry |
 
-## Browser DevTools
+---
+---
+
+> ## **Browser DevTools**
 
 | **Shortcut** | **Description** |
 | --------------|-------------------|

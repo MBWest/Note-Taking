@@ -1,7 +1,9 @@
 # Dirbuster
 
-`dirbuster& - Launches GUI`
+dirbuster& - Launches GUI
 
-or
+---
 
-`dirbuster [WordList] http://[IP]`
+> ## **Syntax**
+
+- dirbuster [WordList] http://[IP]

@@ -1,5 +1,7 @@
 # addgroup
 
+> ## **Example** 
+
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | **addgroup** |

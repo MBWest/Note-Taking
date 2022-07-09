@@ -2,6 +2,10 @@
 
 (Similar to **ip n** command)
 
+---
+
+> ## **Example** 
+
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | **arp** |

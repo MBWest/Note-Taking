@@ -1,5 +1,10 @@
 # tmux
 
+
+
+> ## **Example**
+
+
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | `tmux` | Start tmux |

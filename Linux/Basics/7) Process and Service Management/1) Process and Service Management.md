@@ -109,7 +109,7 @@ guru     29630 29629  0 Jan01 pts/1    00:00:00 -bash
 | `Customized Example` | When process receives the SIGTERM signa, process might want to print the Goodbye msg on the screen, or write its internal data structure in a file for offline debugging before it dies out. |
 | `Ignore` | Process ignore the signal. |
 
-### **Well Known Linux Signals**
+> ## **Well Known Linux Signals**
 
 | **Signal** | **Description** | **Default Action** |
 |------------|-----------------|--------------------|

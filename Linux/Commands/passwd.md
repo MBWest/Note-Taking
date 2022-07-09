@@ -3,11 +3,15 @@
 - Change user password
 - A normal user may only change the password for their own account, while the superuser may change the password for any account.  passwd also changes the account or associated password validity period.
 
-## Format
+---
+
+> ## **Format**
 
 `passwd [options] [LOGIN]`
 
-## Examples
+---
+
+> ## **Examples**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
@@ -15,7 +19,9 @@
 | `passwd` | Prompts the user to enter a new password. This will change the current users password |
 | `sudo passwd sally` | Promts the user to enter a new Password. This will change sally's passwod |
 
-## Files
+---
+
+> ## **Files**
 
 | **File**   | **Description**   | 
 | --------------|-------------------|
@@ -23,7 +29,9 @@
 | `/etc/shadow` | Secure user account information. |
 | `/etc/pam.d/passwd` | PAM configuration for passwd. |
 
-## Exit Values
+---
+
+> ## **Exit Values**
 
 **The passwd command exits with the following values:**
 

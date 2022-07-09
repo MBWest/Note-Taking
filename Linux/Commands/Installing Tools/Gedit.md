@@ -1,17 +1,31 @@
-# Installing gedit
+# gedit
 
-**sudo apt install gedit** - Installs the gedit text editor
 
-## Using gedit
+> ## **Installing gedit**
+
+```
+sudo apt install gedit
+```
+
+---
+
+> ## **Using gedit**
 
 **Opens a new text document named test.txt**
 ```
 gedit test.txt
 ```
-## Alternatives
+---
+
+> ## **Alternatives**
 
 - Nano
 - Mousepad
+
+---
+
+> ## **Examples**
+
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

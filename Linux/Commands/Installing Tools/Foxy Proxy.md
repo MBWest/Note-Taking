@@ -2,7 +2,7 @@
 
 `https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/`
 
-## Setup
+> ## **Setup**
 
     Options
     Add

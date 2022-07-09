@@ -1,5 +1,6 @@
 # Searchsploit
 
-## Example
 
-`searchsploit Samba 2.2.8`
+> ## **Example**
+
+- searchsploit Samba 2.2.8

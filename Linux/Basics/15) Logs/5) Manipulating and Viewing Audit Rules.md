@@ -12,7 +12,7 @@
     - Some fields include:  path, perm, key, dir
     - ex. path=/some/file/to/audit
 
-- **Adding and viewing a rule**
+> ### **Adding and viewing a rule**
 
 ```
 [root@CentOS ~]# auditctl -a exit,always -F path=/root/passwords -F perm=rwxa -F key=secret
@@ -27,7 +27,7 @@ type=CONFIG_CHANGE msg=audit(1485030851.087:215110): auid=0 ses=567 op="add rule
 ... ADDITIONAL ENTRIES ... 
 ```
 ---
-- **Listing an audited file**
+> ### **Listing an audited file**
 
 ```
 [root@CentOS ~]# ls passwords 
@@ -47,7 +47,7 @@ type=PATH msg=audit(1485031370.900:215119): item=0 name="passwords" inode=136126
 
 ---
 
-- **Viewing an audited file’s contents**
+> ### **Viewing an audited file’s contents**
 
 ```
 [root@CentOS ~]# cat passwords 
@@ -67,7 +67,7 @@ type=PATH msg=audit(1485031977.737:215147): item=0 name="passwords" inode=136127
 ```
 ---
 
-- **Deleting a rule**
+> ### **Deleting a rule**
 
 ```
 [root@CentOS ~]# auditctl -d exit,always -F path=/root/passwords -F perm=rwxa -F key=secret
@@ -87,7 +87,7 @@ type=CONFIG_CHANGE msg=audit(1485030870.053:215111): auid=0 ses=567 op="remove r
 
 ---
 
-- **Stores rules that will be loaded by using the `auditctl` command whenever `auditd` is started.**
+> ### **Stores rules that will be loaded by using the `auditctl` command whenever `auditd` is started.**
 
 ```
 [root@CentOS ~]# cat /etc/audit/audit.rules 
@@ -116,7 +116,7 @@ type=CONFIG_CHANGE msg=audit(1485030870.053:215111): auid=0 ses=567 op="remove r
     - Valid ENDs are the same as those for --start 
 - `-i` - interpret numeric entities into text
 
-- **Searches only entries in the audit log**
+> ### **Searches only entries in the audit log**
     - /var/log/audit/audit.log
 
 ```

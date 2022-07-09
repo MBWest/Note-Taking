@@ -1,10 +1,15 @@
 # logrotate
 
-- rotate compress and mail log files 
-- automated way to manage log files
+- Rotate compress and mail log files 
+- Automated way to manage log files
 
-## Config File
+> ## **Config File**
 - `/etc/logrotate.conf`
+
+
+---
+
+> ## **Example**
 
 **Example lorotate.conf**
 - `weekly`
@@ -15,7 +20,6 @@
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `logrotate -fv /etc/logrotate.conf` |
 | `-f` | Force the rotation |
 | `-v` | Verbose logging |

@@ -1,17 +1,19 @@
 # smbclient
 
-## Example
+---
 
-`smbclient -L \\\\[ip]\\[Sharename]`
+> ## **Syntax**
 
-`-L` Lists Files
+- smbclient -L \\\\[ip]\\[Sharename]
 
-## HTB Examples
+> ## HTB **Examples**
 
 Shares
 SMB allows users and administrators to share folders and make them accessible remotely by other users. Often these shares have files in them that contain sensitive information such as passwords. A tool that can enumerate and interact with SMB shares is smbclient. The `-L` flag specifies that we want to retrieve a list of available shares on the remote host, while `-N` suppresses the password prompt.
 
-### Shares
+---
+
+> ## **Shares**
     MBWest@htb[/htb]$ smbclient -N -L \\\\10.129.42.253
 
         Sharename       Type      Comment

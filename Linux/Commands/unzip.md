@@ -1,16 +1,21 @@
 # unzip
 
-## Format
+---
 
-`unzip -l [filename.zip]`
+> ## **Syntax**
 
-## Examples
+- unzip -l [filename.zip]
+
+---
+
+> ## **Examples**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `unzip tmp/backup-files.zip` | Unzips the backup-files.zip file |
 
-## Zip
+---
+
+> ## **Zip**
 
 - See zip.md

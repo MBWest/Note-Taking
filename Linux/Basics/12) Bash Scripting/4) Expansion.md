@@ -12,7 +12,7 @@
 > ## **Expansions**
 
 | **Expression**   | **Description**   |
-| --------------|-------------------|
+|:----------------:|-------------------|
 | **Expansion** |
 | `*` | Represents zero or more characters in a filename |
 | `?` | Represent one character in a filename |
@@ -76,7 +76,7 @@ You can use the **$(command)** syntax to dispay the output of another command
 > ## **Resources**
 
 | **Resource**   | **Website**   |
-| --------------|-------------------|
+|----------------|---------------|
 | `Bash manual section on command substitution` | https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html |
 
 ---
@@ -87,7 +87,7 @@ You can use the **$(command)** syntax to dispay the output of another command
 The shell will perform arithmetic via expansion using the **$((expression))** syntax. Inside the parentheses the user can write artithmetic expression using:
 
 | **Expression**   | **Description**   |
-| --------------|-------------------|
+|:----------------:|-------------------|
 | **Arthmetic Expansion** |
 | `+` | Addition |
 | `-` | Subtraction |
@@ -104,10 +104,13 @@ The shell will perform arithmetic via expansion using the **$((expression))** sy
 > ## **Tilde Expansion**
 
 | **Expression**   | **Description**   |
-| --------------|-------------------|
+|:----------------:|-------------------|
 | **Tilde Expansion** |
 | `echo ~` | Returns the current users home directory |
 | `echo ~User` |Returns the specific users home directory |
+
+---
+---
 
 > ## **Parameter Expansion**
 

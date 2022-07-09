@@ -1,9 +1,12 @@
 # Hydra 
 
-## Syntax
 
-`hydra -l [user] -P [Password List] [protocol]://[IP]:[Port] -t [# of Threads] -V`
+> ## **Syntax**
 
-**Example**
+- hydra -l [user] -P [Password List] [protocol]://[IP]:[Port] -t [# of Threads] -V
+
+---
+
+> ## **Example**
 
 `hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt ssh://192.168.57.134:22 -t 4 -V`

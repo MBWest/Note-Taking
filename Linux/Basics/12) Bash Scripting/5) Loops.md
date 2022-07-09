@@ -1,6 +1,6 @@
 # Linux - Bash Scripting - Loops
 
-> ## **Syntax**
+## **Syntax**
 
 ```bash
 #!/bin/bash
@@ -12,7 +12,7 @@ do
     command N
 done
 ```
-> ## **Examples**
+## **Examples**
 
 ```bash
 #!/bin/bash
@@ -31,9 +31,11 @@ for COLOR in $COLORS
 do
     echo "COLOR: $COLOR"
 done
----```
 
+```
+---
 ### **Take all .JPG pictures and rename them**
+
 ```bash
 #!/bin/bash
 PICTURES=$(ls *jpg)

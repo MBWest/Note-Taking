@@ -2,9 +2,11 @@
 
 Shows calendar
 
-## Exmaples 
+---
+
+> ## **Example** 
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | **Examples** |
-| `cal` | Shows Calendar. |
+| `cal` | Shows Calendar |

@@ -2,7 +2,9 @@
 
 Concatenate files and print on the standard output
 
-## Exmaples
+---
+
+> ## **Example** 
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

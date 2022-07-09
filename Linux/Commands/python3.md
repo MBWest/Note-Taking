@@ -1,6 +1,6 @@
 # python3
 
-## Simple HTTP Server
+> ## **Simple HTTP Server**
 
 This will host a webserver from which ever folder you run it in. 
 
@@ -8,6 +8,6 @@ This will host a webserver from which ever folder you run it in.
 
 ------
 
-## Upgrade a Degraded Shell
+> ## **Upgrade a Degraded Shell**
     
     python3 -c "import pty;pty.spawn('/bin/bash')"

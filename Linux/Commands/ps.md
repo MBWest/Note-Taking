@@ -2,7 +2,9 @@
 
 List processes and their attributes
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   | 
 |:-------------:|-------------------|
@@ -20,7 +22,9 @@ List processes and their attributes
 | **Sort processes by the 3rd column** |
 | `ps -A \| sort -k 3` | Sorts all shown processes by the third column |
 
-## PS Command Attributes
+---
+
+> ## **PS Command Attributes**
 
 | **Attribute** | **Description** |
 |--------------:|-----------------|

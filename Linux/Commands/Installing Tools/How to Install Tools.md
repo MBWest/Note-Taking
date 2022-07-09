@@ -3,4 +3,4 @@
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | **Installing Tools** |
-| `apt install tool-name` | Installs the tool specified |
+| `apt install [tool-name]` | Installs the tool specified |

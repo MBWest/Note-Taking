@@ -51,6 +51,8 @@
      
                     |-----POSTROUTING-----------------|---------------------------------------OUTPUT---------------------------------------|     
 ```
+---
+
 > ## **Chains**
 
 ### **PREROUTING**
@@ -68,6 +70,7 @@
 ### **POSTROUTING**
 - Apply to packets as they just leave the network interface
 
+---
 
 > ## **Targets**
 
@@ -104,6 +107,8 @@ root@wrsk01$ iptables –I INPUT 1 –p tcp –m multiport --dport 20,21 -s 59.4
 - Must be root to view/edit tables
 - Permanent changes need to be made in the following file
     - /etc/sysconfig/iptables
+
+---
 
 > ## **3 Main Actions to Take**
 - `ACCEPT` - allow the connection

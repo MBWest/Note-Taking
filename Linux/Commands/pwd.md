@@ -2,9 +2,10 @@
 
 Shows the present working directory, stands for 'print working directory
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
 | `pwd` | shows the present working directory, stands for 'print working directory |

@@ -1,20 +1,20 @@
 # Linux Components - Linux Characteristics
 
 
-> ### **Flexibility**
+> ## **Flexibility**
 - Many commands and options
 - Many different ways to accomplish the same task
 
-> ### **Multitasking OS**
+> ## **Multitasking OS**
 - Can perform multiple tasks in parallel
 
-> ### **Multi-user OS**
+> ## **Multi-user OS**
 - Not limited to a single log-on session
 
-> ### **Portable**
+> ## **Portable**
 - Runs on many different types of hardware
 
-> ### **Case Sensitive**
+> ## **Case Sensitive**
 - Not like Windows
 - Downloads is not the same as download
 

@@ -1,10 +1,12 @@
 # Pimp My Kali
 
-## Github
+> ## **Github**
 
 https://github.com/Dewalt-arch/pimpmykali
 
-## Installation
+---
+
+> ## **Installation**
 
 1. Go to [Github link](https://github.com/Dewalt-arch/pimpmykali) and copy the link to the code
 2. Switch to `root` user

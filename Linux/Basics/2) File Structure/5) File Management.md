@@ -20,6 +20,8 @@ drwxrwxr-x  2 guru guru 4096 Jan  2 12:06 Downloads
 
 - Change the current directory to dir.  Default dir is the value of the HOME shell variable
 
+---
+
 > ## **pwd [OPTION]...**
 
 - Print name of current/working directory

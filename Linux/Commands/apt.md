@@ -4,14 +4,19 @@
 - Search for and install software packages (Debian/Ubuntu).
 - apt is a subset of the most commonly used apt-get and apt-cache(8) commands, use apt-get for more the low-level package management options.
 
-## Format
+---
 
-install [OPTION]... [-T] SOURCE DEST
-install [OPTION]... SOURCE... DIRECTORY
-install [OPTION]... -t DIRECTORY SOURCE...
-install [OPTION]... -d DIRECTORY...
+> ## **Syntax** 
 
-## Options
+- install [OPTION]... [-T] SOURCE DEST
+- install [OPTION]... SOURCE... DIRECTORY
+- install [OPTION]... -t DIRECTORY SOURCE...
+- install [OPTION]... -d DIRECTORY...
+
+---
+
+> ## **Options** 
+
 
 | **Apt Option**  | **Description**  | **Apt-Get Equivalent**  |
 --------------|-------------------|--------------|
@@ -26,7 +31,9 @@ install [OPTION]... -d DIRECTORY...
 |`upgrade` | Install the newest versions of all packages currently installed on the system from the sources enumerated in etc/apt/sources.list. New packages will be installed, but existing packages will never be removed. | `apt-get upgrade` |
 |`full‑upgrade` | Perform the function of upgrade but may also remove installed packages if that is required in order to resolve a package conflict. | `apt‑get dist‑upgrade` |
 
-## Examples
+---
+
+> ## **Example** 
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

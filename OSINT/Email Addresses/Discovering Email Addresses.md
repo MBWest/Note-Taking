@@ -1,6 +1,6 @@
 # Discovering Email Addresses
 
-> ## **Resouces**
+> ## **Resources**
 
 - `Hunter.io` - https://hunter.io/
 - `Phonebook.cz` - https://phonebook.cz/

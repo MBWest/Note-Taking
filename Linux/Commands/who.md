@@ -2,11 +2,12 @@
 
 Print information about users who are currently logged in
 
-## Options
+---
+
+> ## **Options**
 
 | **Option**   | **Description**   |
 | --------------|-------------------|
-| **Who Options** |
 | `-a, --all` | Same as -b -d --login -p -r -t -T -u |
 | `-b, --boot` | Time of last system boot |
 | `-d, --dead` | Print dead processes |

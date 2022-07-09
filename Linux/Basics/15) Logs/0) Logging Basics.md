@@ -6,6 +6,8 @@
 - Allows Logging to be centrally controlled
 - Uses facilities and severities to categorize messages
 
+---
+
 > ## **rsyslog**
  
 - Default config file location: **/etc/rsyslog.conf**
@@ -16,6 +18,8 @@
     - Facility.none will not match any facilites
 - **Action Field** - Determines how a message is processed
     - Most common action is to write the message to a log file
+
+---
 
 > ## **Caching vs Non-caching**
 

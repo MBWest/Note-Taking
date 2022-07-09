@@ -2,7 +2,9 @@
 
 Execute a command as another user
 
-## Format
+---
+
+> ## **Syntax**
 
      sudo -h | -K | -k | -V
      sudo -v [-ABknS] [-g group] [-h host] [-p prompt] [-u user]
@@ -14,11 +16,12 @@ Execute a command as another user
      sudoedit [-ABknS] [-C num] [-D directory] [-g group] [-h host]
           [-p prompt] [-R directory] [-T timeout] [-u user] file ...o 
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Example** |
 | `sudo` | Execute a command as another user or root |
 | `sudo -l -l` | Shows all commands that the current user can run as the super user |
 | `sudo su -` | Switch to root user for this instance |

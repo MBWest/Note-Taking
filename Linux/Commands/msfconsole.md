@@ -18,15 +18,15 @@
 
 ------
 
-## Searching Modules
+> ## **Searching Modules**
 
     search type:(auxiliary/post/exploit) port:(#) platform:(windows/linux) [service]
 
 ------
 
-## Modules
+> ## **Modules**
 
-### Post Modules
+### **Post Modules**
 
 `Hashdump` 
 
@@ -43,7 +43,7 @@ or
     msf > show options
     msf > set SESSION 1
 
-### Auxiliary Modules
+### **Auxiliary Modules**
 
 `SSH Login`
 
@@ -78,7 +78,7 @@ or
 
 ------
 
-## Sessions
+> ## **Sessions**
 
 `Single Session Exploitation`
 
@@ -126,7 +126,7 @@ All modules (exploits/post/aux) against the target subnet mask will be pivoted t
 
 ------
 
-## Persistence from Meterpreter
+> ## **Persistence from Meterpreter**
 
 `Windows`
 

@@ -1,10 +1,12 @@
 # diff
 
-## Format
+> ## **Syntax**
 
-diff [file1] [file2]
+- diff [file1] [file2]
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

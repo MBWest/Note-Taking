@@ -2,11 +2,11 @@
 
 Locate the binary, source, and manual page files for a command
 
-## Format
+> ## **Syntax**
 
-whereis [ExecutableName]
+- whereis [ExecutableName]
 
-## Examples
+> ## **Examples**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

@@ -1,8 +1,7 @@
 # ip
 
-## IP Queries
 
-## addr (Similar to ifconfig)
+> ## **addr (Similar to ifconfig)**
 
 **Display IP Addresses and property information**
 
@@ -18,7 +17,10 @@
 | `addr del` | Delete an address |
 | `ip addr del 192.168.1.1/24 dev em1` | Remove address 192.168.1.1/24 from device em1 |
 
-## neigh (Similar to arp)
+---
+---
+
+> ## **neigh (Similar to arp)**
 
 **Show neighbour objects; also known as the ARP table for IPv4**
 
@@ -28,7 +30,10 @@
 | `ip neigh` | Display neighbour objects |
 | `ip neigh show dev em1` | Show the ARP cache for device em1 it |
 
-## route (Similar to route)
+---
+---
+
+> ## **route (Similar to route)**
 
 **Display and alter the routing table**
 
@@ -52,7 +57,10 @@
 |`route get` | Display the route an address will take |
 | `ip route get 192.168.1.5` | Display the route taken for IP 192.168.1.5 |
 
-## link
+---
+---
+
+> ## **link**
 
 **Manage and display the state of all network interfaces**
 
@@ -69,7 +77,10 @@
 | `ip link set em1 mtu 9000` | Set the MTU on em1 to 9000 |
 | `ip link set em1 promisc on` | Enable promiscuous mode for em1 |
 
-## maddr
+---
+---
+
+> ## **maddr**
 
 **Manage and display multicast IP addresses**
 
@@ -79,7 +90,10 @@
 | `ip maddr` | Display multicast information for all devices |
 | `ip maddr show dev em1` | Display multicast information for device em1 |
 
-## help
+---
+---
+
+> ## **help**
 
 **Display a list of commands and arguments for each subcommand**
 
@@ -91,7 +105,11 @@
 | `ip link help` | Display link commands and arguments |
 | `ip neigh help` | Display neighbour commands and arguments |
 
-## Comparing Similar Commnads
+---
+---
+
+
+> ## **Comparing Similar Commnads**
 
 | **NET-TOOLS COMMANDS** |**IPROUTE COMMANDS**  |
 |------------------------|----------------------|

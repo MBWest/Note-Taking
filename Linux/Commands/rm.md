@@ -2,15 +2,18 @@
 
 Does not place the file into a recyclebin
 
-# Format
+---
 
-`rm [item]`
+> ## **Syntax**
 
-## Examples
+- rm [item]
+
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
 | `rm [filename]` | Remove files from the machine |
 | `rm -d [foldername]` | Deletes empty directories |
 | `rm -r [foldername]` | Removes directories and their contents recursively |

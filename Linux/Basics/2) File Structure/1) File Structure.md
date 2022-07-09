@@ -2,18 +2,24 @@
 
 ## **Directory Hierarchy**
 
-> ### **Root Directory**
+> ## **Root Directory**
 - / is the top of the directory structure
 - User root has total control of the system (superuser)
 - /root is the root user's home directory
-> ### **Current Directory**
+
+---
+
+> ## **Current Directory**
 - Commonly called current working directory or cwd
 - Parent/Child Directories
-> ### **Parent directory is one level above the child directory**
+
+---
+
+> ## **Parent directory is one level above the child directory**
 - Child directory is one level below the parent directory
 ---
 
-## **Directories**
+> ## **Directories**
 
 
 | **Paths**   | **Description**   |
@@ -31,10 +37,10 @@
 ---
 ---
 
-## **Home Directory**
+> ## **Home Directory**
 - Each user has a unique home directory
 - Default starting point for users
-    - Can be referenced from the CLI with a tilde (~)
+    - Can be referenced from the CLI with a tilde `~`
 - Located in /home
     - Each folder in /home corresponds to a username
         - ex.  /home/student is the user student's home folder

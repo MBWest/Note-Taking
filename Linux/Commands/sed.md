@@ -3,15 +3,18 @@
 Stream editor for filtering and transforming text
 - Operates on text as it flows by and not on the whole file all at once. Unless the `g` option is set, sed will only replace the first instance of the pattern.
 
-## Format
+---
 
-`sed [OPTIONS] {script-only-if-no-other-script} [input-file]`
+> ## **Syntax**
 
-## Examples
+- sed [OPTIONS] {script-only-if-no-other-script} [input-file]
+
+---
+
+> ## **Examples**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|
-| **Examples** |
 | `man sed` | Opens up the sed man page
 | `sed 's/Suite/Ste/' sample.txt` | Substitutes every occurence of 'Suite' with the abbreviation 'Ste' in the sample.txt file. |
 | `echo Suite Suite \| sed 's/Suite/Ste/'` | Substitutes the first instance 'Suite' with 'Ste'. |
@@ -22,7 +25,9 @@ Stream editor for filtering and transforming text
 | `sed 's/$/\n/g' sample.txt \| sed 's/,/\n/g'` | Replace the end of each line with a new line character and pipes that to a sed command to replace every comma with a new line. |
 | `sed -e 's/$/\n/g' -e 's/,/\n/g' sample.txt` | Replace the end of each line with a new line character and replace every comma with a new line. For each expression use the '-e' option to tell sed each section are their own expression. |
 
-## Resources  
+---
+
+> ## **Resources**
 
 | **Resource**   | **Website**   | 
 | --------------|-------------------|

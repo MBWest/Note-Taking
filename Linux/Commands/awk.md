@@ -1,10 +1,12 @@
 # awk
 
-## Resources
+> ## **Resources** 
 
 **AWK manual:** https://www.gnu.org/software/gawk/manual/gawk.html
 
-## Examples
+---
+
+> ## **Example** 
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

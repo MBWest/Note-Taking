@@ -114,10 +114,10 @@ Note: Bear in mind that Vim undoes and redoes changes by entries (changes made w
 
 > ## **Cutting, Copying And Pasting**
 
-- `y`y – copy (yank) entire line
-- `#`yy – copy the specified number of lines
-- `d`d – cut (delete) entire line
-- `#`dd – cut the specified number of lines
+- `yy` – copy (yank) entire line
+- `#yy` – copy the specified number of lines
+- `dd` – cut (delete) entire line
+- `#dd` – cut the specified number of lines
 - `p` – paste after the cursor
 - `P` – paste before the cursor
 

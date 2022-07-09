@@ -7,6 +7,8 @@
 - Changes to target file appear in link
 - Cannot span multiple filesystems
 
+---
+
 > ## **Soft Link (symbolic link)**
 
 - Points to the path of target file, instead of its inode

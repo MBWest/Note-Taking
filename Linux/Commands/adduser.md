@@ -1,5 +1,7 @@
 # adduser
 
+> ## **Example** 
+
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | **adduser** |

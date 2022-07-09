@@ -12,6 +12,8 @@
     - If omitted, the script can be passed as an argument to the appropriate interpreter
 - Comment out lines by placing the `#` character at the beginning of the line
 
+---
+
 > ## **Executing a Bash Script**
 
 - To execute a bash script, you should set the execute bit
@@ -63,5 +65,3 @@ yoda
 name
 ./variables.sh: line 4: rank: command not found
 ```
-
----

@@ -1,6 +1,6 @@
 # Netcat
 
-## Fundamentals
+> ## **Fundamentals**
 
 Both the client and listener take input from STDIN and send data received from the network to STDOUT
 
@@ -18,7 +18,7 @@ Create a Netcat listener on arbitrary local port [LocalPort]
 
 ------
 
-## Command Flags
+> ## **Command Flags**
 
     $ nc [options] [TargetIPaddr] [port(s)]
 
@@ -39,7 +39,7 @@ The [TargetIPaddr] is simply the other side’s IP address or domain name. It is
 
 ------
 
-## TCP Banner Grab
+> ## **TCP Banner Grab**
 
 `Grab the banner of any TCP service running on an IP Address from Linux:`
 
@@ -53,7 +53,7 @@ Add –p [port] to specify a source port for the
 
 ------
 
-## TCP Port Scanner
+> ## **TCP Port Scanner**
 
 `Port scan an IP Address:`
 
@@ -65,7 +65,7 @@ The randomize ports (-r) switch can be used to choose port numbers randomly in t
 
 ------
 
-## Backdoor Shells
+> ## **Backdoor Shells**
 
 `Listening backdoor shell on Linux:`
 
@@ -87,7 +87,7 @@ Create a reverse shell that will attempt to connect to [YourIPaddr] on local por
 
 -------
 
-## File Transfer
+> ## **File Transfer**
 
 `Push a file from client to listener`
 
@@ -111,7 +111,7 @@ Connect to [TargetIPaddr] on [port] and retrieve [outfile]
 
 ------
 
-## Windows Relays
+> ## **Windows Relays**
 
 `Temporary Folder`
 
@@ -142,7 +142,7 @@ Create a relay that will send packets from the connection to [PreviousHopIPaddr]
 
 ------
 
-## Linux Relays
+> ## **Linux Relays**
 
 ` To start, create a FIFO (named pipe) called backpipe:`
 

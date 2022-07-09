@@ -35,7 +35,9 @@
 - Has the same inodes number and permissiosn of original file
 - Permissions will be updated if we change the permissions of source file
 
-### **Descriptions**
+---
+
+> ## **Descriptions**
 
 | **Directory**   | **Description**   |
 | --------------|-------------------|
@@ -60,6 +62,9 @@
 | `/srv` | Service is abbreviated as ‘srv‘. This directory contains server specific and service related files |
 | `/sys` | Modern Linux distributions include a /sys directory as a virtual filesystem, which stores and allows modification of the devices connected to the system |
 | `/usr` | Contains executable binaries, documentation, source code, libraries for second level program  |
+
+---
+---
 
 **Linux is a complex system which requires a more complex and efficient way to start, stop, maintain and reboot a system unlike Windows. There is a well defined configuration files, binaries, man pages, info files, etc. for every process in Linux.** (https://www.tecmint.com/linux-directory-structure-and-important-files-paths-explained/)
 

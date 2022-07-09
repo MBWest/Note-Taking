@@ -1,10 +1,12 @@
 # mv
 
-## Format
+> ## **Syntax**
 
-`mv [source] [destination]`
+- mv [source] [destination]
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|

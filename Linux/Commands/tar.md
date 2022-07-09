@@ -2,13 +2,18 @@
 
 An archiving utility
 
-    tar [-] A --catenate --concatenate | c --create | d --diff --compare | --delete | r --append | t --list | --test-label | u --update | x --extract --get [options] [pathname ...]
+---
 
-## Options
+> ## **Syntax**
+
+- tar [-] A --catenate --concatenate | c --create | d --diff --compare | --delete | r --append | t --list | --test-label | u --update | x --extract --get [options] [pathname ...]
+
+---
+
+> ## **Options**
 
 | **Options**   | **Description**   |
 | --------------|-------------------|
-| **Options** |
 | `-c, --create` | Create a new archive |
 |`-x, --extract` | Ex |
 |`-t, --list` | List the table of contents of an archive |
@@ -19,7 +24,10 @@ An archiving utility
 | `-j, --bzip2` | Use bzip2 compression (.tar, .bz2). Bzip2 typically achieves a better compression ratiio than gzip |
 | `-J, --xz` | Use xz compression (.tar, .xz). The xz compression typically achieves a better compression ratio than bzip2 |
 
-## Examples
+---
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   | 
 | --------------|-------------------|

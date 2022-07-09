@@ -22,7 +22,10 @@
 | `w` | The write permissions. |
 | `x` | The execute permissions. |
 
-## Examples
+---
+---
+
+> ## **Examples**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
@@ -31,8 +34,9 @@
 | `chmod g+w file.txt` | Add write permissions to the group. |
 | `chmod a-w file.txt` | Remove write permissions from all. |
 
+---
 
-## chmod octals
+> ## **chmod octals**
 
 Chmod also supports octal number (base 8). Each digit in an octal number represents 3 binary digits
 

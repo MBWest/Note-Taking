@@ -16,8 +16,10 @@ drwxr-x---.  2 root root     4096 Feb  5 23:31 audit
 [root@CentOS ~]# 
 ```
 
+---
+
 > ## **Viewing rotated logs**
-- Ascii - can perform normal operations on the file 
+- `Ascii` - can perform normal operations on the file 
 - Binary 
 -   `last -f /var/log/wtmp`
 -   `lastb -f /var/log/btmp`

@@ -2,11 +2,12 @@
 
 Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `netstat -rn` | Show networks accessible via the VPN |
 | `netstat -ano` | Shows the active connections that are running on the machine |
 | `netstat -naob` | Shows the active connections that are running on the machine, the parent process, and the binary |

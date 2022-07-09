@@ -2,19 +2,21 @@
 
 Identifies any open files on the system
 
-## Examples
+---
+
+> ## **Example**
 
 | **Command**   | **Description**   |
 | --------------|-------------------|
-| **Example** |
 | `lsof +D /var/log` | Views all sub directories to see if anything is open |
 | `lsof -u brandon` | View open files by the user Brandon |
 
-## Output of lsof
+---
+
+> ## **Output of lsof**
 
 | **Output**   | **Description**   |
 | --------------|-------------------|
-| **Output of losf** |
 | `Command` | Name of the application ran  |
 | `PID` | PID of the application |
 | `USER` | Users context the application is running in |

@@ -1,12 +1,12 @@
 # nmap
 
-## Base Syntax
+> ## **Base Syntax**
 
     nmap [ScanType] [Options] {targets}
 
 ------
 
-## Flags
+> ## **Flags**
 
 | **Flag** | **Description** |
 |----------|-----------------|
@@ -21,7 +21,7 @@
 | `--reason` | Display reason Nmap thinks port is open, closed, or filtered |
 | `-Pn` | Don't probe (assume all hosts are up) |
 
-## dns-zone-transfer 
+> ## **dns-zone-transfer**
 
 `Attempts to pull a zone file (AXFR) from a DNS server:`
 
@@ -29,7 +29,7 @@
 
 ------
 
-## Robots.txt
+> ## **Robots.txt**
 
 `Harvests robots.txt files from discovered web servers:`
 
@@ -37,7 +37,7 @@
 
 ------ 
 
-## SMB-Brute
+> ## **SMB-Brute**
 
 `smb-brute: Attempts to determine valid username and password combinations via automated guessing:`
 
@@ -45,7 +45,7 @@
 
 ------
 
-## SMB-psexec
+> ## **SMB-psexec**
 
 `Attempts to run a series of programs on the target machine, using credentials provided as scriptargs:`
 
@@ -53,7 +53,7 @@
 
 -------
 
-## Scripting Engine
+> ## **Scripting Engine**
 
 `Run default scripts`
 
@@ -71,7 +71,9 @@
 
     --script-updatedb
 
-### Scripting Categories
+---
+
+> ## **Scripting Categories**
 
 Nmap's script categories include, but are not limited to, the following:
 
@@ -94,7 +96,7 @@ Nmap's script categories include, but are not limited to, the following:
 
 ------
 
-## Target Ports
+> ## **Target Ports**
 
 No port range specified scans 1,000 most popular
 ports 
@@ -111,7 +113,9 @@ ports
 | `-p0-` | Leaving off end port in range makes Nmap scan through port 65535 |
 | `-p-` | Scan ports 1-65535 |
 
-## Automated DNS Guessing Example
+---
+
+> ## **Automated DNS Guessing Example**
 
 Note: Collection of lists that are useful for security assessments, including a longer list of host names than nmap default - https://github.com/danielmiessler/SecLists
 
@@ -125,7 +129,7 @@ Note: Collection of lists that are useful for security assessments, including a 
 | `--script dns-brute` | Tell Nmap to run the dns-brute script |
 | `--script-args dns-brute.domain=falsimentis.com` | Specify the falsimentis.com domain as an argument for the dns-brute.domain parameter |
 
-## Top ports
+> ## **Top ports**
 
 Shows the top 1000 ports that nmap uses
 
