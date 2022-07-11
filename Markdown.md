@@ -1,5 +1,7 @@
 Markdown Cheatsheet<a name="TOP"></a>
 
+`[//]: <> (this is a comment)`
+
 # Heading 1 #
 
     Markup :  # Heading 1 #

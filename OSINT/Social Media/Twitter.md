@@ -17,3 +17,17 @@
 - Tinfoleak - https://tinfoleak.com/
 
 - TweetDeck - https://tweetdeck.com/
+
+---
+
+> ## **Twint CLI**
+>> ### **Install/Upgrade**
+
+```
+pip3 install --upgrade -e git+https://github.com/twintproject/twint.git@origin/master#egg=twint
+pip3 install --upgrade aiohttp_socks
+```
+
+### **Github**
+
+- Twint - https://github.com/twintproject/twint
