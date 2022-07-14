@@ -1,3 +1,32 @@
+#FUCNTIONS------------------------------------------------------------
+
+print("Here is an example Function!")
+
+def who_am_i(): #This is a Function
+    name = "Matt" #String
+    age  = 30 #Integer = int(30)
+    gpa = 3.7 #Float = float(3.7)
+    print("My name is " + name + " and I am " + str(age) + " years old!")
+
+who_am_i()
+
+#Adding Parameters
+def add_one_hundred(num):
+    print(num + 100)
+
+add_one_hundred(100) #Call function, with provided argument (100)
+
+#Multiple Parameters
+def add(x,y):
+    print(x + y)
+
+add(7,7)#Call function, with provided argument (7,7)
+
+def multiply(x,y):
+    return x * y #Returns the fuction to store for later
+
+print(multiply (7,7)) #Call function, with provided argument (7,7)
+
 # ----------Built in Functions----------
 # Built in functions (Print, str, int, float, bool, len, sorted)
 print("Print things to the console")  # Print things to the console

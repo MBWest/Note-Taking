@@ -15,7 +15,7 @@ langs = ['C', 'C++', 'Python', 'Go', 'Java']
 print(langs[2][0] + langs[2][-1] # This will produce "Pn"
       
 # Delete an index from a list
- del langs[0]
+del langs[0]
  
 # Replace an index with a new index
 langs[0] = 'Coding is fun'  # The 'C' index 

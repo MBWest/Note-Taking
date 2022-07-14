@@ -1,3 +1,25 @@
+#DICTIONARIES - KEY/VALUE PAIRS {}------------------------------------------------------------
+
+drinks = {"White Russian": 7, "Old Fassion": 10, "Lemon Drop": 8} #Drink is the key, price is the value
+
+print(drinks)
+
+employees = {"Finance": ["Bob", "Linda", "Tina"], "IT": ["Gene", "Louise", "Teddy"], "HR": ["Jimmy JR.", "Mort"]}
+
+print(employees)
+
+employees['Legal'] = ["Mr. Frond"] #Adds new key/value pair
+
+print(employees)
+
+employees.update({"Sales": ["Andie", "Ollie"]}) #Adds new key/value pair
+
+print(employees)
+
+drinks["White Russian"] = 8
+
+print(drinks.get("White Russian")) #Print the Value of the "White Russian"
+
 # ----------Dictionaries----------
 # Dictionaries {"key":"value"}
 my_dict = {"Name": "Matthew", "Age": 27, "Hobby": "Code"}

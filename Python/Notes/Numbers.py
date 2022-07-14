@@ -1,3 +1,13 @@
+#MATH------------------------------------------------------------
+
+print(50 + 50) #Addition
+print(50 - 50) #Subtraction
+print(50 * 50) #Multiplication
+print(50 / 50) #Division with remainder (or a float)
+print(50 ** 2) #Exponents 
+print(50 % 6) #Modulo - Takes what is left over
+print(50 // 6) #Division with no remainder
+
 # ----------Math----------
 addition = "+"
 subtraction = "-"
