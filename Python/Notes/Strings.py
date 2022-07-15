@@ -1,4 +1,4 @@
-#STRINGS------------------------------------------------------------
+#STRINGS, IMUTABLE------------------------------------------------------------
 
 print("Hello, world!") #Double Quotes
 print ('\n') #New Line
@@ -6,14 +6,27 @@ print('Hello, world!') #Single Quotes
 print("""This string runs
 multiple lines""") #Triple Quotes for Multi Lines
 print("This string is " + "awesome") #Concatenate Strings
-
-#ADVANCED STRINGS, IMUTABLE------------------------------------------------------------
+print("\\ \x41\x42\x43") #This will print hex
+print('a' * 10) #Prints 'a 10 times
 
 my_name = 'Matt'
 
+print(my_name.startswith("M")) #Returns true
+print(my_name.index("Matt")) #Prints the index of 'Matt'
+print(my_name.lower()) #Prints my_name in all lowercase 
+print(my_name.upper()) #Prints my_name in all uppercase
+
+print(my_name.encode("utf-8")) #Encode a string
+print(my_name.rjust(25)) #Right justify the string with " "
+print(my_name.rjust(25, "X")) #Right justify the string with "X"
+print(my_name.ljust(25, "X")) #Left justify the string with "X"
+
+
 print(my_name[0]) #First letter
 print(my_name[-1]) #Last letter
+
 sentence = "This is a sentence."
+print(sentence.replace(".", "!")) #Replace the . with a !
 print(sentence[:4]) #Print 'This'
 print(sentence.split()) #Delimeter - Defeault is a space
 print(sentence.split()[:1])
