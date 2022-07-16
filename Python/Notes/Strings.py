@@ -55,6 +55,18 @@ movie = "The Hangover"
 
 print("My favorite movie is {}.".format(movie)) #String Format Method
 
-print("My favorite movie is %s." %movie) #Percent String
+print("My favorite movie is %s." %movie) #String replace (d,x,f are other uses)
 
 print(f"My favorite movie is {movie}.") #String Literal
+
+string = "I am a string!"
+
+length = len(string)
+
+print(f"string is {length:.3f} characters long") #Print the length as a float (14.000)
+
+print(f"string is {length:x} characters long") #Print the length as hex (e)
+
+print(f"string is {length:b} characters long") #Print the length as binary (1110)
+
+print(f"string is {length:o} characters long") #Print the length as octal (16)

@@ -149,6 +149,7 @@ uid=0(root) gid=600(rebels) groups=600(rebels),0(root)
 |:-----:|:-----:|:-----:|:-----:|
 |`SUID` \| SGID \| Sticky | r w x | r w x | r w x |
 | Special | User | Group | Others |
+
 ```
 [guru@CentOS ~]$ id
 uid=500(guru) gid=500(guru) groups=500(guru)

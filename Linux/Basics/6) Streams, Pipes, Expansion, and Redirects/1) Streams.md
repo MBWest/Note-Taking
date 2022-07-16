@@ -193,6 +193,7 @@ no crontab for palpatine
             - A second ^D will close the stream
 
 ```
+
 [guru@CentOS ~]$ cat > stuff 
 things
 
