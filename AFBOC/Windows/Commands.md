@@ -46,7 +46,7 @@ Get-Help cmdlet -full
 </tr> <copy from here>
 
 <tr> <copy from here>
-<td> Make file </td>
+<td> Make directory </td>
 <td>
 
 ```cmd
@@ -63,17 +63,17 @@ New-Item -Path C:\[DirectoryName] -ItemType directory
 </tr> <copy from here>
 
 <tr> <copy from here>
-<td> Command Description </td>
+<td> Make file </td>
 <td>
 
 ```cmd
-CMD Commands
+echo [TextInTheFile] > NewFile.txt
 ```
 
 <td>
 
 ```Powershell
-Powershell code
+New-Item -Path 'C:\[Path] [File].[extention]' -ItemType File
 ```
 
 </td>
