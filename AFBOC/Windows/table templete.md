@@ -1,27 +1,3 @@
-# Command Prompt
-
-## Basic Commands
-
-| **Description** | **CMD** | **PowerShell** |
-|-----------------|-------------|------------|
-|  | `[cmd] /?` | `Get-Help [cmdlet] -full` |
-| Make file |  `echo [TextInTheFile] > NewFile.txt` |
-| Make directory | `mkdir NewDirectoryName` |
-| Change Directory | `cd C:\DirectoryName` |  
-| Display file content | `Type FileToDisplay.txt` | 
-| Copy file to directory | `copy` |
-| Copy files and directories | `xcopy [Source] [Destination]` |
-| Delete directory content | `del [Directory]` |
-| Delete directory and its content | `rmdir /s [Directory]` |
-| View directory structure | `tree` | 
-| View directory and file structure | `tree /f` |
-| Sort input alphabetically | `[cmd] \| sort` |
-| Compare the contents of a set of files | `comp [File1] [File2]` |
-| Compare a set of files and display the difference | `fc [File1] [File2]` |
-| Move file | `move [Directory\File] [NewDirectory]` |
-
-
-
 
 
 <table>
@@ -30,17 +6,17 @@
 </tr>
 
 <tr> <copy from here>
-<td> Get help </td>
+<td> Command Description </td>
 <td>
 
 ```cmd
-[cmd] /?
+CMD Commands
 ```
 
 <td>
 
 ```Powershell
-Get-Help cmdlet -full
+Powershell code
 ```
 
 </td>
