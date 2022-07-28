@@ -4,7 +4,6 @@
 
 | **Description** | **CMD** | **PowerShell** |
 |-----------------|-------------|------------|
-|  | `[cmd] /?` | `Get-Help [cmdlet] -full` |
 | Make file |  `echo [TextInTheFile] > NewFile.txt` |
 | Make directory | `mkdir NewDirectoryName` |
 | Change Directory | `cd C:\DirectoryName` |  
@@ -47,17 +46,17 @@ Get-Help cmdlet -full
 </tr> <copy from here>
 
 <tr> <copy from here>
-<td> Command Description </td>
+<td> Make file </td>
 <td>
 
 ```cmd
-CMD Commands
+mkdir [NewDirectoryName]
 ```
 
 <td>
 
 ```Powershell
-Powershell code
+New-Item -Path C:\[DirectoryName] -ItemType directory
 ```
 
 </td>
